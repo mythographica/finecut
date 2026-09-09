@@ -1,0 +1,1956 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-09T11:02:46.220Z",
+  "modules": {
+    "/code/mnemonica/finecut/express-otel/src/tracing.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "tracer",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "otel",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "diveOtel",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "asyncFlow",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "attachObservability",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "ProcessErrorKind",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "reportProcessError",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "flushTracing",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "NodeTracerProvider",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@opentelemetry/sdk-trace-node/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "SimpleSpanProcessor",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@opentelemetry/sdk-trace-base/build/src/index-shim.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "OTLPTraceExporter",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@opentelemetry/exporter-trace-otlp-http/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "resourceFromAttributes",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@opentelemetry/resources/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "ATTR_SERVICE_NAME",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@opentelemetry/semantic-conventions/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "trace",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@opentelemetry/api/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "attachHooks",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "MnemonicaOtelProvider",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "DiveOtelProvider",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "AsyncFlowProvider",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "buildUnblindReport",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "recordUnblindTelemetry",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "TypesCollection",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/types/index.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageFiles",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "RouteInfo",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "ResponseOutput",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageContext",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "HelperFn",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "Settings",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "RequestData_RouteData_PageData",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/.tactica/types.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+      "definedTypes": [
+        "RequestData",
+        "RequestData.RouteData",
+        "RequestData.RouteData.PageData",
+        "RequestData.RouteData.PageData.RenderData",
+        "RequestData.RouteData.PageData.RenderData.ResponseData"
+      ],
+      "exportedBindings": [
+        {
+          "name": "RequestData",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "RouteData",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageData",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "RenderData",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "ResponseData",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "define",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "PageFiles",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "RouteInfo",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "ResponseOutput",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/core/settings.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Settings",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "getfiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "setfiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "getMtime",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "mkdirp",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "paths",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "parseHeader",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "loadPageFiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageFiles",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "rawPageFiles",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "isReExport": false
+        },
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "isReExport": false
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "getfiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setfiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+      "definedTypes": [
+        "EngineRequest",
+        "EngineRequest.TreeResult",
+        "EngineRequest.PageResult",
+        "EngineRequest.CacheResult",
+        "EngineRequest.TemplateResult"
+      ],
+      "exportedBindings": [
+        {
+          "name": "TreeItem",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "EngineRequestData",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "EngineRequest",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "TreeResult",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageResult",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "CacheResult",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateResult",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "define",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "rawPageFiles",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "ChainStep",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+          "isReExport": false
+        },
+        {
+          "name": "traceChain",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+          "isReExport": false
+        },
+        {
+          "name": "formatChainTrace",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+          "isReExport": false
+        },
+        {
+          "name": "getRequestId",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "getProps",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "createLogger",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+          "isReExport": false
+        },
+        {
+          "name": "setupCollectionLogging",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "pino",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/pino/pino.d.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "TypesCollection",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "hooksOpts",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "traceChain",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "formatChainTrace",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "getRequestId",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/lib/chainTrace.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "checkStaticCache",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts",
+          "isReExport": false
+        },
+        {
+          "name": "writeStaticCache",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "getMtime",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path",
+        "fs"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/routes/engine/settings.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/routes/engine/settings.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/settings.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "Settings",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+        "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "handleContentGet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentSet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleSet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleMkdir",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleDel",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "mkdirp",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "resolvePaths",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "importAlias": "paths"
+        },
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "rawPageFiles",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        },
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "resolvePaths",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "importAlias": "paths"
+        },
+        {
+          "name": "wrap",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/dive/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "handleContentGet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentSet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleSet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleMkdir",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleDel",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/pageStore.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/routes/engine/template.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/routes/engine/template.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/template.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "getfiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setfiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "mkdirp",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "wrap",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/dive/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentGet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentSet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleSet",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleMkdir",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleDel",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+        "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/engineActions.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/routes/engine/admin.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/routes/engine/admin.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/admin.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "LFS",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/elfinder-node/dist/elfinder.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "driverRegistry",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/elfinder-node/dist/elfinder.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "registerHelper",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+          "isReExport": false
+        },
+        {
+          "name": "compile",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+          "isReExport": false
+        },
+        {
+          "name": "render",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "HelperFn",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/lib/components.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "jsonInfo",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "headAdditional",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "contentParser",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "menuMain",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "menuLeft",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "menuDocuments",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageContext",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path",
+        "fs"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/lib/registerHelpers.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/lib/registerHelpers.ts",
+      "definedTypes": [],
+      "exportedBindings": [],
+      "importedBindings": [
+        {
+          "name": "registerHelper",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "jsonInfo",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "headAdditional",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "contentParser",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuMain",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuLeft",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "createLogger",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "wrap",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/dive/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "buildUnblindReport",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "recordUnblindTelemetry",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "checkStaticCache",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "loadPageFiles",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "render",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "jsonInfo",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "headAdditional",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "contentParser",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuMain",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuLeft",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+        "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+        "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/fileUtils.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/templateEngine.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/components.ts",
+        "/code/mnemonica/finecut/express-otel/src/lib/registerHelpers.ts",
+        "/code/mnemonica/finecut/express-otel/src/core/settings.ts",
+        "/code/mnemonica/finecut/express-otel/src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "/code/mnemonica/finecut/express-otel/src/core/server.ts": {
+      "filePath": "/code/mnemonica/finecut/express-otel/src/core/server.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "app",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/server.ts",
+          "isReExport": false
+        },
+        {
+          "name": "logger",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/server.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PORT",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/core/server.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "reportProcessError",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "flushTracing",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "attachObservability",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "tracer",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "otel",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "asyncFlow",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "express",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "NextFunction",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "hooksOpts",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "defaultTypes",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "runInRequestScope",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "feedPreRootFromRequest",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "buildUnblindReport",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "recordUnblindTelemetry",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/otel/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "wrap",
+          "kind": "unknown",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/node_modules/@mnemonica/dive/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "createLogger",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setupCollectionLogging",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "writeStaticCache",
+          "kind": "function",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "settingsRouter",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/settings.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "treePagesRouter",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "templateRouter",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/template.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "templateActionRouter",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "apiRouter",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "adminRouter",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/engine/admin.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "frontendRouter",
+          "kind": "const",
+          "sourceModule": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts",
+          "importKind": "default",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "/code/mnemonica/finecut/express-otel/src/tracing.ts",
+        "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts",
+        "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts",
+        "/code/mnemonica/finecut/express-otel/src/plugins/pino-logger.ts",
+        "/code/mnemonica/finecut/express-otel/src/plugins/static-cache.ts",
+        "/code/mnemonica/finecut/express-otel/src/routes/engine/settings.ts",
+        "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts",
+        "/code/mnemonica/finecut/express-otel/src/routes/engine/template.ts",
+        "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts",
+        "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts",
+        "/code/mnemonica/finecut/express-otel/src/routes/engine/admin.ts",
+        "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    }
+  },
+  "edges": [],
+  "cycles": []
+}

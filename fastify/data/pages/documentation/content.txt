@@ -1,0 +1,40 @@
+<p>First of all &ndash; what does it mean &laquo;Fine Cut&raquo;?<br /></p>
+<p>We got rid of everything we've found unnecessary to develop simple website.</p>
+<p>John Lennon sang: &laquo;All You Need is Love&raquo;.<br />
+We say: &laquo;all we need is UI&raquo;.</p>
+
+<p>FineCut has been rebuilt on <strong>Node.js + Fastify + mnemonica</strong>. The original PHP engine (16 years old) has been ported to a modern TypeScript stack while preserving the same file-based philosophy: no database, just files.</p>
+
+<br />
+<p><strong>OK, here is small FAQ:</strong><br /><br />
+
+<li><strong>What are pages if there is no DB?</strong><br />
+TXT files of Page Properties inside folders.<br />
+Each page is a directory containing: header.txt, content.txt, info.txt, blocks.txt.<br />
+If You need anything else -- Use Your Favorite Framework!
+<br />
+<br />
+</li>
+
+<li><strong>What with other content? I need e-mail, rss, geoIP, maps, web-services...</strong>
+<p>Any page could be marked as <strong>&laquo;non cacheable&raquo;</strong><br />
+at Pages Manager => Settings tab.</p><br />
+
+<p>As for the rest &ndash; write your own code.<br />
+Please, lookup for <a href="/about/examples/">examples page</a>, if not yet.</p><br />
+
+</li>
+
+<li><strong>You told about performance, did you?</strong>
+<p>On modest hardware, page generation passes through in ~0.05 sec. And while that generation, page stores in static cache. Therefore, when requested again, it is served in ~0.007 sec. No special software optimizations needed.</p>
+</li>
+
+<li><strong>What is mnemonica?</strong>
+<p><a href="https://github.com/wentout/mnemonica" target="_blank">mnemonica</a> is an instance inheritance system for JavaScript/TypeScript. In FineCut, every HTTP request creates a persistent transformation chain through mnemonica's prototype inheritance:</p>
+<pre>
+RequestData &rarr; RouteData &rarr; PageData &rarr; RenderData &rarr; ResponseData
+</pre>
+<p>Each step progressively enriches the request context. Hooks provide cross-cutting observability (logging, caching, metrics) without business logic in route handlers.</p>
+</li>
+
+</ul>

@@ -1,0 +1,21 @@
+<p>FineCut Node.js requires:</p>
+<ul>
+<li><strong>Node.js 20+</strong> (LTS recommended)</li>
+<li>Any web server capable of reverse proxy (nginx, Apache, Caddy) <strong>or</strong> run standalone on a port</li>
+</ul>
+<br />
+
+<p><strong>No database engine required.</strong> All content is stored as files.</p>
+<br />
+
+<p>To use FineCut Admin Panel you'll need a modern browser:</p>
+<ul>
+<li>Firefox 100+</li>
+<li>Google Chrome / Chromium</li>
+<li>Safari 15+</li>
+<li>Edge (Chromium-based)</li>
+</ul>
+<br />
+
+<p>Admin Panel is available at:<br /></p>
+<p><strong><nobr>http://YourHost/admin</nobr></strong></p>

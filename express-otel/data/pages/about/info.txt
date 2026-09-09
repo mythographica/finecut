@@ -1,0 +1,9 @@
+{
+    "title": "Title",
+    "mainMenu": {
+        "menuFile": "menu.js"
+    },
+    "leftMenu": {
+        "menuFile": "left.js"
+    }
+}

@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-09T11:22:27.917Z",
+  "eds": {
+    "unknown": [
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts:27:8",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tconst inst = instance as Record<string, unknown>;\n\t\t\tconst value = inst.value;\n\n\t\t\ti"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/worker.ts:17:15",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\t\tresolve();\n\t\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:50:22",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\t\tthrow new Error(`sync throw: ${uuid}`);\n\t\t\t}, instance)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:58:24",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\t\tconst err = new Error(`async rejection: ${uuid}`);\n\t\t\t\tconst rejection = Promise.re"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:70:28",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\t\t\tconst child = new (childCtor as new (data: unknown) => object)({ forceError: true "
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:77:25",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\t\t\tthrow new Error(`no child ctor: ${uuid}`);\n\t\t\t\t}, instance)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:13:13",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\tresolve();\n\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:30:22",
+        "kind": "wrap",
+        "code": "wrap(function crashAsync () {\n\t\t\tconst rejection = Promise.reject(\n\t\t\t\tnew Error(`crash-demo unhandl"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:40:20",
+        "kind": "wrap",
+        "code": "wrap(function crashSync () {\n\t\tthrow new Error(`crash-demo uncaught exception: ${uuid}`);\n\t}, instan"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:52:19",
+        "kind": "wrap",
+        "code": "wrap(async function validate () {\n\t\tawait tick(5);\n\t}, instance)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:57:20",
+        "kind": "wrap",
+        "code": "wrap(async function transform () {\n\t\tawait tick(5);\n\t}, instance)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:45:19",
+        "kind": "contextConsume",
+        "code": "getErrorInstance(err)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:342:54",
+        "kind": "wrap",
+        "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst cb = args[0] as () => object |"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:370:48",
+        "kind": "wrap",
+        "code": "wrap(function () {\n\t\t\tthrow new Error('dive-sync-error');\n\t\t}, treeResult)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:378:21",
+        "kind": "contextConsume",
+        "code": "getErrorInstance(err as Error)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:406:25",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tconst enriched = new ExceptionCtor(treeResult, new Error('dive-uncaught-exception'))"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:449:47",
+        "kind": "wrap",
+        "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst task = args[0] as (instance: o"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:476:19",
+        "kind": "wrap",
+        "code": "wrap(nextTick)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:482:30",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\t\t\t\t\tconst ctx = current();\n\t\t\t\t\t\t\tconst ctxType = ctx\n\t\t\t\t\t\t\t\t? (() => {\n\t\t\t\t\t\t\t\t\ttr"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:525:17",
+        "kind": "wrap",
+        "code": "wrap(nextTick)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:42:19",
+        "kind": "contextConsume",
+        "code": "getErrorInstance(err)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:75:3",
+        "kind": "hookAttach",
+        "code": "attachHooks(defaultTypes)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:80:25",
+        "kind": "contextConsume",
+        "code": "getErrorInstance(err)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:172:25",
+        "kind": "contextConsume",
+        "code": "getErrorInstance(reason)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<p>Components are template helpers that generate HTML fragments.</p>
+<p>All components are available inside the template via <code>{{components.helperName}}</code>.</p>
+
+<p>Available components:</p>
+
+<ul>
+<li><strong>contentParser</strong> &mdash; renders page content. Rewrites absolute URLs (<code>href="/"</code>) to include the <code>deep</code> prefix when FineCut is installed in a subdirectory.</li>
+
+<li><strong>headAdditional</strong> &mdash; placeholder for custom head content (currently empty, available for extension).</li>
+
+<li><strong>jsonInfo</strong> &mdash; generates <code>&lt;meta&gt;</code> tags from page info metadata.</li>
+
+<li><strong>menuDocuments</strong> &mdash; generates recursive HTML list from the documentation folder.</li>
+
+<li><strong>menuMain</strong> &mdash; generates top navigation menu from <code>data/menu_main.json</code>.</li>
+
+<li><strong>menuLeft</strong> &mdash; generates left sidebar menu from <code>data/menu_left.json</code>.</li>
+</ul>
+
+<p>Menu JSON format:</p>
+<pre>
+[
+  { "type": "link", "link": "/about/", "title": "About" },
+  { "type": "divider" },
+  { "type": "header", "title": "Section" },
+  {
+    "type": "link",
+    "link": "/docs/",
+    "title": "Docs",
+    "menu": [
+      { "type": "link", "link": "/docs/install/", "title": "Install" }
+    ]
+  }
+]
+</pre>

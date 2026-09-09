@@ -1,0 +1,6 @@
+<p>We are using <code>/views/templates/</code> for storing templates.</p>
+<p>Each folder inside of &laquo;/views/templates/&raquo; is a name of a template.</p>
+
+<p><strong>Changing template</strong>: simply edit its code, settings or properties snippet and push &laquo;Save&raquo; button.</p>
+<p><strong>Adding new template</strong>: press &laquo;Add&raquo; to make a copy of the selected template. Very useful &mdash; you don't need to create markup structure from scratch.</p>
+<p><strong>Removing template</strong>: deletes the template folder. If any page depends on the deleted template, the engine will fall back to &laquo;default&raquo;.</p>

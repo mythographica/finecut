@@ -1,0 +1,15 @@
+<p>FineCut is distributed as source code. Installation is straightforward:</p>
+<br />
+
+<p>Step by step:</p>
+<ol>
+<li>Clone or download the repository.</li>
+<li>Run <code>npm install</code> to install dependencies.</li>
+<li>Build the project: <code>npm run build</code></li>
+<li>Start the server: <code>npm start</code> or <code>npm run dev</code> for development with auto-restart.</li>
+<li>Open <strong>http://localhost:3000</strong> in your browser.</li>
+<li>Go to <strong>/admin</strong> for the Admin Panel.</li>
+</ol>
+
+<p>For production, use a process manager (PM2, systemd) or containerize with Docker.</p>
+<p>Default template and pages are exactly the same you are looking here.</p>

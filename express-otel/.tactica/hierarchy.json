@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-09T11:09:16.344Z",
+  "roots": [
+    {
+      "name": "RequestData",
+      "fullPath": "RequestData",
+      "location": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts:8:28",
+      "children": [
+        {
+          "name": "RouteData",
+          "fullPath": "RequestData.RouteData",
+          "location": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts:37:38",
+          "children": [
+            {
+              "name": "PageData",
+              "fullPath": "RequestData.RouteData.PageData",
+              "location": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts:50:35",
+              "children": [
+                {
+                  "name": "RenderData",
+                  "fullPath": "RequestData.RouteData.PageData.RenderData",
+                  "location": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts:67:36",
+                  "children": [
+                    {
+                      "name": "ResponseData",
+                      "fullPath": "RequestData.RouteData.PageData.RenderData.ResponseData",
+                      "location": "/code/mnemonica/finecut/express-otel/src/core/collections/requestTypes.ts:86:40",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EngineRequest",
+      "fullPath": "EngineRequest",
+      "location": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts:22:30",
+      "children": [
+        {
+          "name": "TreeResult",
+          "fullPath": "EngineRequest.TreeResult",
+          "location": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts:33:41",
+          "children": []
+        },
+        {
+          "name": "PageResult",
+          "fullPath": "EngineRequest.PageResult",
+          "location": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts:40:41",
+          "children": []
+        },
+        {
+          "name": "CacheResult",
+          "fullPath": "EngineRequest.CacheResult",
+          "location": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts:47:42",
+          "children": []
+        },
+        {
+          "name": "TemplateResult",
+          "fullPath": "EngineRequest.TemplateResult",
+          "location": "/code/mnemonica/finecut/express-otel/src/core/collections/engineTypes.ts:54:45",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<p>Single way for download Fine Cut Engine is to just get it from GitHub.</p>
+
+<p>There are at least:</p>
+<br />
+
+<ol>
+<li><a href="https://github.com/wentout/Fine-Cut-Engine/zipball/master" target="_blank">Fine Cut ZIP</a></li>
+<li><a href="https://github.com/wentout/Fine-Cut-Engine/tarball/master" target="_blank">Fine Cut TAR.BZ</a></li>
+<li><a href="https://github.com/wentout/Fine-Cut-Engine" target="_blank">Link to our Git</a></li>
+</ol>

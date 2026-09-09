@@ -1,0 +1,11 @@
+<p>FineCut uses <a href="https://github.com/Studio-42/elFinder" target="_blank">elFinder</a> as its file manager.</p>
+
+<p>The file manager is accessible from the Admin Panel and provides full filesystem access within the project directory. You can browse, edit, upload, and manage files directly through the web interface.</p>
+
+<p>Key features:</p>
+<ul>
+<li>Drag-and-drop file operations</li>
+<li>Built-in text editor with syntax highlighting</li>
+<li>Image preview and thumbnail generation</li>
+<li>Archive creation and extraction</li>
+</ul>

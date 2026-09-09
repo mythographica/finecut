@@ -1,0 +1,274 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-09T11:09:16.342Z",
+  "usages": {
+    "EngineRequest": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/settings.ts:16:23",
+        "kind": "lookup",
+        "code": "lookup('EngineRequest')"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/settings.ts:41:24",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:22:23",
+        "kind": "lookup",
+        "code": "lookup('EngineRequest')"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:44:24",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\tbody: { action: 'get', leaf } as Record<string, unknown>\n\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:56:24",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\tbody: { action: 'content_get', leaf } as Record<string, unknown>\n\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:81:24",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:13:23",
+        "kind": "lookup",
+        "code": "lookup('EngineRequest')"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:47:24",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\tbody: { action, template } as Record<string, unknown>\n\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:96:25",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:110:25",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts:24:23",
+        "kind": "lookup",
+        "code": "lookup('EngineRequest')"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts:42:24",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})"
+      }
+    ],
+    "EngineRequest.TreeResult": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:47:21",
+        "kind": "instantiation",
+        "code": "new engineRequest.TreeResult({ tree })"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:47:25",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TreeResult"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:100:22",
+        "kind": "instantiation",
+        "code": "new engineRequest.TreeResult({ tree })"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/tree_pages.ts:100:26",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TreeResult"
+      }
+    ],
+    "EngineRequest.TemplateResult": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:57:26",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult(data)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:57:30",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:68:26",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult({ snippet, header })"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:68:30",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:99:26",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult(data)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:99:30",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:113:26",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult({ snippet: s, header: h })"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/template_action.ts:113:30",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult"
+      }
+    ],
+    "EngineRequest.CacheResult": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts:49:23",
+        "kind": "instantiation",
+        "code": "new engineRequest.CacheResult(ok)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/engine/api.ts:49:27",
+        "kind": "propertyAccess",
+        "code": "engineRequest.CacheResult"
+      }
+    ],
+    "RequestData": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:22:21",
+        "kind": "lookup",
+        "code": "lookup('RequestData')"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:49:23",
+        "kind": "instantiation",
+        "code": "new RequestData({\n\t\t\tmethod  : req.method,\n\t\t\turl     : req.url,\n\t\t\tquery   : req.query as Record<st"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:58:21",
+        "kind": "lookup",
+        "code": "lookup('RequestData')"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:121:22",
+        "kind": "instantiation",
+        "code": "new RequestData({\n\t\tmethod  : 'GET',\n\t\turl     : '/test',\n\t\tquery   : {},\n\t\tparams  : {},\n\t\tbody    "
+      }
+    ],
+    "RequestData.RouteData": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:75:21",
+        "kind": "instantiation",
+        "code": "new requestData.RouteData({\n\t\t\tpagePath,\n\t\t\tisMain,\n\t\t\tdeep : ''\n\t\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:75:25",
+        "kind": "propertyAccess",
+        "code": "requestData.RouteData"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:130:20",
+        "kind": "instantiation",
+        "code": "new requestData.RouteData({\n\t\tpagePath : '/test',\n\t\tisMain   : false,\n\t\tdeep     : ''\n\t})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:130:24",
+        "kind": "propertyAccess",
+        "code": "requestData.RouteData"
+      }
+    ],
+    "RequestData.RouteData.PageData": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:86:20",
+        "kind": "instantiation",
+        "code": "new routeData.PageData(pageFiles)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:86:24",
+        "kind": "propertyAccess",
+        "code": "routeData.PageData"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:135:19",
+        "kind": "instantiation",
+        "code": "new routeData.PageData({\n\t\theader : {\n\t\t\ttitle       : 'Test',\n\t\t\ttemplate    : 'default',\n\t\t\tpageIs"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:135:23",
+        "kind": "propertyAccess",
+        "code": "routeData.PageData"
+      }
+    ],
+    "RequestData.RouteData.PageData.RenderData": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:92:29",
+        "kind": "instantiation",
+        "code": "new pageData.RenderData({})"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:92:33",
+        "kind": "propertyAccess",
+        "code": "pageData.RenderData"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:114:22",
+        "kind": "instantiation",
+        "code": "new pageData.RenderData(components)"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:114:26",
+        "kind": "propertyAccess",
+        "code": "pageData.RenderData"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:149:21",
+        "kind": "instantiation",
+        "code": "new pageData.RenderData({ parser : 'test' })"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:149:25",
+        "kind": "propertyAccess",
+        "code": "pageData.RenderData"
+      }
+    ],
+    "RequestData.RouteData.PageData.RenderData.ResponseData": [
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:93:25",
+        "kind": "instantiation",
+        "code": "new cachedRenderData.ResponseData({\n\t\t\t\tbody : cached,\n\t\t\t\tcontentType : 'text/html',\n\t\t\t\tstatusCode"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:93:29",
+        "kind": "propertyAccess",
+        "code": "cachedRenderData.ResponseData"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:136:24",
+        "kind": "instantiation",
+        "code": "new renderData.ResponseData({\n\t\t\tbody : html,\n\t\t\tcontentType : 'text/html',\n\t\t\tstatusCode : 200,\n\t\t\t"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/routes/frontend.ts:136:28",
+        "kind": "propertyAccess",
+        "code": "renderData.ResponseData"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:150:23",
+        "kind": "instantiation",
+        "code": "new renderData.ResponseData({\n\t\tbody : JSON.stringify({}),\n\t\tcontentType : 'application/json',\n\t\tsta"
+      },
+      {
+        "location": "/code/mnemonica/finecut/express-otel/src/core/server.ts:150:27",
+        "kind": "propertyAccess",
+        "code": "renderData.ResponseData"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+# Jaeger all-in-one for the finecut backend comparison.
+#
+# One container: OTLP collector + query + UI + in-memory storage.
+# Demo-grade only — in-memory means traces vanish on container stop,
+# which is exactly what you want between rehearsals.
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:1.76.0
+    container_name: finecut-jaeger
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    ports:
+      - "16686:16686"   # UI + query API
+      - "4318:4318"     # OTLP HTTP (what the apps post spans to)
+      - "4317:4317"     # OTLP gRPC (unused, kept for completeness)
+    restart: unless-stopped

@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-06-20T18:25:43.278Z",
+  "definitions": {
+    "RequestData": {
+      "name": "RequestData",
+      "location": "/code/mnemonica/finecut/nest/src/core/request-types.ts:8:28",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "RequestData.RouteData": {
+      "name": "RouteData",
+      "location": "/code/mnemonica/finecut/nest/src/core/request-types.ts:37:38",
+      "kind": "define",
+      "parent": "RequestData",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "RequestData.RouteData.PageData": {
+      "name": "PageData",
+      "location": "/code/mnemonica/finecut/nest/src/core/request-types.ts:50:35",
+      "kind": "define",
+      "parent": "RequestData.RouteData",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "RequestData.RouteData.PageData.RenderData": {
+      "name": "RenderData",
+      "location": "/code/mnemonica/finecut/nest/src/core/request-types.ts:67:36",
+      "kind": "define",
+      "parent": "RequestData.RouteData.PageData",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "RequestData.RouteData.PageData.RenderData.ResponseData": {
+      "name": "ResponseData",
+      "location": "/code/mnemonica/finecut/nest/src/core/request-types.ts:86:40",
+      "kind": "define",
+      "parent": "RequestData.RouteData.PageData.RenderData",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "EngineRequest": {
+      "name": "EngineRequest",
+      "location": "/code/mnemonica/finecut/nest/src/core/engine-types.ts:22:30",
+      "kind": "define",
+      "parent": null,
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "EngineRequest.TreeResult": {
+      "name": "TreeResult",
+      "location": "/code/mnemonica/finecut/nest/src/core/engine-types.ts:33:41",
+      "kind": "define",
+      "parent": "EngineRequest",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "EngineRequest.PageResult": {
+      "name": "PageResult",
+      "location": "/code/mnemonica/finecut/nest/src/core/engine-types.ts:40:41",
+      "kind": "define",
+      "parent": "EngineRequest",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "EngineRequest.CacheResult": {
+      "name": "CacheResult",
+      "location": "/code/mnemonica/finecut/nest/src/core/engine-types.ts:47:42",
+      "kind": "define",
+      "parent": "EngineRequest",
+      "strictChain": true,
+      "blockErrors": false
+    },
+    "EngineRequest.TemplateResult": {
+      "name": "TemplateResult",
+      "location": "/code/mnemonica/finecut/nest/src/core/engine-types.ts:54:45",
+      "kind": "define",
+      "parent": "EngineRequest",
+      "strictChain": true,
+      "blockErrors": false
+    }
+  }
+}

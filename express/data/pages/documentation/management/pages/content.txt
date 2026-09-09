@@ -1,0 +1,27 @@
+<p>The Pages Manager shows a tree structure on the left side.</p>
+
+<p>This tree represents URLs or paths inside the FineCut website. The names of tree leafs are exact URL paths with hierarchy preserved.</p>
+
+<p>On the first level: &laquo;about&raquo;, &laquo;documentation&raquo;, &laquo;search&raquo;, &laquo;download&raquo;, &laquo;_index&raquo;.</p>
+<p>When browsing the site, &laquo;<strong>about</strong>&raquo; is available at:<br />
+<nobr>http://YourWebSite.url/<strong>about</strong></nobr></p>
+
+<p>And inside &laquo;about&raquo; there might be &laquo;<strong>forkus</strong>&raquo; and &laquo;<strong>screenshots</strong>&raquo;, therefore:<br />
+<nobr>http://YourWebSite.url/<strong>about/forkus</strong></nobr><br />
+<nobr>http://YourWebSite.url/<strong>about/screenshots</strong></nobr></p>
+
+<p><em>Note: if you create a real folder with name &laquo;<strong>about</strong>&raquo; directly inside the FineCut dir, the page &laquo;about&raquo; will still work because static files are checked first, then page rendering.</em></p>
+
+<p>The <strong>root index page</strong> is named <strong>&laquo;_index&raquo;</strong> at the first level of the tree.</p>
+<hr>
+<p>Each page is stored as four files:</p>
+
+<p>&mdash; &laquo;page primary <a href="/documentation/management/pages/content/">content</a>&raquo;</p>
+<p>&mdash; &laquo;<a href="/documentation/management/pages/header/">header</a> data and settings&raquo;</p>
+<p>&mdash; &laquo;page additional <a href="/documentation/management/pages/properties/">properties</a>&raquo;</p>
+<p>&mdash; &laquo;page <a href="/documentation/management/pages/blocks/">blocks</a>&raquo;</p>
+
+<p>Filesystem path to a stored page:</p>
+<pre>
+/YourFineCutDir/data/pages/PagePathInTheTree
+</pre>

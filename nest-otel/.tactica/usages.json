@@ -1,0 +1,275 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-09T11:29:07.963Z",
+  "usages": {
+    "RequestData": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:24:21",
+        "kind": "lookup",
+        "code": "lookup('RequestData')",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:36:24",
+        "kind": "instantiation",
+        "code": "new RequestData({\n\t\t\t\tmethod  : req.method,\n\t\t\t\turl     : req.url,\n\t\t\t\tquery   : req.query as Record",
+        "constructorText": "RequestData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      }
+    ],
+    "RequestData.RouteData": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:62:22",
+        "kind": "instantiation",
+        "code": "new requestData.RouteData({\n\t\t\t\tpagePath,\n\t\t\t\tisMain,\n\t\t\t\tdeep : ''\n\t\t\t})",
+        "constructorText": "requestData.RouteData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:62:26",
+        "kind": "propertyAccess",
+        "code": "requestData.RouteData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      }
+    ],
+    "RequestData.RouteData.PageData": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:72:21",
+        "kind": "instantiation",
+        "code": "new routeData.PageData(pageFiles)",
+        "constructorText": "routeData.PageData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:72:25",
+        "kind": "propertyAccess",
+        "code": "routeData.PageData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      }
+    ],
+    "RequestData.RouteData.PageData.RenderData": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:80:30",
+        "kind": "instantiation",
+        "code": "new pageData.RenderData({})",
+        "constructorText": "pageData.RenderData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:80:34",
+        "kind": "propertyAccess",
+        "code": "pageData.RenderData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:108:23",
+        "kind": "instantiation",
+        "code": "new pageData.RenderData(components)",
+        "constructorText": "pageData.RenderData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:108:27",
+        "kind": "propertyAccess",
+        "code": "pageData.RenderData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      }
+    ],
+    "RequestData.RouteData.PageData.RenderData.ResponseData": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:81:26",
+        "kind": "instantiation",
+        "code": "new cachedRenderData.ResponseData({\n\t\t\t\t\tbody : cached,\n\t\t\t\t\tcontentType : 'text/html',\n\t\t\t\t\tstatusC",
+        "constructorText": "cachedRenderData.ResponseData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:81:30",
+        "kind": "propertyAccess",
+        "code": "cachedRenderData.ResponseData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:130:25",
+        "kind": "instantiation",
+        "code": "new renderData.ResponseData({\n\t\t\t\tbody : html,\n\t\t\t\tcontentType : 'text/html',\n\t\t\t\tstatusCode : 200,\n",
+        "constructorText": "renderData.ResponseData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:130:29",
+        "kind": "propertyAccess",
+        "code": "renderData.ResponseData",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:30:2"
+      }
+    ],
+    "EngineRequest": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:16:23",
+        "kind": "lookup",
+        "code": "lookup('EngineRequest')",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:30:25",
+        "kind": "instantiation",
+        "code": "new EngineRequest({ body })",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:28:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:42:25",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\tbody: { action: 'get', leaf },\n\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:39:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:63:25",
+        "kind": "instantiation",
+        "code": "new EngineRequest({ body })",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:49:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:126:25",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\tbody: { action: 'content_get', leaf },\n\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:123:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:161:26",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:146:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:173:26",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:146:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:206:26",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:186:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:218:26",
+        "kind": "instantiation",
+        "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:186:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:267:25",
+        "kind": "instantiation",
+        "code": "new EngineRequest({ body })",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:253:2"
+      }
+    ],
+    "EngineRequest.TreeResult": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:45:22",
+        "kind": "instantiation",
+        "code": "new engineRequest.TreeResult({ tree })",
+        "constructorText": "engineRequest.TreeResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:39:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:45:26",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TreeResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:39:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:67:23",
+        "kind": "instantiation",
+        "code": "new engineRequest.TreeResult({ tree })",
+        "constructorText": "engineRequest.TreeResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:49:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:67:27",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TreeResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:49:2"
+      }
+    ],
+    "EngineRequest.TemplateResult": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:164:27",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult(data)",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:146:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:164:31",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:146:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:176:27",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult({\n\t\t\t\tsnippet: data.snippet,\n\t\t\t\theader: data.header,\n\t\t\t})",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:146:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:176:31",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:146:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:209:27",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult(data)",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:186:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:209:31",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:186:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:221:27",
+        "kind": "instantiation",
+        "code": "new engineRequest.TemplateResult({\n\t\t\t\tsnippet: data.snippet,\n\t\t\t\theader: data.header,\n\t\t\t})",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:186:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:221:31",
+        "kind": "propertyAccess",
+        "code": "engineRequest.TemplateResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:186:2"
+      }
+    ],
+    "EngineRequest.CacheResult": [
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:275:24",
+        "kind": "instantiation",
+        "code": "new engineRequest.CacheResult(ok)",
+        "constructorText": "engineRequest.CacheResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:253:2"
+      },
+      {
+        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:275:28",
+        "kind": "propertyAccess",
+        "code": "engineRequest.CacheResult",
+        "holderScopeId": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:253:2"
+      }
+    ]
+  }
+}

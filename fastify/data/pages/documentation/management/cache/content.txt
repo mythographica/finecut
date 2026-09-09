@@ -1,0 +1,20 @@
+<p>The Settings tab contains a &laquo;Clear Cache&raquo; button.</p>
+
+<p>FineCut cache is smart:</p>
+<ul>
+<li>Cache can be disabled entirely via settings (<code>use_static: false</code> in <code>data/settings.json</code>).</li>
+<li>Individual pages can be marked as &laquo;non cacheable&raquo; via the <a href="/documentation/management/pages/header/"><nobr>Pages Manager &rarr; Settings</nobr></a> tab.</li>
+<li>When a page is saved, its mtime becomes newer than the cached version, triggering regeneration on the next request.</li>
+<li>When a template is saved, all pages using that template are considered stale.</li>
+<li>When settings are saved, the global cache is invalidated.</li>
+</ul>
+
+<p>To manually clear cache from the command line:</p>
+<pre>
+rm -rf data/static/*
+</pre>
+
+<p>Or via the API:</p>
+<pre>
+curl -X POST http://localhost:3000/engine/api -d "action=clear_cache"
+</pre>

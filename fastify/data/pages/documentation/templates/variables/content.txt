@@ -1,0 +1,46 @@
+<p>Each template receives a <strong>context object</strong> from the engine.</p>
+<p>Inside of that context you can find:</p>
+
+<ul>
+<li>
+<p><strong>header</strong> &mdash; object with page settings:<br />
+&nbsp;&nbsp;&#39;title&#39;, &#39;description&#39;, &#39;keywords&#39;, &#39;template&#39;, &#39;pageIsCode&#39;, &#39;additional&#39;.</p>
+</li>
+<li>
+<p><strong>info</strong> &mdash; JSON object with page properties.<br />
+Usually used via the <code>jsonInfo</code> component for meta tags.</p>
+</li>
+<li>
+<p><strong>content</strong> &mdash; page body content (raw string).<br />
+Rendered via the <code>contentParser</code> component.</p>
+</li>
+<li>
+<p><strong>blocks</strong> &mdash; array of page blocks.</p>
+</li>
+<li>
+<p><strong>deep</strong> &mdash; path prefix for assets when FineCut is installed in a subdirectory.</p>
+</li>
+<li>
+<p><strong>path</strong> &mdash; filesystem path to page directory.</p>
+</li>
+<li>
+<p><strong>pagePath</strong> &mdash; URL path to the page.</p>
+</li>
+<li>
+<p><strong>isMain</strong> &mdash; boolean, true if this is the root index page.</p>
+</li>
+<li>
+<p><strong>components</strong> &mdash; rendered HTML fragments from components (jsonInfo, menuMain, menuLeft, contentParser, headAdditional).</p>
+</li>
+</ul>
+
+<p>Example template syntax:</p>
+<pre>
+&lt;title&gt;{{header.title}}&lt;/title&gt;
+{{#if !isMain}}&lt;a href="/"&gt;Home&lt;/a&gt;{{/if}}
+{{#if header.additional}}&lt;meta name="custom" content="{{header.additional}}"&gt;{{/if}}
+{{components.jsonInfo}}
+{{components.contentParser}}
+{{components.menuMain}}
+{{components.menuLeft}}
+</pre>
