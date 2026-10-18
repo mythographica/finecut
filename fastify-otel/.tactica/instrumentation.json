@@ -1,0 +1,269 @@
+{
+  "version": 2,
+  "generatedAt": "2026-10-18T23:21:58.520Z",
+  "points": [],
+  "creationGraph": {
+    "nodes": [
+      {
+        "scopeId": "src/core/server.ts:169:24",
+        "name": "src/core/server.ts:169",
+        "kind": "arrow",
+        "filePath": "src/core/server.ts",
+        "location": "src/core/server.ts:169:24",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/frontend.ts:42:16",
+        "name": "src/routes/frontend.ts:42",
+        "kind": "arrow",
+        "filePath": "src/routes/frontend.ts",
+        "location": "src/routes/frontend.ts:42:16",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/engine/api.ts:33:26",
+        "name": "src/routes/engine/api.ts:33",
+        "kind": "arrow",
+        "filePath": "src/routes/engine/api.ts",
+        "location": "src/routes/engine/api.ts:33:26",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/engine/template_action.ts:81:38",
+        "name": "src/routes/engine/template_action.ts:81",
+        "kind": "arrow",
+        "filePath": "src/routes/engine/template_action.ts",
+        "location": "src/routes/engine/template_action.ts:81:38",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/engine/template_action.ts:42:37",
+        "name": "src/routes/engine/template_action.ts:42",
+        "kind": "arrow",
+        "filePath": "src/routes/engine/template_action.ts",
+        "location": "src/routes/engine/template_action.ts:42:37",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "name": "src/routes/engine/tree_pages.ts:77",
+        "kind": "arrow",
+        "filePath": "src/routes/engine/tree_pages.ts",
+        "location": "src/routes/engine/tree_pages.ts:77:27",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/engine/tree_pages.ts:31:26",
+        "name": "src/routes/engine/tree_pages.ts:31",
+        "kind": "arrow",
+        "filePath": "src/routes/engine/tree_pages.ts",
+        "location": "src/routes/engine/tree_pages.ts:31:26",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/engine/tree_pages.ts:58:26",
+        "name": "src/routes/engine/tree_pages.ts:58",
+        "kind": "arrow",
+        "filePath": "src/routes/engine/tree_pages.ts",
+        "location": "src/routes/engine/tree_pages.ts:58:26",
+        "starter": true
+      },
+      {
+        "scopeId": "src/routes/engine/settings.ts:45:31",
+        "name": "src/routes/engine/settings.ts:45",
+        "kind": "arrow",
+        "filePath": "src/routes/engine/settings.ts",
+        "location": "src/routes/engine/settings.ts:45:31",
+        "starter": true
+      }
+    ],
+    "edges": [],
+    "anchors": [
+      {
+        "location": "src/routes/engine/settings.ts:46:25",
+        "holderScopeId": "src/routes/engine/settings.ts:45:31",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/routes/engine/tree_pages.ts:50:25",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:31:26",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/routes/engine/tree_pages.ts:63:25",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:58:26",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/routes/engine/tree_pages.ts:93:25",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/routes/engine/template_action.ts:53:25",
+        "holderScopeId": "src/routes/engine/template_action.ts:42:37",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/routes/engine/template_action.ts:100:26",
+        "holderScopeId": "src/routes/engine/template_action.ts:81:38",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest"
+      },
+      {
+        "location": "src/routes/engine/template_action.ts:112:26",
+        "holderScopeId": "src/routes/engine/template_action.ts:81:38",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/routes/engine/api.ts:47:25",
+        "holderScopeId": "src/routes/engine/api.ts:33:26",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/routes/engine/tree_pages.ts:53:22",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:31:26",
+        "typePath": "EngineRequest.TreeResult",
+        "constructorText": "engineRequest.TreeResult",
+        "variable": "treeResult"
+      },
+      {
+        "location": "src/routes/engine/tree_pages.ts:112:23",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "typePath": "EngineRequest.TreeResult",
+        "constructorText": "engineRequest.TreeResult",
+        "variable": "treeResult"
+      },
+      {
+        "location": "src/routes/engine/template_action.ts:63:27",
+        "holderScopeId": "src/routes/engine/template_action.ts:42:37",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult"
+      },
+      {
+        "location": "src/routes/engine/template_action.ts:73:27",
+        "holderScopeId": "src/routes/engine/template_action.ts:42:37",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult",
+        "variable": "templateResult"
+      },
+      {
+        "location": "src/routes/engine/template_action.ts:103:27",
+        "holderScopeId": "src/routes/engine/template_action.ts:81:38",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult"
+      },
+      {
+        "location": "src/routes/engine/template_action.ts:115:27",
+        "holderScopeId": "src/routes/engine/template_action.ts:81:38",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult",
+        "variable": "templateResult"
+      },
+      {
+        "location": "src/routes/engine/api.ts:59:24",
+        "holderScopeId": "src/routes/engine/api.ts:33:26",
+        "typePath": "EngineRequest.CacheResult",
+        "constructorText": "engineRequest.CacheResult",
+        "variable": "cacheResult"
+      },
+      {
+        "location": "src/routes/frontend.ts:47:24",
+        "holderScopeId": "src/routes/frontend.ts:42:16",
+        "typePath": "RequestData",
+        "constructorText": "RequestData",
+        "variable": "requestData"
+      },
+      {
+        "location": "src/core/server.ts:170:22",
+        "holderScopeId": "src/core/server.ts:169:24",
+        "typePath": "RequestData",
+        "constructorText": "RequestData",
+        "variable": "requestData"
+      },
+      {
+        "location": "src/routes/frontend.ts:73:22",
+        "holderScopeId": "src/routes/frontend.ts:42:16",
+        "typePath": "RequestData.RouteData",
+        "constructorText": "requestData.RouteData",
+        "variable": "routeData"
+      },
+      {
+        "location": "src/core/server.ts:179:20",
+        "holderScopeId": "src/core/server.ts:169:24",
+        "typePath": "RequestData.RouteData",
+        "constructorText": "requestData.RouteData",
+        "variable": "routeData"
+      },
+      {
+        "location": "src/routes/frontend.ts:86:21",
+        "holderScopeId": "src/routes/frontend.ts:42:16",
+        "typePath": "RequestData.RouteData.PageData",
+        "constructorText": "routeData.PageData",
+        "variable": "pageData"
+      },
+      {
+        "location": "src/core/server.ts:184:19",
+        "holderScopeId": "src/core/server.ts:169:24",
+        "typePath": "RequestData.RouteData.PageData",
+        "constructorText": "routeData.PageData",
+        "variable": "pageData"
+      },
+      {
+        "location": "src/routes/frontend.ts:94:30",
+        "holderScopeId": "src/routes/frontend.ts:42:16",
+        "typePath": "RequestData.RouteData.PageData.RenderData",
+        "constructorText": "pageData.RenderData",
+        "variable": "cachedRenderData"
+      },
+      {
+        "location": "src/routes/frontend.ts:122:23",
+        "holderScopeId": "src/routes/frontend.ts:42:16",
+        "typePath": "RequestData.RouteData.PageData.RenderData",
+        "constructorText": "pageData.RenderData",
+        "variable": "renderData"
+      },
+      {
+        "location": "src/core/server.ts:198:21",
+        "holderScopeId": "src/core/server.ts:169:24",
+        "typePath": "RequestData.RouteData.PageData.RenderData",
+        "constructorText": "pageData.RenderData",
+        "variable": "renderData"
+      },
+      {
+        "location": "src/routes/frontend.ts:95:26",
+        "holderScopeId": "src/routes/frontend.ts:42:16",
+        "typePath": "RequestData.RouteData.PageData.RenderData.ResponseData",
+        "constructorText": "cachedRenderData.ResponseData"
+      },
+      {
+        "location": "src/routes/frontend.ts:146:25",
+        "holderScopeId": "src/routes/frontend.ts:42:16",
+        "typePath": "RequestData.RouteData.PageData.RenderData.ResponseData",
+        "constructorText": "renderData.ResponseData",
+        "variable": "responseData"
+      },
+      {
+        "location": "src/core/server.ts:199:23",
+        "holderScopeId": "src/core/server.ts:169:24",
+        "typePath": "RequestData.RouteData.PageData.RenderData.ResponseData",
+        "constructorText": "renderData.ResponseData",
+        "variable": "responseData"
+      }
+    ]
+  }
+}

@@ -1,112 +1,232 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-09T11:37:52.564Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:21:58.503Z",
   "eds": {
     "unknown": [
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/tracing.ts:53:2",
+        "location": "src/tracing.ts:53:2",
         "kind": "hookAttach",
         "code": "attachHooks(collection)"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/tracing.ts:54:2",
+        "location": "src/tracing.ts:54:2",
         "kind": "hookAttach",
         "code": "otel.attachHooks(collection)"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/tree_pages.ts:67:25",
+        "location": "src/core/server.ts:140:23",
         "kind": "wrap",
-        "code": "wrap(function contentGet () {\n\t\t\t\t\treturn handleContentGet(leaf);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function writeCache () {\n\t\t\t\treturn writeStaticCache(instance.pagePath || '', instance.body || ",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/core/server.ts:140:28",
+        "scopeId": "src/core/server.ts:131:43"
+      }
+    ],
+    "EngineRequest": [
+      {
+        "location": "src/routes/engine/tree_pages.ts:67:25",
+        "kind": "wrap",
+        "code": "wrap(function contentGet () {\n\t\t\t\t\treturn handleContentGet(leaf);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/tree_pages.ts:67:30",
+        "scopeId": "src/routes/engine/tree_pages.ts:58:26",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/tree_pages.ts:118:26",
+        "location": "src/routes/engine/tree_pages.ts:118:26",
         "kind": "wrap",
-        "code": "wrap(function pageSet () {\n\t\t\t\t\t\treturn handleSet(leaf, pageName, data);\n\t\t\t\t\t}, engineRequest)"
+        "code": "wrap(function pageSet () {\n\t\t\t\t\t\treturn handleSet(leaf, pageName, data);\n\t\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/tree_pages.ts:118:31",
+        "scopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/tree_pages.ts:129:25",
+        "location": "src/routes/engine/tree_pages.ts:129:25",
         "kind": "wrap",
-        "code": "wrap(function pageMkdir () {\n\t\t\t\t\treturn handleMkdir(leaf, pageName);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function pageMkdir () {\n\t\t\t\t\treturn handleMkdir(leaf, pageName);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/tree_pages.ts:129:30",
+        "scopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/tree_pages.ts:136:25",
+        "location": "src/routes/engine/tree_pages.ts:136:25",
         "kind": "wrap",
-        "code": "wrap(function pageDel () {\n\t\t\t\t\treturn handleDel(leaf, pageName);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function pageDel () {\n\t\t\t\t\treturn handleDel(leaf, pageName);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/tree_pages.ts:136:30",
+        "scopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/tree_pages.ts:144:26",
+        "location": "src/routes/engine/tree_pages.ts:144:26",
         "kind": "wrap",
-        "code": "wrap(function contentGet () {\n\t\t\t\t\t\treturn handleContentGet(leaf);\n\t\t\t\t\t}, engineRequest)"
+        "code": "wrap(function contentGet () {\n\t\t\t\t\t\treturn handleContentGet(leaf);\n\t\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/tree_pages.ts:144:31",
+        "scopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/tree_pages.ts:159:25",
+        "location": "src/routes/engine/tree_pages.ts:159:25",
         "kind": "wrap",
-        "code": "wrap(function contentSet () {\n\t\t\t\t\treturn handleContentSet(leaf, data);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function contentSet () {\n\t\t\t\t\treturn handleContentSet(leaf, data);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/tree_pages.ts:159:30",
+        "scopeId": "src/routes/engine/tree_pages.ts:77:27",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/api.ts:56:21",
+        "location": "src/routes/engine/api.ts:56:21",
         "kind": "wrap",
-        "code": "wrap(function clearCache () {\n\t\t\t\t\treturn removeRecursive(staticPath);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function clearCache () {\n\t\t\t\t\treturn removeRecursive(staticPath);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/api.ts:56:26",
+        "scopeId": "src/routes/engine/api.ts:33:26",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/api.ts:65:26",
+        "location": "src/routes/engine/api.ts:65:26",
         "kind": "wrap",
-        "code": "wrap(function contentGet () {\n\t\t\t\t\t\treturn handleContentGet(leaf);\n\t\t\t\t\t}, engineRequest)"
+        "code": "wrap(function contentGet () {\n\t\t\t\t\t\treturn handleContentGet(leaf);\n\t\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/api.ts:65:31",
+        "scopeId": "src/routes/engine/api.ts:33:26",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/api.ts:80:25",
+        "location": "src/routes/engine/api.ts:80:25",
         "kind": "wrap",
-        "code": "wrap(function contentSet () {\n\t\t\t\t\treturn handleContentSet(leaf, data);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function contentSet () {\n\t\t\t\t\treturn handleContentSet(leaf, data);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/api.ts:80:30",
+        "scopeId": "src/routes/engine/api.ts:33:26",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/api.ts:88:26",
+        "location": "src/routes/engine/api.ts:88:26",
         "kind": "wrap",
-        "code": "wrap(function pageSet () {\n\t\t\t\t\t\treturn handleSet(leaf, pathName, data);\n\t\t\t\t\t}, engineRequest)"
+        "code": "wrap(function pageSet () {\n\t\t\t\t\t\treturn handleSet(leaf, pathName, data);\n\t\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/api.ts:88:31",
+        "scopeId": "src/routes/engine/api.ts:33:26",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/api.ts:123:25",
+        "location": "src/routes/engine/api.ts:123:25",
         "kind": "wrap",
-        "code": "wrap(function pageMkdir () {\n\t\t\t\t\treturn handleMkdir(leaf, pathName);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function pageMkdir () {\n\t\t\t\t\treturn handleMkdir(leaf, pathName);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/api.ts:123:30",
+        "scopeId": "src/routes/engine/api.ts:33:26",
+        "wrapsTypePath": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/engine/api.ts:130:25",
+        "location": "src/routes/engine/api.ts:130:25",
         "kind": "wrap",
-        "code": "wrap(function pageDel () {\n\t\t\t\t\treturn handleDel(leaf, pathName);\n\t\t\t\t}, engineRequest)"
+        "code": "wrap(function pageDel () {\n\t\t\t\t\treturn handleDel(leaf, pathName);\n\t\t\t\t}, engineRequest)",
+        "scope": "EngineRequest",
+        "fn": "wrap",
+        "instanceArg": "engineRequest",
+        "callbackScopeId": "src/routes/engine/api.ts:130:30",
+        "scopeId": "src/routes/engine/api.ts:33:26",
+        "wrapsTypePath": "EngineRequest"
+      }
+    ],
+    "RequestData.RouteData": [
+      {
+        "location": "src/routes/frontend.ts:83:28",
+        "kind": "wrap",
+        "code": "wrap(function loadPage () {\n\t\t\t\t\treturn loadPageFiles(fullPagePath);\n\t\t\t\t}, routeData)",
+        "scope": "RequestData.RouteData",
+        "fn": "wrap",
+        "instanceArg": "routeData",
+        "callbackScopeId": "src/routes/frontend.ts:83:33",
+        "scopeId": "src/routes/frontend.ts:42:16",
+        "wrapsTypePath": "RequestData.RouteData"
+      }
+    ],
+    "RequestData.RouteData.PageData": [
+      {
+        "location": "src/routes/frontend.ts:90:25",
+        "kind": "wrap",
+        "code": "wrap(function staticCache () {\n\t\t\t\t\treturn checkStaticCache(pagePath, pageFiles.header);\n\t\t\t\t}, page",
+        "scope": "RequestData.RouteData.PageData",
+        "fn": "wrap",
+        "instanceArg": "pageData",
+        "callbackScopeId": "src/routes/frontend.ts:90:30",
+        "scopeId": "src/routes/frontend.ts:42:16",
+        "wrapsTypePath": "RequestData.RouteData.PageData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/frontend.ts:83:28",
+        "location": "src/routes/frontend.ts:111:28",
         "kind": "wrap",
-        "code": "wrap(function loadPage () {\n\t\t\t\t\treturn loadPageFiles(fullPagePath);\n\t\t\t\t}, routeData)"
+        "code": "wrap(function parseContent () {\n\t\t\t\t\t\treturn contentParser(pageData);\n\t\t\t\t\t}, pageData)",
+        "scope": "RequestData.RouteData.PageData",
+        "fn": "wrap",
+        "instanceArg": "pageData",
+        "callbackScopeId": "src/routes/frontend.ts:111:33",
+        "scopeId": "src/routes/frontend.ts:42:16",
+        "wrapsTypePath": "RequestData.RouteData.PageData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/frontend.ts:90:25",
+        "location": "src/routes/frontend.ts:114:28",
         "kind": "wrap",
-        "code": "wrap(function staticCache () {\n\t\t\t\t\treturn checkStaticCache(pagePath, pageFiles.header);\n\t\t\t\t}, page"
+        "code": "wrap(function mainMenu () {\n\t\t\t\t\t\treturn menuMain(pageData);\n\t\t\t\t\t}, pageData)",
+        "scope": "RequestData.RouteData.PageData",
+        "fn": "wrap",
+        "instanceArg": "pageData",
+        "callbackScopeId": "src/routes/frontend.ts:114:33",
+        "scopeId": "src/routes/frontend.ts:42:16",
+        "wrapsTypePath": "RequestData.RouteData.PageData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/frontend.ts:111:28",
+        "location": "src/routes/frontend.ts:117:28",
         "kind": "wrap",
-        "code": "wrap(function parseContent () {\n\t\t\t\t\t\treturn contentParser(pageData);\n\t\t\t\t\t}, pageData)"
-      },
+        "code": "wrap(function leftMenu () {\n\t\t\t\t\t\treturn menuLeft(pageData);\n\t\t\t\t\t}, pageData)",
+        "scope": "RequestData.RouteData.PageData",
+        "fn": "wrap",
+        "instanceArg": "pageData",
+        "callbackScopeId": "src/routes/frontend.ts:117:33",
+        "scopeId": "src/routes/frontend.ts:42:16",
+        "wrapsTypePath": "RequestData.RouteData.PageData"
+      }
+    ],
+    "RequestData.RouteData.PageData.RenderData": [
       {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/frontend.ts:114:28",
+        "location": "src/routes/frontend.ts:142:23",
         "kind": "wrap",
-        "code": "wrap(function mainMenu () {\n\t\t\t\t\t\treturn menuMain(pageData);\n\t\t\t\t\t}, pageData)"
-      },
-      {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/frontend.ts:117:28",
-        "kind": "wrap",
-        "code": "wrap(function leftMenu () {\n\t\t\t\t\t\treturn menuLeft(pageData);\n\t\t\t\t\t}, pageData)"
-      },
-      {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/routes/frontend.ts:142:23",
-        "kind": "wrap",
-        "code": "wrap(function renderTemplate () {\n\t\t\t\t\treturn render(templatePath, context);\n\t\t\t\t}, renderData)"
-      },
-      {
-        "location": "/code/mnemonica/finecut/fastify-otel/src/core/server.ts:120:23",
-        "kind": "wrap",
-        "code": "wrap(function writeCache () {\n\t\t\t\treturn writeStaticCache(instance.pagePath || '', instance.body || "
+        "code": "wrap(function renderTemplate () {\n\t\t\t\t\treturn render(templatePath, context);\n\t\t\t\t}, renderData)",
+        "scope": "RequestData.RouteData.PageData.RenderData",
+        "fn": "wrap",
+        "instanceArg": "renderData",
+        "callbackScopeId": "src/routes/frontend.ts:142:28",
+        "scopeId": "src/routes/frontend.ts:42:16",
+        "wrapsTypePath": "RequestData.RouteData.PageData.RenderData"
       }
     ]
   }

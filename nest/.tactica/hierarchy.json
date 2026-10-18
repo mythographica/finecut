@@ -1,0 +1,71 @@
+{
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:11:01.304Z",
+  "roots": [
+    {
+      "name": "RequestData",
+      "fullPath": "RequestData",
+      "location": "src/core/request-types.ts:8:28",
+      "children": [
+        {
+          "name": "RouteData",
+          "fullPath": "RequestData.RouteData",
+          "location": "src/core/request-types.ts:37:38",
+          "children": [
+            {
+              "name": "PageData",
+              "fullPath": "RequestData.RouteData.PageData",
+              "location": "src/core/request-types.ts:50:35",
+              "children": [
+                {
+                  "name": "RenderData",
+                  "fullPath": "RequestData.RouteData.PageData.RenderData",
+                  "location": "src/core/request-types.ts:67:36",
+                  "children": [
+                    {
+                      "name": "ResponseData",
+                      "fullPath": "RequestData.RouteData.PageData.RenderData.ResponseData",
+                      "location": "src/core/request-types.ts:86:40",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EngineRequest",
+      "fullPath": "EngineRequest",
+      "location": "src/core/engine-types.ts:22:30",
+      "children": [
+        {
+          "name": "TreeResult",
+          "fullPath": "EngineRequest.TreeResult",
+          "location": "src/core/engine-types.ts:33:41",
+          "children": []
+        },
+        {
+          "name": "PageResult",
+          "fullPath": "EngineRequest.PageResult",
+          "location": "src/core/engine-types.ts:40:41",
+          "children": []
+        },
+        {
+          "name": "CacheResult",
+          "fullPath": "EngineRequest.CacheResult",
+          "location": "src/core/engine-types.ts:47:42",
+          "children": []
+        },
+        {
+          "name": "TemplateResult",
+          "fullPath": "EngineRequest.TemplateResult",
+          "location": "src/core/engine-types.ts:54:45",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

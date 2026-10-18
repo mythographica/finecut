@@ -69,8 +69,8 @@ describe('observability wiring (e2e)', () => {
 		const spans = exporter.getFinishedSpans() as unknown as SpanShape[];
 		const names = spans.map((s) => s.name);
 
-		// The request span — runInRequestScope names it from req.url, and
-		// the raw IncomingMessage exposes no route pattern, so it is the
+		// The request span — runInEntryScope names it from the request url,
+		// and the raw IncomingMessage exposes no route pattern, so it is the
 		// raw url. Verified shape on both cache states.
 		expect(names).toContain('HTTP GET /');
 		// Construction spans follow the prototype chain

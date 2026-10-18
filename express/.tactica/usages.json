@@ -1,268 +1,241 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-06-20T18:25:40.990Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:10:43.804Z",
   "usages": {
     "EngineRequest": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/settings.ts:16:23",
+        "location": "src/routes/engine/settings.ts:16:23",
         "kind": "lookup",
-        "code": "lookup('EngineRequest')"
+        "code": "lookup('EngineRequest')",
+        "holderScopeId": "src/routes/engine/settings.ts"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/settings.ts:41:24",
+        "location": "src/routes/engine/settings.ts:41:24",
         "kind": "instantiation",
-        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})"
+        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "src/routes/engine/settings.ts:40:33"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/tree_pages.ts:21:23",
+        "location": "src/routes/engine/tree_pages.ts:21:23",
         "kind": "lookup",
-        "code": "lookup('EngineRequest')"
+        "code": "lookup('EngineRequest')",
+        "holderScopeId": "src/routes/engine/tree_pages.ts"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/tree_pages.ts:43:24",
+        "location": "src/routes/engine/tree_pages.ts:43:24",
         "kind": "instantiation",
-        "code": "new EngineRequest({\n\t\tbody: { action: 'get', leaf } as Record<string, unknown>\n\t})"
+        "code": "new EngineRequest({\n\t\tbody: { action: 'get', leaf } as Record<string, unknown>\n\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:25:28"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/tree_pages.ts:75:24",
+        "location": "src/routes/engine/tree_pages.ts:75:24",
         "kind": "instantiation",
-        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})"
+        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:61:29"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:13:23",
+        "location": "src/routes/engine/template_action.ts:13:23",
         "kind": "lookup",
-        "code": "lookup('EngineRequest')"
+        "code": "lookup('EngineRequest')",
+        "holderScopeId": "src/routes/engine/template_action.ts"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:47:24",
+        "location": "src/routes/engine/template_action.ts:47:24",
         "kind": "instantiation",
-        "code": "new EngineRequest({\n\t\tbody: { action, template } as Record<string, unknown>\n\t})"
+        "code": "new EngineRequest({\n\t\tbody: { action, template } as Record<string, unknown>\n\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "src/routes/engine/template_action.ts:37:39"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:96:25",
+        "location": "src/routes/engine/template_action.ts:96:25",
         "kind": "instantiation",
-        "code": "new EngineRequest({\n\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t})"
+        "code": "new EngineRequest({\n\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "src/routes/engine/template_action.ts:76:40"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:110:25",
+        "location": "src/routes/engine/template_action.ts:110:25",
         "kind": "instantiation",
-        "code": "new EngineRequest({\n\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t})"
+        "code": "new EngineRequest({\n\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "src/routes/engine/template_action.ts:76:40"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/api.ts:23:23",
+        "location": "src/routes/engine/api.ts:23:23",
         "kind": "lookup",
-        "code": "lookup('EngineRequest')"
+        "code": "lookup('EngineRequest')",
+        "holderScopeId": "src/routes/engine/api.ts"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/api.ts:41:24",
+        "location": "src/routes/engine/api.ts:41:24",
         "kind": "instantiation",
-        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})"
+        "code": "new EngineRequest({\n\t\tbody: req.body as Record<string, unknown>\n\t})",
+        "constructorText": "EngineRequest",
+        "holderScopeId": "src/routes/engine/api.ts:27:28"
       }
     ],
     "EngineRequest.TreeResult": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/tree_pages.ts:46:21",
+        "location": "src/routes/engine/tree_pages.ts:46:21",
         "kind": "instantiation",
-        "code": "new engineRequest.TreeResult({ tree })"
+        "code": "new engineRequest.TreeResult({ tree })",
+        "constructorText": "engineRequest.TreeResult",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:25:28"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/tree_pages.ts:46:25",
-        "kind": "propertyAccess",
-        "code": "engineRequest.TreeResult"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/tree_pages.ts:94:22",
+        "location": "src/routes/engine/tree_pages.ts:94:22",
         "kind": "instantiation",
-        "code": "new engineRequest.TreeResult({ tree })"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/tree_pages.ts:94:26",
-        "kind": "propertyAccess",
-        "code": "engineRequest.TreeResult"
+        "code": "new engineRequest.TreeResult({ tree })",
+        "constructorText": "engineRequest.TreeResult",
+        "holderScopeId": "src/routes/engine/tree_pages.ts:61:29"
       }
     ],
     "EngineRequest.TemplateResult": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:57:26",
+        "location": "src/routes/engine/template_action.ts:57:26",
         "kind": "instantiation",
-        "code": "new engineRequest.TemplateResult(data)"
+        "code": "new engineRequest.TemplateResult(data)",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "src/routes/engine/template_action.ts:37:39"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:57:30",
-        "kind": "propertyAccess",
-        "code": "engineRequest.TemplateResult"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:68:26",
+        "location": "src/routes/engine/template_action.ts:68:26",
         "kind": "instantiation",
-        "code": "new engineRequest.TemplateResult({ snippet, header })"
+        "code": "new engineRequest.TemplateResult({ snippet, header })",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "src/routes/engine/template_action.ts:37:39"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:68:30",
-        "kind": "propertyAccess",
-        "code": "engineRequest.TemplateResult"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:99:26",
+        "location": "src/routes/engine/template_action.ts:99:26",
         "kind": "instantiation",
-        "code": "new engineRequest.TemplateResult(data)"
+        "code": "new engineRequest.TemplateResult(data)",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "src/routes/engine/template_action.ts:76:40"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:99:30",
-        "kind": "propertyAccess",
-        "code": "engineRequest.TemplateResult"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:113:26",
+        "location": "src/routes/engine/template_action.ts:113:26",
         "kind": "instantiation",
-        "code": "new engineRequest.TemplateResult({ snippet: s, header: h })"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/template_action.ts:113:30",
-        "kind": "propertyAccess",
-        "code": "engineRequest.TemplateResult"
+        "code": "new engineRequest.TemplateResult({ snippet: s, header: h })",
+        "constructorText": "engineRequest.TemplateResult",
+        "holderScopeId": "src/routes/engine/template_action.ts:76:40"
       }
     ],
     "EngineRequest.CacheResult": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/api.ts:48:23",
+        "location": "src/routes/engine/api.ts:48:23",
         "kind": "instantiation",
-        "code": "new engineRequest.CacheResult(ok)"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/engine/api.ts:48:27",
-        "kind": "propertyAccess",
-        "code": "engineRequest.CacheResult"
+        "code": "new engineRequest.CacheResult(ok)",
+        "constructorText": "engineRequest.CacheResult",
+        "holderScopeId": "src/routes/engine/api.ts:27:28"
       }
     ],
     "RequestData": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:20:21",
+        "location": "src/routes/frontend.ts:20:21",
         "kind": "lookup",
-        "code": "lookup('RequestData')"
+        "code": "lookup('RequestData')",
+        "holderScopeId": "src/routes/frontend.ts"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:47:23",
+        "location": "src/routes/frontend.ts:47:23",
         "kind": "instantiation",
-        "code": "new RequestData({\n\t\t\tmethod  : req.method,\n\t\t\turl     : req.url,\n\t\t\tquery   : req.query as Record<st"
+        "code": "new RequestData({\n\t\t\tmethod  : req.method,\n\t\t\turl     : req.url,\n\t\t\tquery   : req.query as Record<st",
+        "constructorText": "RequestData",
+        "holderScopeId": "src/routes/frontend.ts:36:12"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:24:21",
+        "location": "src/core/server.ts:43:21",
         "kind": "lookup",
-        "code": "lookup('RequestData')"
+        "code": "lookup('RequestData')",
+        "holderScopeId": "src/core/server.ts"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:67:22",
+        "location": "src/core/server.ts:86:22",
         "kind": "instantiation",
-        "code": "new RequestData({\n\t\tmethod  : 'GET',\n\t\turl     : '/test',\n\t\tquery   : {},\n\t\tparams  : {},\n\t\tbody    "
+        "code": "new RequestData({\n\t\tmethod  : 'GET',\n\t\turl     : '/test',\n\t\tquery   : {},\n\t\tparams  : {},\n\t\tbody    ",
+        "constructorText": "RequestData",
+        "holderScopeId": "src/core/server.ts:85:24"
       }
     ],
     "RequestData.RouteData": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:73:21",
+        "location": "src/routes/frontend.ts:73:21",
         "kind": "instantiation",
-        "code": "new requestData.RouteData({\n\t\t\tpagePath,\n\t\t\tisMain,\n\t\t\tdeep : ''\n\t\t})"
+        "code": "new requestData.RouteData({\n\t\t\tpagePath,\n\t\t\tisMain,\n\t\t\tdeep : ''\n\t\t})",
+        "constructorText": "requestData.RouteData",
+        "holderScopeId": "src/routes/frontend.ts:36:12"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:73:25",
-        "kind": "propertyAccess",
-        "code": "requestData.RouteData"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:76:20",
+        "location": "src/core/server.ts:95:20",
         "kind": "instantiation",
-        "code": "new requestData.RouteData({\n\t\tpagePath : '/test',\n\t\tisMain   : false,\n\t\tdeep     : ''\n\t})"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:76:24",
-        "kind": "propertyAccess",
-        "code": "requestData.RouteData"
+        "code": "new requestData.RouteData({\n\t\tpagePath : '/test',\n\t\tisMain   : false,\n\t\tdeep     : ''\n\t})",
+        "constructorText": "requestData.RouteData",
+        "holderScopeId": "src/core/server.ts:85:24"
       }
     ],
     "RequestData.RouteData.PageData": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:81:20",
+        "location": "src/routes/frontend.ts:81:20",
         "kind": "instantiation",
-        "code": "new routeData.PageData(pageFiles)"
+        "code": "new routeData.PageData(pageFiles)",
+        "constructorText": "routeData.PageData",
+        "holderScopeId": "src/routes/frontend.ts:36:12"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:81:24",
-        "kind": "propertyAccess",
-        "code": "routeData.PageData"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:81:19",
+        "location": "src/core/server.ts:100:19",
         "kind": "instantiation",
-        "code": "new routeData.PageData({\n\t\theader : {\n\t\t\ttitle       : 'Test',\n\t\t\ttemplate    : 'default',\n\t\t\tpageIs"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:81:23",
-        "kind": "propertyAccess",
-        "code": "routeData.PageData"
+        "code": "new routeData.PageData({\n\t\theader : {\n\t\t\ttitle       : 'Test',\n\t\t\ttemplate    : 'default',\n\t\t\tpageIs",
+        "constructorText": "routeData.PageData",
+        "holderScopeId": "src/core/server.ts:85:24"
       }
     ],
     "RequestData.RouteData.PageData.RenderData": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:87:29",
+        "location": "src/routes/frontend.ts:87:29",
         "kind": "instantiation",
-        "code": "new pageData.RenderData({})"
+        "code": "new pageData.RenderData({})",
+        "constructorText": "pageData.RenderData",
+        "holderScopeId": "src/routes/frontend.ts:36:12"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:87:33",
-        "kind": "propertyAccess",
-        "code": "pageData.RenderData"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:109:22",
+        "location": "src/routes/frontend.ts:109:22",
         "kind": "instantiation",
-        "code": "new pageData.RenderData(components)"
+        "code": "new pageData.RenderData(components)",
+        "constructorText": "pageData.RenderData",
+        "holderScopeId": "src/routes/frontend.ts:36:12"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:109:26",
-        "kind": "propertyAccess",
-        "code": "pageData.RenderData"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:95:21",
+        "location": "src/core/server.ts:114:21",
         "kind": "instantiation",
-        "code": "new pageData.RenderData({ parser : 'test' })"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:95:25",
-        "kind": "propertyAccess",
-        "code": "pageData.RenderData"
+        "code": "new pageData.RenderData({ parser : 'test' })",
+        "constructorText": "pageData.RenderData",
+        "holderScopeId": "src/core/server.ts:85:24"
       }
     ],
     "RequestData.RouteData.PageData.RenderData.ResponseData": [
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:88:25",
+        "location": "src/routes/frontend.ts:88:25",
         "kind": "instantiation",
-        "code": "new cachedRenderData.ResponseData({\n\t\t\t\tbody : cached,\n\t\t\t\tcontentType : 'text/html',\n\t\t\t\tstatusCode"
+        "code": "new cachedRenderData.ResponseData({\n\t\t\t\tbody : cached,\n\t\t\t\tcontentType : 'text/html',\n\t\t\t\tstatusCode",
+        "constructorText": "cachedRenderData.ResponseData",
+        "holderScopeId": "src/routes/frontend.ts:36:12"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:88:29",
-        "kind": "propertyAccess",
-        "code": "cachedRenderData.ResponseData"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:131:24",
+        "location": "src/routes/frontend.ts:131:24",
         "kind": "instantiation",
-        "code": "new renderData.ResponseData({\n\t\t\tbody : html,\n\t\t\tcontentType : 'text/html',\n\t\t\tstatusCode : 200,\n\t\t\t"
+        "code": "new renderData.ResponseData({\n\t\t\tbody : html,\n\t\t\tcontentType : 'text/html',\n\t\t\tstatusCode : 200,\n\t\t\t",
+        "constructorText": "renderData.ResponseData",
+        "holderScopeId": "src/routes/frontend.ts:36:12"
       },
       {
-        "location": "/code/mnemonica/finecut/express/src/routes/frontend.ts:131:28",
-        "kind": "propertyAccess",
-        "code": "renderData.ResponseData"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:96:23",
+        "location": "src/core/server.ts:115:23",
         "kind": "instantiation",
-        "code": "new renderData.ResponseData({\n\t\tbody : JSON.stringify({}),\n\t\tcontentType : 'application/json',\n\t\tsta"
-      },
-      {
-        "location": "/code/mnemonica/finecut/express/src/core/server.ts:96:27",
-        "kind": "propertyAccess",
-        "code": "renderData.ResponseData"
+        "code": "new renderData.ResponseData({\n\t\tbody : JSON.stringify({}),\n\t\tcontentType : 'application/json',\n\t\tsta",
+        "constructorText": "renderData.ResponseData",
+        "holderScopeId": "src/core/server.ts:85:24"
       }
     ]
   }

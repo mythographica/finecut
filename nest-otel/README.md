@@ -13,7 +13,7 @@ for that story see [`../nest-dive`](../nest-dive)).
 Same trace shape as the other `-otel` demos — one request, one trace:
 
 ```
-HTTP GET /                      ← request span (runInRequestScope)
+HTTP GET /                      ← request span (runInEntryScope)
 ├─ mnemonica.RequestData        ┐ construction spans (provider trio)
 ├─ dive.create:RouteData        │
 ├─ dive.call:loadPage           │ wrapped sync-splits, named after
@@ -30,8 +30,8 @@ row of siblings — verified).
 | File | What it shows |
 |---|---|
 | `src/tracing.ts` | `NodeTracerProvider` + provider trio + `attachObservability` + Unblinder process reporting (imported first in `main.ts`) |
-| `src/request-scope.middleware.ts` | global `NestMiddleware`: `feedPreRootFromRequest` + `runInRequestScope` — middie hands over the RAW `IncomingMessage`/`ServerResponse`, so it reads like the Express recipe |
-| `src/unblind-exception.filter.ts` | global `@Catch()` filter (registered via `APP_FILTER`): `buildUnblindReport` + `recordUnblindTelemetry`, then 500 with the report body |
+| `src/request-scope.middleware.ts` | global `NestMiddleware`: `feedPreRoot` + `runInEntryScope` — middie hands over the RAW `IncomingMessage`/`ServerResponse`, so the feed sees the request line only and the span closes on the raw response's `finish` |
+| `src/unblind-exception.filter.ts` | global `@Catch()` filter (registered via `APP_FILTER`): the app's `unblind` (analysis on the request span's `mnemonica.error` event), then 500 with the report body |
 | `src/app.module.ts` | `attachObservability(defaultTypes)` after the app's own hooks; middleware via `configure(consumer)` |
 | `src/frontend/frontend.controller.ts`, `src/engine/engine.controller.ts` | call-site wraps of the sync-splits with the chain instance (`wrap(function loadPage () { … }, routeData)()`), Unblinder in the route catch |
 

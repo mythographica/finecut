@@ -1,0 +1,11 @@
+Type Hierarchy (Trie):
+├── EngineRequest
+│   ├── EngineRequest_CacheResult
+│   ├── EngineRequest_PageResult
+│   ├── EngineRequest_TemplateResult
+│   └── EngineRequest_TreeResult
+└── RequestData
+    └── RequestData_RouteData
+        └── RequestData_RouteData_PageData
+            └── RequestData_RouteData_PageData_RenderData
+                └── RequestData_RouteData_PageData_RenderData_ResponseData

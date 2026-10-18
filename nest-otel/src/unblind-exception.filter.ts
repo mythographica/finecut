@@ -3,11 +3,11 @@
  *
  * NestJS has no route-level error middleware like Express, so this global
  * APP_FILTER is the error boundary: anything escaping a controller lands
- * here. The report carries the dive branch that led to the error, the
- * errored construction and the attempted args — recovered from the
- * exception OBJECT itself. recordUnblindTelemetry emits the pinned
- * 'mnemonica.caught-exception' span plus the '[unblind]' stdout marker,
- * parented under the request span by the ALS context.
+ * here. The report carries the analysed dive chain, the errored
+ * construction and the attempted args — recovered from the exception
+ * OBJECT itself. unblind() records the analysis as a 'mnemonica.error'
+ * event on the request's active span (a fresh ERROR span when there is
+ * none) plus the '[unblind]' stdout marker.
  *
  * Verified shape: for exceptions thrown in middleware/controller phases,
  * switchToHttp().getResponse() may hand back EITHER the raw ServerResponse
@@ -17,13 +17,12 @@
 import { Catch, ExceptionFilter, ArgumentsHost } from '@nestjs/common';
 import type { FastifyReply } from 'fastify';
 import { ServerResponse } from 'http';
-import { buildUnblindReport, recordUnblindTelemetry } from '@mnemonica/otel';
+import { unblind } from './tracing.js';
 
 @Catch()
 export class UnblindExceptionFilter implements ExceptionFilter {
 	catch (exception: unknown, host: ArgumentsHost): void {
-		const report = buildUnblindReport(exception);
-		recordUnblindTelemetry(report, exception);
+		const report = unblind(exception);
 
 		const reply = host.switchToHttp().getResponse<FastifyReply | ServerResponse>();
 		const raw = reply instanceof ServerResponse ? reply : reply.raw;

@@ -1,92 +1,136 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-06-20T18:25:42.074Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:10:51.694Z",
   "flow": {
+    "NodeSDK": [
+      {
+        "location": "src/tracing.ts:16:13",
+        "kind": "instantiation",
+        "code": "new NodeSDK({\n\tresource        : resourceFromAttributes({\n\t\t[ ATTR_SERVICE_NAME ] : 'finecut-fastify",
+        "context": "new expression"
+      }
+    ],
+    "OTLPTraceExporter": [
+      {
+        "location": "src/tracing.ts:20:20",
+        "kind": "instantiation",
+        "code": "new OTLPTraceExporter({\n\t\turl : 'http://localhost:4318/v1/traces',\n\t})",
+        "context": "new expression"
+      },
+      {
+        "location": "src/tracing.ts:26:1",
+        "kind": "methodCall",
+        "code": "sdk.start()",
+        "propertyName": "start",
+        "targetType": "OTLPTraceExporter"
+      },
+      {
+        "location": "src/tracing.ts:26:1",
+        "kind": "propertyRead",
+        "code": "sdk.start",
+        "propertyName": "start",
+        "targetType": "OTLPTraceExporter"
+      },
+      {
+        "location": "src/tracing.ts:48:8",
+        "kind": "methodCall",
+        "code": "sdk.shutdown()",
+        "propertyName": "shutdown",
+        "targetType": "OTLPTraceExporter"
+      },
+      {
+        "location": "src/tracing.ts:48:8",
+        "kind": "propertyRead",
+        "code": "sdk.shutdown",
+        "propertyName": "shutdown",
+        "targetType": "OTLPTraceExporter"
+      }
+    ],
     "Map": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:34:18",
+        "location": "src/plugins/pino-logger.ts:34:18",
         "kind": "instantiation",
         "code": "new Map<string, number>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:40:4",
+        "location": "src/plugins/pino-logger.ts:40:4",
         "kind": "methodCall",
         "code": "timings.set(requestId, performance.now())",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:40:4",
+        "location": "src/plugins/pino-logger.ts:40:4",
         "kind": "propertyRead",
         "code": "timings.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:57:18",
+        "location": "src/plugins/pino-logger.ts:57:18",
         "kind": "methodCall",
         "code": "timings.get(requestId)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:57:18",
+        "location": "src/plugins/pino-logger.ts:57:18",
         "kind": "propertyRead",
         "code": "timings.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:59:4",
+        "location": "src/plugins/pino-logger.ts:59:4",
         "kind": "methodCall",
         "code": "timings.delete(requestId)",
         "propertyName": "delete",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:59:4",
+        "location": "src/plugins/pino-logger.ts:59:4",
         "kind": "propertyRead",
         "code": "timings.delete",
         "propertyName": "delete",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/templateEngine.ts:11:17",
+        "location": "src/lib/templateEngine.ts:11:17",
         "kind": "instantiation",
         "code": "new Map<string, HelperFn>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/templateEngine.ts:14:2",
+        "location": "src/lib/templateEngine.ts:14:2",
         "kind": "methodCall",
         "code": "helpers.set(name, fn)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/templateEngine.ts:14:2",
+        "location": "src/lib/templateEngine.ts:14:2",
         "kind": "propertyRead",
         "code": "helpers.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/templateEngine.ts:62:14",
+        "location": "src/lib/templateEngine.ts:62:14",
         "kind": "methodCall",
         "code": "helpers.get(name)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/templateEngine.ts:62:14",
+        "location": "src/lib/templateEngine.ts:62:14",
         "kind": "propertyRead",
         "code": "helpers.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/templateEngine.ts:73:9",
+        "location": "src/lib/templateEngine.ts:73:9",
         "kind": "passAsArg",
         "code": "fn(context, helpers, get)",
         "targetType": "Map",
@@ -95,66 +139,66 @@
     ],
     "Error": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:84:6",
+        "location": "src/plugins/pino-logger.ts:84:6",
         "kind": "instantiation",
         "code": "new Error('Unknown creation error')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:109:18",
+        "location": "src/plugins/pino-logger.ts:107:18",
         "kind": "propertyRead",
         "code": "error.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:108:18",
         "kind": "methodCall",
         "code": "error.stack?.split('\\n')",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:108:18",
         "kind": "propertyRead",
         "code": "error.stack?.split",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:108:18",
         "kind": "propertyRead",
         "code": "error.stack",
         "propertyName": "stack",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/engineActions.ts:12:9",
+        "location": "src/lib/engineActions.ts:12:9",
         "kind": "instantiation",
         "code": "new Error('404:Page not found')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/engineActions.ts:32:9",
+        "location": "src/lib/engineActions.ts:32:9",
         "kind": "instantiation",
         "code": "new Error('409:Page already exists')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/admin.ts:66:10",
+        "location": "src/routes/engine/admin.ts:70:10",
         "kind": "instantiation",
         "code": "new Error(`'${cmd}' is not implemented by volume driver`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:144:25",
+        "location": "src/routes/frontend.ts:144:25",
         "kind": "propertyRead",
         "code": "error.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:46:10",
+        "location": "src/core/server.ts:65:10",
         "kind": "instantiation",
         "code": "new Error('PageData requires a valid path')",
         "context": "new expression"
@@ -162,105 +206,105 @@
     ],
     "EngineRequest": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/settings.ts:46:25",
+        "location": "src/routes/engine/settings.ts:46:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: req.body as Record<string, unknown>\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/settings.ts:49:16",
+        "location": "src/routes/engine/settings.ts:49:16",
         "kind": "propertyRead",
         "code": "engineRequest.data",
         "propertyName": "data",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:49:25",
+        "location": "src/routes/engine/tree_pages.ts:49:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: { action: 'get', leaf } as Record<string, unknown>\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:52:26",
+        "location": "src/routes/engine/tree_pages.ts:52:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:85:25",
+        "location": "src/routes/engine/tree_pages.ts:85:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: req.body as Record<string, unknown>\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:104:27",
+        "location": "src/routes/engine/tree_pages.ts:104:27",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:53:25",
+        "location": "src/routes/engine/template_action.ts:53:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:63:31",
+        "location": "src/routes/engine/template_action.ts:63:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:73:31",
+        "location": "src/routes/engine/template_action.ts:73:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:100:26",
+        "location": "src/routes/engine/template_action.ts:100:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:103:31",
+        "location": "src/routes/engine/template_action.ts:103:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:112:26",
+        "location": "src/routes/engine/template_action.ts:112:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template } as Record<string, unknown>\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:115:31",
+        "location": "src/routes/engine/template_action.ts:115:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/api.ts:46:25",
+        "location": "src/routes/engine/api.ts:46:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: req.body as Record<string, unknown>\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/api.ts:53:28",
+        "location": "src/routes/engine/api.ts:53:28",
         "kind": "propertyRead",
         "code": "engineRequest.CacheResult",
         "propertyName": "CacheResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:72:1",
+        "location": "src/core/server.ts:91:1",
         "kind": "passAsArg",
         "code": "app.decorate('EngineRequest', EngineRequest)",
         "targetType": "EngineRequest",
@@ -269,146 +313,203 @@
     ],
     "EngineRequest.TreeResult": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:52:22",
+        "location": "src/routes/engine/tree_pages.ts:52:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:54:10",
+        "location": "src/routes/engine/tree_pages.ts:54:10",
         "kind": "passAsArg",
         "code": "reply.type('application/json').send(treeResult.tree)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:54:46",
+        "location": "src/routes/engine/tree_pages.ts:54:46",
         "kind": "propertyRead",
         "code": "treeResult.tree",
         "propertyName": "tree",
         "targetType": "EngineRequest.TreeResult"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:104:23",
+        "location": "src/routes/engine/tree_pages.ts:104:23",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:105:11",
+        "location": "src/routes/engine/tree_pages.ts:105:11",
         "kind": "passAsArg",
         "code": "reply.type('application/json').send(treeResult.tree)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/tree_pages.ts:105:47",
+        "location": "src/routes/engine/tree_pages.ts:105:47",
         "kind": "propertyRead",
         "code": "treeResult.tree",
         "propertyName": "tree",
         "targetType": "EngineRequest.TreeResult"
+      },
+      {
+        "location": "src/core/server.ts:92:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('TreeResult', TreeResult)",
+        "targetType": "EngineRequest.TreeResult",
+        "context": "arg 1 to decorate"
       }
     ],
     "EngineRequest.TemplateResult": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:63:27",
+        "location": "src/routes/engine/template_action.ts:63:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult(data)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:64:11",
+        "location": "src/routes/engine/template_action.ts:64:11",
         "kind": "passAsArg",
         "code": "reply.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:64:47",
+        "location": "src/routes/engine/template_action.ts:64:47",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:73:27",
+        "location": "src/routes/engine/template_action.ts:73:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult({ snippet, header })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:74:11",
+        "location": "src/routes/engine/template_action.ts:74:11",
         "kind": "passAsArg",
         "code": "reply.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:74:47",
+        "location": "src/routes/engine/template_action.ts:74:47",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:103:27",
+        "location": "src/routes/engine/template_action.ts:103:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult(data)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:104:11",
+        "location": "src/routes/engine/template_action.ts:104:11",
         "kind": "passAsArg",
         "code": "reply.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:104:47",
+        "location": "src/routes/engine/template_action.ts:104:47",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:115:27",
+        "location": "src/routes/engine/template_action.ts:115:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult({ snippet: s, header: h })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:116:11",
+        "location": "src/routes/engine/template_action.ts:116:11",
         "kind": "passAsArg",
         "code": "reply.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/template_action.ts:116:47",
+        "location": "src/routes/engine/template_action.ts:116:47",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
+      },
+      {
+        "location": "src/core/server.ts:95:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('TemplateResult', TemplateResult)",
+        "targetType": "EngineRequest.TemplateResult",
+        "context": "arg 1 to decorate"
       }
     ],
     "EngineRequest.CacheResult": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/api.ts:53:24",
+        "location": "src/routes/engine/api.ts:53:24",
         "kind": "instantiation",
         "code": "new engineRequest.CacheResult(ok)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/engine/api.ts:54:59",
+        "location": "src/routes/engine/api.ts:54:59",
         "kind": "propertyRead",
         "code": "cacheResult.cleared",
         "propertyName": "cleared",
         "targetType": "EngineRequest.CacheResult"
+      },
+      {
+        "location": "src/core/server.ts:94:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('CacheResult', CacheResult)",
+        "targetType": "EngineRequest.CacheResult",
+        "context": "arg 1 to decorate"
+      }
+    ],
+    "DriverRegistry": [
+      {
+        "location": "src/routes/engine/admin.ts:19:24",
+        "kind": "instantiation",
+        "code": "new DriverRegistry()",
+        "context": "new expression"
+      },
+      {
+        "location": "src/routes/engine/admin.ts:20:1",
+        "kind": "methodCall",
+        "code": "driverRegistry.initialize(roots)",
+        "propertyName": "initialize",
+        "targetType": "DriverRegistry"
+      },
+      {
+        "location": "src/routes/engine/admin.ts:20:1",
+        "kind": "propertyRead",
+        "code": "driverRegistry.initialize",
+        "propertyName": "initialize",
+        "targetType": "DriverRegistry"
+      },
+      {
+        "location": "src/routes/engine/admin.ts:65:18",
+        "kind": "methodCall",
+        "code": "driverRegistry.getDriverForRequest(params)",
+        "propertyName": "getDriverForRequest",
+        "targetType": "DriverRegistry"
+      },
+      {
+        "location": "src/routes/engine/admin.ts:65:18",
+        "kind": "propertyRead",
+        "code": "driverRegistry.getDriverForRequest",
+        "propertyName": "getDriverForRequest",
+        "targetType": "DriverRegistry"
       }
     ],
     "Function": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/lib/templateEngine.ts:44:9",
+        "location": "src/lib/templateEngine.ts:44:9",
         "kind": "instantiation",
         "code": "new Function('ctx', 'helpers', 'get', `return \\`${code}\\`;`)",
         "context": "new expression"
@@ -416,33 +517,33 @@
     ],
     "RequestData": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:45:24",
+        "location": "src/routes/frontend.ts:45:24",
         "kind": "instantiation",
         "code": "new RequestData({\n\t\t\t\tmethod  : req.method,\n\t\t\t\turl     : req.url,\n\t\t\t\tquery   : req.query as Record",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:71:26",
+        "location": "src/routes/frontend.ts:71:26",
         "kind": "propertyRead",
         "code": "requestData.RouteData",
         "propertyName": "RouteData",
         "targetType": "RequestData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:66:1",
+        "location": "src/core/server.ts:85:1",
         "kind": "passAsArg",
         "code": "app.decorate('RequestData', RequestData)",
         "targetType": "RequestData",
         "context": "arg 1 to decorate"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:85:22",
+        "location": "src/core/server.ts:104:22",
         "kind": "instantiation",
         "code": "new RequestData({\n\t\tmethod  : 'GET',\n\t\turl     : '/test',\n\t\tquery   : {},\n\t\tparams  : {},\n\t\tbody    ",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:94:24",
+        "location": "src/core/server.ts:113:24",
         "kind": "propertyRead",
         "code": "requestData.RouteData",
         "propertyName": "RouteData",
@@ -451,26 +552,33 @@
     ],
     "RequestData.RouteData": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:71:22",
+        "location": "src/routes/frontend.ts:71:22",
         "kind": "instantiation",
         "code": "new requestData.RouteData({\n\t\t\t\tpagePath,\n\t\t\t\tisMain,\n\t\t\t\tdeep : ''\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:79:25",
+        "location": "src/routes/frontend.ts:79:25",
         "kind": "propertyRead",
         "code": "routeData.PageData",
         "propertyName": "PageData",
         "targetType": "RequestData.RouteData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:94:20",
+        "location": "src/core/server.ts:86:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('RouteData', RouteData)",
+        "targetType": "RequestData.RouteData",
+        "context": "arg 1 to decorate"
+      },
+      {
+        "location": "src/core/server.ts:113:20",
         "kind": "instantiation",
         "code": "new requestData.RouteData({\n\t\tpagePath : '/test',\n\t\tisMain   : false,\n\t\tdeep     : ''\n\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:99:23",
+        "location": "src/core/server.ts:118:23",
         "kind": "propertyRead",
         "code": "routeData.PageData",
         "propertyName": "PageData",
@@ -479,61 +587,68 @@
     ],
     "RequestData.RouteData.PageData": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:79:21",
+        "location": "src/routes/frontend.ts:79:21",
         "kind": "instantiation",
         "code": "new routeData.PageData(pageFiles)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:85:34",
+        "location": "src/routes/frontend.ts:85:34",
         "kind": "propertyRead",
         "code": "pageData.RenderData",
         "propertyName": "RenderData",
         "targetType": "RequestData.RouteData.PageData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:100:22",
+        "location": "src/routes/frontend.ts:100:22",
         "kind": "passAsArg",
         "code": "jsonInfo(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to jsonInfo"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:102:28",
+        "location": "src/routes/frontend.ts:102:28",
         "kind": "passAsArg",
         "code": "contentParser(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to contentParser"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:103:28",
+        "location": "src/routes/frontend.ts:103:28",
         "kind": "passAsArg",
         "code": "menuMain(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to menuMain"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:104:28",
+        "location": "src/routes/frontend.ts:104:28",
         "kind": "passAsArg",
         "code": "menuLeft(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to menuLeft"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:107:27",
+        "location": "src/routes/frontend.ts:107:27",
         "kind": "propertyRead",
         "code": "pageData.RenderData",
         "propertyName": "RenderData",
         "targetType": "RequestData.RouteData.PageData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:99:19",
+        "location": "src/core/server.ts:87:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('PageData', PageData)",
+        "targetType": "RequestData.RouteData.PageData",
+        "context": "arg 1 to decorate"
+      },
+      {
+        "location": "src/core/server.ts:118:19",
         "kind": "instantiation",
         "code": "new routeData.PageData({\n\t\theader : {\n\t\t\ttitle       : 'Test',\n\t\t\ttemplate    : 'default',\n\t\t\tpageIs",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:113:25",
+        "location": "src/core/server.ts:132:25",
         "kind": "propertyRead",
         "code": "pageData.RenderData",
         "propertyName": "RenderData",
@@ -542,109 +657,116 @@
     ],
     "RequestData.RouteData.PageData.RenderData": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:85:30",
+        "location": "src/routes/frontend.ts:85:30",
         "kind": "instantiation",
         "code": "new pageData.RenderData({})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:86:30",
+        "location": "src/routes/frontend.ts:86:30",
         "kind": "propertyRead",
         "code": "cachedRenderData.ResponseData",
         "propertyName": "ResponseData",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:107:23",
+        "location": "src/routes/frontend.ts:107:23",
         "kind": "instantiation",
         "code": "new pageData.RenderData(components)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:111:5",
+        "location": "src/routes/frontend.ts:111:5",
         "kind": "propertyRead",
         "code": "renderData.template",
         "propertyName": "template",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:116:18",
+        "location": "src/routes/frontend.ts:116:18",
         "kind": "propertyRead",
         "code": "renderData.header",
         "propertyName": "header",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:117:18",
+        "location": "src/routes/frontend.ts:117:18",
         "kind": "propertyRead",
         "code": "renderData.content",
         "propertyName": "content",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:118:18",
+        "location": "src/routes/frontend.ts:118:18",
         "kind": "propertyRead",
         "code": "renderData.info",
         "propertyName": "info",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:119:18",
+        "location": "src/routes/frontend.ts:119:18",
         "kind": "propertyRead",
         "code": "renderData.blocks",
         "propertyName": "blocks",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:120:18",
+        "location": "src/routes/frontend.ts:120:18",
         "kind": "propertyRead",
         "code": "renderData.components",
         "propertyName": "components",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:121:18",
+        "location": "src/routes/frontend.ts:121:18",
         "kind": "propertyRead",
         "code": "renderData.isMain",
         "propertyName": "isMain",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:122:18",
+        "location": "src/routes/frontend.ts:122:18",
         "kind": "propertyRead",
         "code": "renderData.deep",
         "propertyName": "deep",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:123:18",
+        "location": "src/routes/frontend.ts:123:18",
         "kind": "propertyRead",
         "code": "renderData.pagePath",
         "propertyName": "pagePath",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:124:18",
+        "location": "src/routes/frontend.ts:124:18",
         "kind": "propertyRead",
         "code": "renderData.path",
         "propertyName": "path",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:129:29",
+        "location": "src/routes/frontend.ts:129:29",
         "kind": "propertyRead",
         "code": "renderData.ResponseData",
         "propertyName": "ResponseData",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:113:21",
+        "location": "src/core/server.ts:88:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('RenderData', RenderData)",
+        "targetType": "RequestData.RouteData.PageData.RenderData",
+        "context": "arg 1 to decorate"
+      },
+      {
+        "location": "src/core/server.ts:132:21",
         "kind": "instantiation",
         "code": "new pageData.RenderData({ parser : 'test' })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:114:27",
+        "location": "src/core/server.ts:133:27",
         "kind": "propertyRead",
         "code": "renderData.ResponseData",
         "propertyName": "ResponseData",
@@ -653,156 +775,172 @@
     ],
     "RequestData.RouteData.PageData.RenderData.ResponseData": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:86:26",
+        "location": "src/routes/frontend.ts:86:26",
         "kind": "instantiation",
         "code": "new cachedRenderData.ResponseData({\n\t\t\t\t\tbody : cached,\n\t\t\t\t\tcontentType : 'text/html',\n\t\t\t\t\tstatusC",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:92:12",
+        "location": "src/routes/frontend.ts:92:12",
         "kind": "passAsArg",
         "code": "reply\n\t\t\t\t\t.type(responseData.contentType)\n\t\t\t\t\t.code(responseData.statusCode)\n\t\t\t\t\t.send(responseDa",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:92:12",
+        "location": "src/routes/frontend.ts:92:12",
         "kind": "passAsArg",
         "code": "reply\n\t\t\t\t\t.type(responseData.contentType)\n\t\t\t\t\t.code(responseData.statusCode)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to code"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:92:12",
+        "location": "src/routes/frontend.ts:92:12",
         "kind": "passAsArg",
         "code": "reply\n\t\t\t\t\t.type(responseData.contentType)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to type"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:93:12",
+        "location": "src/routes/frontend.ts:93:12",
         "kind": "propertyRead",
         "code": "responseData.contentType",
         "propertyName": "contentType",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:94:12",
+        "location": "src/routes/frontend.ts:94:12",
         "kind": "propertyRead",
         "code": "responseData.statusCode",
         "propertyName": "statusCode",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:95:12",
+        "location": "src/routes/frontend.ts:95:12",
         "kind": "propertyRead",
         "code": "responseData.body",
         "propertyName": "body",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:129:25",
+        "location": "src/routes/frontend.ts:129:25",
         "kind": "instantiation",
         "code": "new renderData.ResponseData({\n\t\t\t\tbody : html,\n\t\t\t\tcontentType : 'text/html',\n\t\t\t\tstatusCode : 200,\n",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:137:11",
+        "location": "src/routes/frontend.ts:137:11",
         "kind": "passAsArg",
         "code": "reply\n\t\t\t\t.type(responseData.contentType)\n\t\t\t\t.code(responseData.statusCode)\n\t\t\t\t.send(responseData.",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:137:11",
+        "location": "src/routes/frontend.ts:137:11",
         "kind": "passAsArg",
         "code": "reply\n\t\t\t\t.type(responseData.contentType)\n\t\t\t\t.code(responseData.statusCode)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to code"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:137:11",
+        "location": "src/routes/frontend.ts:137:11",
         "kind": "passAsArg",
         "code": "reply\n\t\t\t\t.type(responseData.contentType)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to type"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:138:11",
+        "location": "src/routes/frontend.ts:138:11",
         "kind": "propertyRead",
         "code": "responseData.contentType",
         "propertyName": "contentType",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:139:11",
+        "location": "src/routes/frontend.ts:139:11",
         "kind": "propertyRead",
         "code": "responseData.statusCode",
         "propertyName": "statusCode",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:140:11",
+        "location": "src/routes/frontend.ts:140:11",
         "kind": "propertyRead",
         "code": "responseData.body",
         "propertyName": "body",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:114:23",
+        "location": "src/core/server.ts:89:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('ResponseData', ResponseData)",
+        "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
+        "context": "arg 1 to decorate"
+      },
+      {
+        "location": "src/core/server.ts:133:23",
         "kind": "instantiation",
         "code": "new renderData.ResponseData({\n\t\tbody : JSON.stringify({}),\n\t\tcontentType : 'application/json',\n\t\tsta",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:121:9",
+        "location": "src/core/server.ts:140:9",
         "kind": "passAsArg",
         "code": "reply\n\t\t.type(responseData.contentType)\n\t\t.code(responseData.statusCode)\n\t\t.send(responseData.body)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:121:9",
+        "location": "src/core/server.ts:140:9",
         "kind": "passAsArg",
         "code": "reply\n\t\t.type(responseData.contentType)\n\t\t.code(responseData.statusCode)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to code"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:121:9",
+        "location": "src/core/server.ts:140:9",
         "kind": "passAsArg",
         "code": "reply\n\t\t.type(responseData.contentType)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to type"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:122:9",
+        "location": "src/core/server.ts:141:9",
         "kind": "propertyRead",
         "code": "responseData.contentType",
         "propertyName": "contentType",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:123:9",
+        "location": "src/core/server.ts:142:9",
         "kind": "propertyRead",
         "code": "responseData.statusCode",
         "propertyName": "statusCode",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/fastify/src/core/server.ts:124:9",
+        "location": "src/core/server.ts:143:9",
         "kind": "propertyRead",
         "code": "responseData.body",
         "propertyName": "body",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       }
     ],
-    "exceptionCtor": [
+    "ExceptionCtor": [
       {
-        "location": "/code/mnemonica/finecut/fastify/src/routes/frontend.ts:152:22",
+        "location": "src/routes/frontend.ts:154:28",
         "kind": "instantiation",
-        "code": "new exceptionCtor(error)",
+        "code": "new ExceptionCtor(chainInstance, error)",
         "context": "new expression"
+      }
+    ],
+    "EngineRequest.PageResult": [
+      {
+        "location": "src/core/server.ts:93:1",
+        "kind": "passAsArg",
+        "code": "app.decorate('PageResult', PageResult)",
+        "targetType": "EngineRequest.PageResult",
+        "context": "arg 1 to decorate"
       }
     ]
   }

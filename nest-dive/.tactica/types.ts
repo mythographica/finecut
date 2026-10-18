@@ -14,24 +14,33 @@ export type RequestData = {
 	body: Record<string, unknown>;
 	headers: Record<string, unknown>;
 	requestId: string;
-	RouteData: new (routeInfo: { pagePath: string; isMain: boolean; deep: string }) => RequestData_RouteData;
+	RouteData: {
+		new (routeInfo: { pagePath: string; isMain: boolean; deep: string }): RequestData_RouteData;
+		(routeInfo: { pagePath: string; isMain: boolean; deep: string }): RequestData_RouteData;
+	};
 };
 
 export type RequestData_RouteData = ProtoFlat<RequestData, {
 	pagePath: string;
 	isMain: boolean;
 	deep: string;
-	PageData: new (pageFiles: { header: { title: string; template: string; pageIsCode: boolean; keywords: string; description: string; additional: string } | null; content: string; info: Record<string, unknown>; blocks: Array<{ name: string; value: string }>; path: string }) => RequestData_RouteData_PageData;
+	PageData: {
+		new (pageFiles: { header: { title: string; template: string; pageIsCode: boolean; keywords: string; description: string; additional: string } | null; content: string; info: Record<string, unknown>; blocks: Array<{ name: string; value: string }>; path: string }): RequestData_RouteData_PageData;
+		(pageFiles: { header: { title: string; template: string; pageIsCode: boolean; keywords: string; description: string; additional: string } | null; content: string; info: Record<string, unknown>; blocks: Array<{ name: string; value: string }>; path: string }): RequestData_RouteData_PageData;
+	};
 	RouteData: undefined;
 }>;
 
 export type RequestData_RouteData_PageData = ProtoFlat<RequestData_RouteData, {
-	header: { header: { title: string; template: string; pageIsCode: boolean; keywords: string; description: string; additional: string } | null; content: string; info: Record<string, unknown>; blocks: Array<{ name: string; value: string }>; path: string }['header'];
+	header: { title: string; template: string; pageIsCode: boolean; keywords: string; description: string; additional: string } | null;
 	content: string;
 	info: Record<string, unknown>;
 	blocks: Array<{ name: string; value: string }>;
 	path: string;
-	RenderData: new (components: Record<string, string | Promise<string>>) => RequestData_RouteData_PageData_RenderData;
+	RenderData: {
+		new (components: Record<string, string | Promise<string>>): RequestData_RouteData_PageData_RenderData;
+		(components: Record<string, string | Promise<string>>): RequestData_RouteData_PageData_RenderData;
+	};
 	PageData: undefined;
 }>;
 
@@ -46,7 +55,10 @@ export type RequestData_RouteData_PageData_RenderData = ProtoFlat<RequestData_Ro
 	pagePath: string;
 	components: Record<string, string | Promise<string>>;
 	template: string | undefined;
-	ResponseData: new (output: { body: string; contentType: string; statusCode: number; fromCache: boolean }) => RequestData_RouteData_PageData_RenderData_ResponseData;
+	ResponseData: {
+		new (output: { body: string; contentType: string; statusCode: number; fromCache: boolean }): RequestData_RouteData_PageData_RenderData_ResponseData;
+		(output: { body: string; contentType: string; statusCode: number; fromCache: boolean }): RequestData_RouteData_PageData_RenderData_ResponseData;
+	};
 	RenderData: undefined;
 }>;
 
@@ -61,13 +73,25 @@ export type RequestData_RouteData_PageData_RenderData_ResponseData = ProtoFlat<R
 export type EngineRequest = {
 	action: string;
 	data?: Record<string, unknown>;
-	leaf: string;
-	path: string;
-	template: string;
-	TreeResult: new (result: { tree: Array<{ name: string; folder?: boolean }> }) => EngineRequest_TreeResult;
-	PageResult: new (pageData: { header: string; content: string; info: string; blocks: string }) => EngineRequest_PageResult;
-	CacheResult: new (cleared: boolean) => EngineRequest_CacheResult;
-	TemplateResult: new (templateData: { source?: string; snippet?: string; header?: string }) => EngineRequest_TemplateResult;
+	leaf?: string;
+	path?: string;
+	template?: string;
+	TreeResult: {
+		new (result: { tree: Array<{ name: string; folder?: boolean }> }): EngineRequest_TreeResult;
+		(result: { tree: Array<{ name: string; folder?: boolean }> }): EngineRequest_TreeResult;
+	};
+	PageResult: {
+		new (pageData: { header: string; content: string; info: string; blocks: string }): EngineRequest_PageResult;
+		(pageData: { header: string; content: string; info: string; blocks: string }): EngineRequest_PageResult;
+	};
+	CacheResult: {
+		new (cleared: boolean): EngineRequest_CacheResult;
+		(cleared: boolean): EngineRequest_CacheResult;
+	};
+	TemplateResult: {
+		new (templateData: { source?: string; snippet?: string; header?: string }): EngineRequest_TemplateResult;
+		(templateData: { source?: string; snippet?: string; header?: string }): EngineRequest_TemplateResult;
+	};
 };
 
 export type EngineRequest_TreeResult = ProtoFlat<EngineRequest, {
@@ -103,7 +127,7 @@ export type EngineRequest_TemplateResult = ProtoFlat<EngineRequest, {
 }>;
 
 export type DiveTestEntity = {
-	uuid: unknown;
+	uuid: string;
 	value: unknown;
 };
 
@@ -111,7 +135,10 @@ export type StressEntity = {
 	uuid: string;
 	requestId: string;
 	value: unknown;
-	StressChild: new (data: { forceError?: boolean }) => StressEntity_StressChild;
+	StressChild: {
+		new (data: { forceError?: boolean }): StressEntity_StressChild;
+		(data: { forceError?: boolean }): StressEntity_StressChild;
+	};
 };
 
 export type StressEntity_StressChild = ProtoFlat<StressEntity, {
@@ -120,23 +147,23 @@ export type StressEntity_StressChild = ProtoFlat<StressEntity, {
 }>;
 
 export type CrashDemoEntity = {
-	uuid: unknown;
-	payload: unknown;
-	mode: unknown;
+	uuid: string;
+	payload: string;
+	mode: 'sync' | 'async';
 };
 
 export type InvoiceEntity = {
-	title: unknown;
-	price: unknown;
-	quantity: unknown;
-	total: unknown;
+	title: string;
+	price: number;
+	quantity: number;
+	total: number;
 };
 
 export type InvoiceEntityAsync = {
-	title: unknown;
-	price: unknown;
-	quantity: unknown;
-	total: unknown;
+	title: string;
+	price: number;
+	quantity: number;
+	total: number;
 };
 
 export type StrictInvoiceEntity = {
@@ -144,7 +171,7 @@ export type StrictInvoiceEntity = {
 };
 
 export type ProofEntity = {
-	uuid: unknown;
-	marker: unknown;
-	expect: unknown;
+	uuid: string;
+	marker: number;
+	expect: 'ok' | 'fail';
 };

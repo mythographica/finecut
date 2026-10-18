@@ -14,7 +14,7 @@ templates, tests — is untouched.
 One HTTP request produces ONE coherent trace:
 
 ```
-HTTP GET /                      ← request span (runInRequestScope)
+HTTP GET /                      ← request span (runInEntryScope)
 ├─ dive.create:RequestData      ┐
 ├─ mnemonica.RequestData        │ construction spans close at
 ├─ dive.create:RouteData        │ postCreation, so the sequential
@@ -43,10 +43,12 @@ HTTP GET /                      ← request span (runInRequestScope)
   caption as a bare callsite.
 - **Errors arrive with their data.** The route catch, the Express error
   middleware, and the process-level handlers all report through the
-  Unblinder: `buildUnblindReport(err)` recovers the dive branch, the
+  Unblinder: `analyseError(captureError(err))` recovers the dive branch, the
   errored construction and the attempted args from the error OBJECT;
-  `recordUnblindTelemetry` emits the pinned `mnemonica.caught-exception`
-  span plus the `[unblind]` stdout marker.
+  the app's `unblind`/`reportProcessError` helpers (`src/tracing.ts`)
+  record the analysis as a `mnemonica.error` span event (a fresh ERROR
+  `mnemonica.caught-exception` span when no request span is active) plus
+  the `[unblind]` stdout marker.
 - **Async hops are attributed.** Timers, promise continuations and other
   unwrapped async work land under the parental dive edge via the
   `AsyncFlowProvider` ALS backbone — no per-callback wrapping needed

@@ -8,7 +8,7 @@ import '../core/collections/requestTypes.js';
 import { createLogger } from '../plugins/pino-logger.js';
 import { lookup } from 'mnemonica/module';
 import { wrap } from '@mnemonica/dive';
-import { buildUnblindReport, recordUnblindTelemetry } from '@mnemonica/otel';
+import { unblind } from '../tracing.js';
 import { checkStaticCache } from '../plugins/static-cache.js';
 import { fileExists, loadPageFiles } from '../lib/fileUtils.js';
 import { render } from '../lib/templateEngine.js';
@@ -161,10 +161,9 @@ router.use(async (req: Request, res: Response) => {
 		const error = err as Error;
 		routeLogger.error({ err: error.message, pagePath }, 'request failed');
 
-		// The route's own error boundary: emit the Unblinder span + marker.
-		// The dive branch and errored construction ride the error object.
-		const report = buildUnblindReport(error);
-		recordUnblindTelemetry(report, error);
+		// The route's own error boundary: the analysed dive chain rides the
+		// error object; unblind records it on the request span + the marker.
+		unblind(error);
 
 		let displayError = error;
 		if (chainInstance) {

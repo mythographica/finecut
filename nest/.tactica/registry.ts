@@ -4,10 +4,10 @@
 // Usage:
 //   import { lookup } from 'mnemonica';
 //   import './.tactica/registry';  // applies the augmentation
-//   const Sentience = lookup('Sentience');
-//   // TypeScript knows: Sentience is a constructor for SentienceInstance
-//   const instance = new Sentience({ purpose: 'AI' });
-//   // instance has full intellisense for Consciousness, Memory, etc.
+//   const MyType = lookup('MyType');
+//   // TypeScript knows: MyType is the typed constructor for MyType
+//   const instance = new MyType({ /* constructor args */ });
+//   // instance has full intellisense for the generated type
 
 import type {
 	RequestData,

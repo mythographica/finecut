@@ -5,7 +5,7 @@
  */
 import { Controller, Get, Post, Query, Body, Res } from '@nestjs/common';
 import type { FastifyReply } from 'fastify';
-import { LFS, driverRegistry } from 'elfinder-node';
+import { LFS, DriverRegistry } from 'elfinder-node';
 
 const ROOT = process.cwd();
 
@@ -18,6 +18,7 @@ const roots = [
 	}
 ];
 
+const driverRegistry = new DriverRegistry();
 driverRegistry.initialize(roots);
 
 function convertParams (

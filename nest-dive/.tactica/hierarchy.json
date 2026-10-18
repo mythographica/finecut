@@ -1,31 +1,31 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-09T11:22:27.919Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:11:06.374Z",
   "roots": [
     {
       "name": "RequestData",
       "fullPath": "RequestData",
-      "location": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts:8:28",
+      "location": "src/core/request-types.ts:8:28",
       "children": [
         {
           "name": "RouteData",
           "fullPath": "RequestData.RouteData",
-          "location": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts:37:38",
+          "location": "src/core/request-types.ts:37:38",
           "children": [
             {
               "name": "PageData",
               "fullPath": "RequestData.RouteData.PageData",
-              "location": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts:50:35",
+              "location": "src/core/request-types.ts:50:35",
               "children": [
                 {
                   "name": "RenderData",
                   "fullPath": "RequestData.RouteData.PageData.RenderData",
-                  "location": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts:67:36",
+                  "location": "src/core/request-types.ts:67:36",
                   "children": [
                     {
                       "name": "ResponseData",
                       "fullPath": "RequestData.RouteData.PageData.RenderData.ResponseData",
-                      "location": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts:86:40",
+                      "location": "src/core/request-types.ts:86:40",
                       "children": []
                     }
                   ]
@@ -39,30 +39,30 @@
     {
       "name": "EngineRequest",
       "fullPath": "EngineRequest",
-      "location": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts:22:30",
+      "location": "src/core/engine-types.ts:22:30",
       "children": [
         {
           "name": "TreeResult",
           "fullPath": "EngineRequest.TreeResult",
-          "location": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts:33:41",
+          "location": "src/core/engine-types.ts:33:41",
           "children": []
         },
         {
           "name": "PageResult",
           "fullPath": "EngineRequest.PageResult",
-          "location": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts:40:41",
+          "location": "src/core/engine-types.ts:40:41",
           "children": []
         },
         {
           "name": "CacheResult",
           "fullPath": "EngineRequest.CacheResult",
-          "location": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts:47:42",
+          "location": "src/core/engine-types.ts:47:42",
           "children": []
         },
         {
           "name": "TemplateResult",
           "fullPath": "EngineRequest.TemplateResult",
-          "location": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts:54:45",
+          "location": "src/core/engine-types.ts:54:45",
           "children": []
         }
       ]
@@ -70,18 +70,18 @@
     {
       "name": "DiveTestEntity",
       "fullPath": "DiveTestEntity",
-      "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/types.ts:16:44",
+      "location": "src/lib/dive-test/types.ts:16:44",
       "children": []
     },
     {
       "name": "StressEntity",
       "fullPath": "StressEntity",
-      "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts:20:42",
+      "location": "src/lib/dive-stress/types.ts:20:42",
       "children": [
         {
           "name": "StressChild",
           "fullPath": "StressEntity.StressChild",
-          "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts:29:41",
+          "location": "src/lib/dive-stress/types.ts:29:41",
           "children": []
         }
       ]
@@ -89,31 +89,31 @@
     {
       "name": "CrashDemoEntity",
       "fullPath": "CrashDemoEntity",
-      "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/types.ts:22:45",
+      "location": "src/lib/dive-demo/types.ts:22:45",
       "children": []
     },
     {
       "name": "InvoiceEntity",
       "fullPath": "InvoiceEntity",
-      "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts:29:43",
+      "location": "src/lib/full-bundle/invoice.types.ts:29:43",
       "children": []
     },
     {
       "name": "InvoiceEntityAsync",
       "fullPath": "InvoiceEntityAsync",
-      "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts:34:48",
+      "location": "src/lib/full-bundle/invoice-async.types.ts:34:48",
       "children": []
     },
     {
       "name": "StrictInvoiceEntity",
       "fullPath": "StrictInvoiceEntity",
-      "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts:48:49",
+      "location": "src/lib/full-bundle/strict-invoice.types.ts:48:49",
       "children": []
     },
     {
       "name": "ProofEntity",
       "fullPath": "ProofEntity",
-      "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts:27:41",
+      "location": "src/lib/dive-proof/types.ts:27:41",
       "children": []
     }
   ]

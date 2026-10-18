@@ -1,10 +1,10 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-09T11:29:07.965Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:22:03.264Z",
   "flow": {
     "NodeTracerProvider": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:29:24",
+        "location": "src/tracing.ts:30:24",
         "kind": "instantiation",
         "code": "new NodeTracerProvider({\n\tresource        : resourceFromAttributes({\n\t\t[ ATTR_SERVICE_NAME ] : 'fine",
         "context": "new expression"
@@ -12,7 +12,7 @@
     ],
     "SimpleSpanProcessor": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:33:21",
+        "location": "src/tracing.ts:34:21",
         "kind": "instantiation",
         "code": "new SimpleSpanProcessor(new OTLPTraceExporter({\n\t\turl : 'http://localhost:4318/v1/traces',\n\t}))",
         "context": "new expression"
@@ -20,34 +20,34 @@
     ],
     "OTLPTraceExporter": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:33:45",
+        "location": "src/tracing.ts:34:45",
         "kind": "instantiation",
         "code": "new OTLPTraceExporter({\n\t\turl : 'http://localhost:4318/v1/traces',\n\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:38:1",
+        "location": "src/tracing.ts:39:1",
         "kind": "methodCall",
         "code": "tracerProvider.register()",
         "propertyName": "register",
         "targetType": "OTLPTraceExporter"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:38:1",
+        "location": "src/tracing.ts:39:1",
         "kind": "propertyRead",
         "code": "tracerProvider.register",
         "propertyName": "register",
         "targetType": "OTLPTraceExporter"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:79:8",
+        "location": "src/tracing.ts:122:8",
         "kind": "methodCall",
         "code": "tracerProvider.shutdown()",
         "propertyName": "shutdown",
         "targetType": "OTLPTraceExporter"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:79:8",
+        "location": "src/tracing.ts:122:8",
         "kind": "propertyRead",
         "code": "tracerProvider.shutdown",
         "propertyName": "shutdown",
@@ -56,20 +56,20 @@
     ],
     "MnemonicaOtelProvider": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:44:26",
+        "location": "src/tracing.ts:45:26",
         "kind": "instantiation",
         "code": "new MnemonicaOtelProvider(tracer)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:54:2",
+        "location": "src/tracing.ts:55:2",
         "kind": "methodCall",
         "code": "otel.attachHooks(collection)",
         "propertyName": "attachHooks",
         "targetType": "MnemonicaOtelProvider"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:54:2",
+        "location": "src/tracing.ts:55:2",
         "kind": "propertyRead",
         "code": "otel.attachHooks",
         "propertyName": "attachHooks",
@@ -78,20 +78,20 @@
     ],
     "DiveOtelProvider": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:45:26",
+        "location": "src/tracing.ts:46:26",
         "kind": "instantiation",
         "code": "new DiveOtelProvider(tracer)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:55:2",
+        "location": "src/tracing.ts:56:2",
         "kind": "methodCall",
         "code": "diveOtel.attach()",
         "propertyName": "attach",
         "targetType": "DiveOtelProvider"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:55:2",
+        "location": "src/tracing.ts:56:2",
         "kind": "propertyRead",
         "code": "diveOtel.attach",
         "propertyName": "attach",
@@ -100,20 +100,20 @@
     ],
     "AsyncFlowProvider": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:46:26",
+        "location": "src/tracing.ts:47:26",
         "kind": "instantiation",
         "code": "new AsyncFlowProvider()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:56:2",
+        "location": "src/tracing.ts:57:2",
         "kind": "methodCall",
         "code": "asyncFlow.attach()",
         "propertyName": "attach",
         "targetType": "AsyncFlowProvider"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/tracing.ts:56:2",
+        "location": "src/tracing.ts:57:2",
         "kind": "propertyRead",
         "code": "asyncFlow.attach",
         "propertyName": "attach",
@@ -122,89 +122,89 @@
     ],
     "Map": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/templateEngine.ts:11:17",
+        "location": "src/lib/templateEngine.ts:11:17",
         "kind": "instantiation",
         "code": "new Map<string, HelperFn>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/templateEngine.ts:14:2",
+        "location": "src/lib/templateEngine.ts:14:2",
         "kind": "methodCall",
         "code": "helpers.set(name, fn)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/templateEngine.ts:14:2",
+        "location": "src/lib/templateEngine.ts:14:2",
         "kind": "propertyRead",
         "code": "helpers.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/templateEngine.ts:62:14",
+        "location": "src/lib/templateEngine.ts:62:14",
         "kind": "methodCall",
         "code": "helpers.get(name)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/templateEngine.ts:62:14",
+        "location": "src/lib/templateEngine.ts:62:14",
         "kind": "propertyRead",
         "code": "helpers.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/templateEngine.ts:73:9",
+        "location": "src/lib/templateEngine.ts:73:9",
         "kind": "passAsArg",
         "code": "fn(context, helpers, get)",
         "targetType": "Map",
         "context": "arg 1 to fn"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:34:18",
+        "location": "src/plugins/pino-logger.ts:34:18",
         "kind": "instantiation",
         "code": "new Map<string, number>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:40:4",
+        "location": "src/plugins/pino-logger.ts:40:4",
         "kind": "methodCall",
         "code": "timings.set(requestId, performance.now())",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:40:4",
+        "location": "src/plugins/pino-logger.ts:40:4",
         "kind": "propertyRead",
         "code": "timings.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:57:18",
+        "location": "src/plugins/pino-logger.ts:57:18",
         "kind": "methodCall",
         "code": "timings.get(requestId)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:57:18",
+        "location": "src/plugins/pino-logger.ts:57:18",
         "kind": "propertyRead",
         "code": "timings.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:59:4",
+        "location": "src/plugins/pino-logger.ts:59:4",
         "kind": "methodCall",
         "code": "timings.delete(requestId)",
         "propertyName": "delete",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:59:4",
+        "location": "src/plugins/pino-logger.ts:59:4",
         "kind": "propertyRead",
         "code": "timings.delete",
         "propertyName": "delete",
@@ -213,7 +213,7 @@
     ],
     "Function": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/templateEngine.ts:44:9",
+        "location": "src/lib/templateEngine.ts:44:9",
         "kind": "instantiation",
         "code": "new Function('ctx', 'helpers', 'get', `return \\`${code}\\`;`)",
         "context": "new expression"
@@ -221,13 +221,13 @@
     ],
     "RequestData": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:36:24",
+        "location": "src/frontend/frontend.controller.ts:36:24",
         "kind": "instantiation",
         "code": "new RequestData({\n\t\t\t\tmethod  : req.method,\n\t\t\t\turl     : req.url,\n\t\t\t\tquery   : req.query as Record",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:62:26",
+        "location": "src/frontend/frontend.controller.ts:62:26",
         "kind": "propertyRead",
         "code": "requestData.RouteData",
         "propertyName": "RouteData",
@@ -236,20 +236,20 @@
     ],
     "RequestData.RouteData": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:62:22",
+        "location": "src/frontend/frontend.controller.ts:62:22",
         "kind": "instantiation",
         "code": "new requestData.RouteData({\n\t\t\t\tpagePath,\n\t\t\t\tisMain,\n\t\t\t\tdeep : ''\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:69:28",
+        "location": "src/frontend/frontend.controller.ts:69:28",
         "kind": "passAsArg",
         "code": "wrap(function loadPage () {\n\t\t\t\t\treturn loadPageFiles(fullPagePath);\n\t\t\t\t}, routeData)",
         "targetType": "RequestData.RouteData",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:72:25",
+        "location": "src/frontend/frontend.controller.ts:72:25",
         "kind": "propertyRead",
         "code": "routeData.PageData",
         "propertyName": "PageData",
@@ -258,76 +258,76 @@
     ],
     "RequestData.RouteData.PageData": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:72:21",
+        "location": "src/frontend/frontend.controller.ts:72:21",
         "kind": "instantiation",
         "code": "new routeData.PageData(pageFiles)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:76:25",
+        "location": "src/frontend/frontend.controller.ts:76:25",
         "kind": "passAsArg",
         "code": "wrap(function staticCache () {\n\t\t\t\t\treturn checkStaticCache(pagePath, pageFiles.header);\n\t\t\t\t}, page",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:80:34",
+        "location": "src/frontend/frontend.controller.ts:80:34",
         "kind": "propertyRead",
         "code": "pageData.RenderData",
         "propertyName": "RenderData",
         "targetType": "RequestData.RouteData.PageData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:95:22",
+        "location": "src/frontend/frontend.controller.ts:95:22",
         "kind": "passAsArg",
         "code": "jsonInfo(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to jsonInfo"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:97:28",
+        "location": "src/frontend/frontend.controller.ts:97:28",
         "kind": "passAsArg",
         "code": "wrap(function parseContent () {\n\t\t\t\t\t\treturn contentParser(pageData);\n\t\t\t\t\t}, pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:98:14",
+        "location": "src/frontend/frontend.controller.ts:98:14",
         "kind": "passAsArg",
         "code": "contentParser(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to contentParser"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:100:28",
+        "location": "src/frontend/frontend.controller.ts:100:28",
         "kind": "passAsArg",
         "code": "wrap(function mainMenu () {\n\t\t\t\t\t\treturn menuMain(pageData);\n\t\t\t\t\t}, pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:101:14",
+        "location": "src/frontend/frontend.controller.ts:101:14",
         "kind": "passAsArg",
         "code": "menuMain(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to menuMain"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:103:28",
+        "location": "src/frontend/frontend.controller.ts:103:28",
         "kind": "passAsArg",
         "code": "wrap(function leftMenu () {\n\t\t\t\t\t\treturn menuLeft(pageData);\n\t\t\t\t\t}, pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:104:14",
+        "location": "src/frontend/frontend.controller.ts:104:14",
         "kind": "passAsArg",
         "code": "menuLeft(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to menuLeft"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:108:27",
+        "location": "src/frontend/frontend.controller.ts:108:27",
         "kind": "propertyRead",
         "code": "pageData.RenderData",
         "propertyName": "RenderData",
@@ -336,103 +336,103 @@
     ],
     "RequestData.RouteData.PageData.RenderData": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:80:30",
+        "location": "src/frontend/frontend.controller.ts:80:30",
         "kind": "instantiation",
         "code": "new pageData.RenderData({})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:81:30",
+        "location": "src/frontend/frontend.controller.ts:81:30",
         "kind": "propertyRead",
         "code": "cachedRenderData.ResponseData",
         "propertyName": "ResponseData",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:108:23",
+        "location": "src/frontend/frontend.controller.ts:108:23",
         "kind": "instantiation",
         "code": "new pageData.RenderData(components)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:111:5",
+        "location": "src/frontend/frontend.controller.ts:111:5",
         "kind": "propertyRead",
         "code": "renderData.template",
         "propertyName": "template",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:115:18",
+        "location": "src/frontend/frontend.controller.ts:115:18",
         "kind": "propertyRead",
         "code": "renderData.header",
         "propertyName": "header",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:116:18",
+        "location": "src/frontend/frontend.controller.ts:116:18",
         "kind": "propertyRead",
         "code": "renderData.content",
         "propertyName": "content",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:117:18",
+        "location": "src/frontend/frontend.controller.ts:117:18",
         "kind": "propertyRead",
         "code": "renderData.info",
         "propertyName": "info",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:118:18",
+        "location": "src/frontend/frontend.controller.ts:118:18",
         "kind": "propertyRead",
         "code": "renderData.blocks",
         "propertyName": "blocks",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:119:18",
+        "location": "src/frontend/frontend.controller.ts:119:18",
         "kind": "propertyRead",
         "code": "renderData.components",
         "propertyName": "components",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:120:18",
+        "location": "src/frontend/frontend.controller.ts:120:18",
         "kind": "propertyRead",
         "code": "renderData.isMain",
         "propertyName": "isMain",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:121:18",
+        "location": "src/frontend/frontend.controller.ts:121:18",
         "kind": "propertyRead",
         "code": "renderData.deep",
         "propertyName": "deep",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:122:18",
+        "location": "src/frontend/frontend.controller.ts:122:18",
         "kind": "propertyRead",
         "code": "renderData.pagePath",
         "propertyName": "pagePath",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:123:18",
+        "location": "src/frontend/frontend.controller.ts:123:18",
         "kind": "propertyRead",
         "code": "renderData.path",
         "propertyName": "path",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:126:23",
+        "location": "src/frontend/frontend.controller.ts:126:23",
         "kind": "passAsArg",
         "code": "wrap(function renderTemplate () {\n\t\t\t\t\treturn render(templatePath, context);\n\t\t\t\t}, renderData)",
         "targetType": "RequestData.RouteData.PageData.RenderData",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:130:29",
+        "location": "src/frontend/frontend.controller.ts:130:29",
         "kind": "propertyRead",
         "code": "renderData.ResponseData",
         "propertyName": "ResponseData",
@@ -441,96 +441,96 @@
     ],
     "RequestData.RouteData.PageData.RenderData.ResponseData": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:81:26",
+        "location": "src/frontend/frontend.controller.ts:81:26",
         "kind": "instantiation",
         "code": "new cachedRenderData.ResponseData({\n\t\t\t\t\tbody : cached,\n\t\t\t\t\tcontentType : 'text/html',\n\t\t\t\t\tstatusC",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:87:5",
+        "location": "src/frontend/frontend.controller.ts:87:5",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t\t.type(responseData.contentType)\n\t\t\t\t\t.send(responseData.bod",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:87:5",
+        "location": "src/frontend/frontend.controller.ts:87:5",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t\t.type(responseData.contentType)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to type"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:87:5",
+        "location": "src/frontend/frontend.controller.ts:87:5",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to status"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:87:16",
+        "location": "src/frontend/frontend.controller.ts:87:16",
         "kind": "propertyRead",
         "code": "responseData.statusCode",
         "propertyName": "statusCode",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:88:12",
+        "location": "src/frontend/frontend.controller.ts:88:12",
         "kind": "propertyRead",
         "code": "responseData.contentType",
         "propertyName": "contentType",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:89:12",
+        "location": "src/frontend/frontend.controller.ts:89:12",
         "kind": "propertyRead",
         "code": "responseData.body",
         "propertyName": "body",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:130:25",
+        "location": "src/frontend/frontend.controller.ts:130:25",
         "kind": "instantiation",
         "code": "new renderData.ResponseData({\n\t\t\t\tbody : html,\n\t\t\t\tcontentType : 'text/html',\n\t\t\t\tstatusCode : 200,\n",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:138:4",
+        "location": "src/frontend/frontend.controller.ts:138:4",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t.type(responseData.contentType)\n\t\t\t\t.send(responseData.body)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:138:4",
+        "location": "src/frontend/frontend.controller.ts:138:4",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t.type(responseData.contentType)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to type"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:138:4",
+        "location": "src/frontend/frontend.controller.ts:138:4",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to status"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:138:15",
+        "location": "src/frontend/frontend.controller.ts:138:15",
         "kind": "propertyRead",
         "code": "responseData.statusCode",
         "propertyName": "statusCode",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:139:11",
+        "location": "src/frontend/frontend.controller.ts:139:11",
         "kind": "propertyRead",
         "code": "responseData.contentType",
         "propertyName": "contentType",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:140:11",
+        "location": "src/frontend/frontend.controller.ts:140:11",
         "kind": "propertyRead",
         "code": "responseData.body",
         "propertyName": "body",
@@ -539,7 +539,7 @@
     ],
     "exceptionCtor": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/frontend/frontend.controller.ts:157:22",
+        "location": "src/frontend/frontend.controller.ts:156:22",
         "kind": "instantiation",
         "code": "new exceptionCtor(error)",
         "context": "new expression"
@@ -547,58 +547,58 @@
     ],
     "Error": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/engineActions.ts:12:9",
+        "location": "src/lib/engineActions.ts:12:9",
         "kind": "instantiation",
         "code": "new Error('404:Page not found')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/lib/engineActions.ts:32:9",
+        "location": "src/lib/engineActions.ts:32:9",
         "kind": "instantiation",
         "code": "new Error('409:Page already exists')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/admin/admin.controller.ts:91:11",
+        "location": "src/admin/admin.controller.ts:92:11",
         "kind": "instantiation",
         "code": "new Error(`'${cmd}' is not implemented by volume driver`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/app.module.ts:54:12",
+        "location": "src/app.module.ts:54:12",
         "kind": "instantiation",
         "code": "new Error('PageData requires a valid path')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:84:6",
+        "location": "src/plugins/pino-logger.ts:84:6",
         "kind": "instantiation",
         "code": "new Error('Unknown creation error')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:109:18",
+        "location": "src/plugins/pino-logger.ts:109:18",
         "kind": "propertyRead",
         "code": "error.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:110:18",
         "kind": "methodCall",
         "code": "error.stack?.split('\\n')",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:110:18",
         "kind": "propertyRead",
         "code": "error.stack?.split",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:110:18",
         "kind": "propertyRead",
         "code": "error.stack",
         "propertyName": "stack",
@@ -607,194 +607,194 @@
     ],
     "EngineRequest": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:30:25",
+        "location": "src/engine/engine.controller.ts:30:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:31:16",
+        "location": "src/engine/engine.controller.ts:31:16",
         "kind": "propertyRead",
         "code": "engineRequest.data",
         "propertyName": "data",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:42:25",
+        "location": "src/engine/engine.controller.ts:42:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: { action: 'get', leaf },\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:45:26",
+        "location": "src/engine/engine.controller.ts:45:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:63:25",
+        "location": "src/engine/engine.controller.ts:63:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:67:27",
+        "location": "src/engine/engine.controller.ts:67:27",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:75:26",
+        "location": "src/engine/engine.controller.ts:75:26",
         "kind": "passAsArg",
         "code": "wrap(function pageSet () {\n\t\t\t\t\t\treturn engineService.handleSet(leaf, pageName, data);\n\t\t\t\t\t}, engin",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:85:25",
+        "location": "src/engine/engine.controller.ts:85:25",
         "kind": "passAsArg",
         "code": "wrap(function pageMkdir () {\n\t\t\t\t\treturn engineService.handleMkdir(leaf, pageName);\n\t\t\t\t}, engineReq",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:92:25",
+        "location": "src/engine/engine.controller.ts:92:25",
         "kind": "passAsArg",
         "code": "wrap(function pageDel () {\n\t\t\t\t\treturn engineService.handleDel(leaf, pageName);\n\t\t\t\t}, engineRequest",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:100:26",
+        "location": "src/engine/engine.controller.ts:100:26",
         "kind": "passAsArg",
         "code": "wrap(function contentGet () {\n\t\t\t\t\t\treturn engineService.handleContentGet(leaf);\n\t\t\t\t\t}, engineReque",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:113:25",
+        "location": "src/engine/engine.controller.ts:113:25",
         "kind": "passAsArg",
         "code": "wrap(function contentSet () {\n\t\t\t\t\treturn engineService.handleContentSet(leaf, data);\n\t\t\t\t}, engineR",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:126:25",
+        "location": "src/engine/engine.controller.ts:126:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: { action: 'content_get', leaf },\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:130:25",
+        "location": "src/engine/engine.controller.ts:130:25",
         "kind": "passAsArg",
         "code": "wrap(function contentGet () {\n\t\t\t\t\treturn engineService.handleContentGet(leaf);\n\t\t\t\t}, engineRequest",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:161:26",
+        "location": "src/engine/engine.controller.ts:161:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:164:31",
+        "location": "src/engine/engine.controller.ts:164:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:173:26",
+        "location": "src/engine/engine.controller.ts:173:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:176:31",
+        "location": "src/engine/engine.controller.ts:176:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:206:26",
+        "location": "src/engine/engine.controller.ts:206:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:209:31",
+        "location": "src/engine/engine.controller.ts:209:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:218:26",
+        "location": "src/engine/engine.controller.ts:218:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:221:31",
+        "location": "src/engine/engine.controller.ts:221:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:267:25",
+        "location": "src/engine/engine.controller.ts:267:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:272:21",
+        "location": "src/engine/engine.controller.ts:272:21",
         "kind": "passAsArg",
         "code": "wrap(function clearCache () {\n\t\t\t\t\treturn engineService.clearCache();\n\t\t\t\t}, engineRequest)",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:275:28",
+        "location": "src/engine/engine.controller.ts:275:28",
         "kind": "propertyRead",
         "code": "engineRequest.CacheResult",
         "propertyName": "CacheResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:281:26",
+        "location": "src/engine/engine.controller.ts:281:26",
         "kind": "passAsArg",
         "code": "wrap(function contentGet () {\n\t\t\t\t\t\treturn engineService.handleContentGet(leaf);\n\t\t\t\t\t}, engineReque",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:294:25",
+        "location": "src/engine/engine.controller.ts:294:25",
         "kind": "passAsArg",
         "code": "wrap(function contentSet () {\n\t\t\t\t\treturn engineService.handleContentSet(leaf, data);\n\t\t\t\t}, engineR",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:302:26",
+        "location": "src/engine/engine.controller.ts:302:26",
         "kind": "passAsArg",
         "code": "wrap(function pageSet () {\n\t\t\t\t\t\treturn engineService.handleSet(leaf, pathName, data);\n\t\t\t\t\t}, engin",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:321:25",
+        "location": "src/engine/engine.controller.ts:321:25",
         "kind": "passAsArg",
         "code": "wrap(function pageMkdir () {\n\t\t\t\t\treturn engineService.handleMkdir(leaf, pathName);\n\t\t\t\t}, engineReq",
         "targetType": "EngineRequest",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:328:25",
+        "location": "src/engine/engine.controller.ts:328:25",
         "kind": "passAsArg",
         "code": "wrap(function pageDel () {\n\t\t\t\t\treturn engineService.handleDel(leaf, pathName);\n\t\t\t\t}, engineRequest",
         "targetType": "EngineRequest",
@@ -803,39 +803,39 @@
     ],
     "EngineRequest.TreeResult": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:45:22",
+        "location": "src/engine/engine.controller.ts:45:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:46:3",
+        "location": "src/engine/engine.controller.ts:46:3",
         "kind": "return",
         "code": "return treeResult.tree;",
         "targetType": "EngineRequest.TreeResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:46:10",
+        "location": "src/engine/engine.controller.ts:46:10",
         "kind": "propertyRead",
         "code": "treeResult.tree",
         "propertyName": "tree",
         "targetType": "EngineRequest.TreeResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:67:23",
+        "location": "src/engine/engine.controller.ts:67:23",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:68:11",
+        "location": "src/engine/engine.controller.ts:68:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(treeResult.tree)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:68:45",
+        "location": "src/engine/engine.controller.ts:68:45",
         "kind": "propertyRead",
         "code": "treeResult.tree",
         "propertyName": "tree",
@@ -844,80 +844,80 @@
     ],
     "EngineRequest.TemplateResult": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:164:27",
+        "location": "src/engine/engine.controller.ts:164:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult(data)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:165:11",
+        "location": "src/engine/engine.controller.ts:165:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:165:45",
+        "location": "src/engine/engine.controller.ts:165:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:176:27",
+        "location": "src/engine/engine.controller.ts:176:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult({\n\t\t\t\tsnippet: data.snippet,\n\t\t\t\theader: data.header,\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:180:11",
+        "location": "src/engine/engine.controller.ts:180:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:180:45",
+        "location": "src/engine/engine.controller.ts:180:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:209:27",
+        "location": "src/engine/engine.controller.ts:209:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult(data)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:210:11",
+        "location": "src/engine/engine.controller.ts:210:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:210:45",
+        "location": "src/engine/engine.controller.ts:210:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:221:27",
+        "location": "src/engine/engine.controller.ts:221:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult({\n\t\t\t\tsnippet: data.snippet,\n\t\t\t\theader: data.header,\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:225:11",
+        "location": "src/engine/engine.controller.ts:225:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:225:45",
+        "location": "src/engine/engine.controller.ts:225:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
@@ -926,22 +926,58 @@
     ],
     "EngineRequest.CacheResult": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:275:24",
+        "location": "src/engine/engine.controller.ts:275:24",
         "kind": "instantiation",
         "code": "new engineRequest.CacheResult(ok)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/engine/engine.controller.ts:276:56",
+        "location": "src/engine/engine.controller.ts:276:56",
         "kind": "propertyRead",
         "code": "cacheResult.cleared",
         "propertyName": "cleared",
         "targetType": "EngineRequest.CacheResult"
       }
     ],
+    "DriverRegistry": [
+      {
+        "location": "src/admin/admin.controller.ts:21:24",
+        "kind": "instantiation",
+        "code": "new DriverRegistry()",
+        "context": "new expression"
+      },
+      {
+        "location": "src/admin/admin.controller.ts:22:1",
+        "kind": "methodCall",
+        "code": "driverRegistry.initialize(roots)",
+        "propertyName": "initialize",
+        "targetType": "DriverRegistry"
+      },
+      {
+        "location": "src/admin/admin.controller.ts:22:1",
+        "kind": "propertyRead",
+        "code": "driverRegistry.initialize",
+        "propertyName": "initialize",
+        "targetType": "DriverRegistry"
+      },
+      {
+        "location": "src/admin/admin.controller.ts:90:19",
+        "kind": "methodCall",
+        "code": "driverRegistry.getDriverForRequest(params)",
+        "propertyName": "getDriverForRequest",
+        "targetType": "DriverRegistry"
+      },
+      {
+        "location": "src/admin/admin.controller.ts:90:19",
+        "kind": "propertyRead",
+        "code": "driverRegistry.getDriverForRequest",
+        "propertyName": "getDriverForRequest",
+        "targetType": "DriverRegistry"
+      }
+    ],
     "Logger": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/app.module.ts:38:28",
+        "location": "src/app.module.ts:38:28",
         "kind": "instantiation",
         "code": "new Logger(AppModule.name)",
         "context": "new expression"
@@ -949,20 +985,20 @@
     ],
     "FastifyAdapter": [
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/main.ts:36:3",
+        "location": "src/main.ts:36:3",
         "kind": "instantiation",
         "code": "new FastifyAdapter()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/main.ts:39:8",
+        "location": "src/main.ts:39:8",
         "kind": "methodCall",
         "code": "app.listen(PORT, '0.0.0.0')",
         "propertyName": "listen",
         "targetType": "FastifyAdapter"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-otel/src/main.ts:39:8",
+        "location": "src/main.ts:39:8",
         "kind": "propertyRead",
         "code": "app.listen",
         "propertyName": "listen",

@@ -37,7 +37,7 @@ import { writeStaticCache } from './plugins/static-cache.js';
 export class AppModule implements OnModuleInit {
 	private readonly logger = new Logger(AppModule.name);
 
-	// Request scope: every request runs inside runInRequestScope — one
+	// Request scope: every request runs inside runInEntryScope — one
 	// 'HTTP {method} {url}' span plus the triple async scope (see the
 	// middleware file for the full story).
 	configure (consumer: MiddlewareConsumer): void {

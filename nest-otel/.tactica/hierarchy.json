@@ -1,31 +1,31 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-09T11:29:08.012Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:22:03.288Z",
   "roots": [
     {
       "name": "RequestData",
       "fullPath": "RequestData",
-      "location": "/code/mnemonica/finecut/nest-otel/src/core/request-types.ts:8:28",
+      "location": "src/core/request-types.ts:8:28",
       "children": [
         {
           "name": "RouteData",
           "fullPath": "RequestData.RouteData",
-          "location": "/code/mnemonica/finecut/nest-otel/src/core/request-types.ts:37:38",
+          "location": "src/core/request-types.ts:37:38",
           "children": [
             {
               "name": "PageData",
               "fullPath": "RequestData.RouteData.PageData",
-              "location": "/code/mnemonica/finecut/nest-otel/src/core/request-types.ts:50:35",
+              "location": "src/core/request-types.ts:50:35",
               "children": [
                 {
                   "name": "RenderData",
                   "fullPath": "RequestData.RouteData.PageData.RenderData",
-                  "location": "/code/mnemonica/finecut/nest-otel/src/core/request-types.ts:67:36",
+                  "location": "src/core/request-types.ts:67:36",
                   "children": [
                     {
                       "name": "ResponseData",
                       "fullPath": "RequestData.RouteData.PageData.RenderData.ResponseData",
-                      "location": "/code/mnemonica/finecut/nest-otel/src/core/request-types.ts:86:40",
+                      "location": "src/core/request-types.ts:86:40",
                       "children": []
                     }
                   ]
@@ -39,30 +39,30 @@
     {
       "name": "EngineRequest",
       "fullPath": "EngineRequest",
-      "location": "/code/mnemonica/finecut/nest-otel/src/core/engine-types.ts:22:30",
+      "location": "src/core/engine-types.ts:22:30",
       "children": [
         {
           "name": "TreeResult",
           "fullPath": "EngineRequest.TreeResult",
-          "location": "/code/mnemonica/finecut/nest-otel/src/core/engine-types.ts:33:41",
+          "location": "src/core/engine-types.ts:33:41",
           "children": []
         },
         {
           "name": "PageResult",
           "fullPath": "EngineRequest.PageResult",
-          "location": "/code/mnemonica/finecut/nest-otel/src/core/engine-types.ts:40:41",
+          "location": "src/core/engine-types.ts:40:41",
           "children": []
         },
         {
           "name": "CacheResult",
           "fullPath": "EngineRequest.CacheResult",
-          "location": "/code/mnemonica/finecut/nest-otel/src/core/engine-types.ts:47:42",
+          "location": "src/core/engine-types.ts:47:42",
           "children": []
         },
         {
           "name": "TemplateResult",
           "fullPath": "EngineRequest.TemplateResult",
-          "location": "/code/mnemonica/finecut/nest-otel/src/core/engine-types.ts:54:45",
+          "location": "src/core/engine-types.ts:54:45",
           "children": []
         }
       ]

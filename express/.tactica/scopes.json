@@ -1,0 +1,4189 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-18T23:10:43.814Z",
+  "scopes": {
+    "src/tracing.ts": {
+      "scopeId": "src/tracing.ts",
+      "name": "src/tracing.ts",
+      "kind": "module",
+      "filePath": "src/tracing.ts",
+      "location": "src/tracing.ts:1:1"
+    },
+    "src/tracing.ts:36:1": {
+      "scopeId": "src/tracing.ts:36:1",
+      "name": "reportProcessError",
+      "kind": "function",
+      "parentScopeId": "src/tracing.ts",
+      "filePath": "src/tracing.ts",
+      "location": "src/tracing.ts:36:1"
+    },
+    "src/tracing.ts:47:1": {
+      "scopeId": "src/tracing.ts:47:1",
+      "name": "flushTracing",
+      "kind": "function",
+      "parentScopeId": "src/tracing.ts",
+      "filePath": "src/tracing.ts",
+      "location": "src/tracing.ts:47:1"
+    },
+    "src/types/index.ts": {
+      "scopeId": "src/types/index.ts",
+      "name": "src/types/index.ts",
+      "kind": "module",
+      "filePath": "src/types/index.ts",
+      "location": "src/types/index.ts:1:1"
+    },
+    "src/core/collections/requestTypes.ts": {
+      "scopeId": "src/core/collections/requestTypes.ts",
+      "name": "src/core/collections/requestTypes.ts",
+      "kind": "module",
+      "filePath": "src/core/collections/requestTypes.ts",
+      "location": "src/core/collections/requestTypes.ts:1:1"
+    },
+    "src/core/collections/requestTypes.ts:8:50": {
+      "scopeId": "src/core/collections/requestTypes.ts:8:50",
+      "name": "src/core/collections/requestTypes.ts:8",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/requestTypes.ts",
+      "filePath": "src/core/collections/requestTypes.ts",
+      "location": "src/core/collections/requestTypes.ts:8:50"
+    },
+    "src/core/collections/requestTypes.ts:37:58": {
+      "scopeId": "src/core/collections/requestTypes.ts:37:58",
+      "name": "src/core/collections/requestTypes.ts:37",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/requestTypes.ts",
+      "filePath": "src/core/collections/requestTypes.ts",
+      "location": "src/core/collections/requestTypes.ts:37:58"
+    },
+    "src/core/collections/requestTypes.ts:50:54": {
+      "scopeId": "src/core/collections/requestTypes.ts:50:54",
+      "name": "src/core/collections/requestTypes.ts:50",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/requestTypes.ts",
+      "filePath": "src/core/collections/requestTypes.ts",
+      "location": "src/core/collections/requestTypes.ts:50:54"
+    },
+    "src/core/collections/requestTypes.ts:67:57": {
+      "scopeId": "src/core/collections/requestTypes.ts:67:57",
+      "name": "src/core/collections/requestTypes.ts:67",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/requestTypes.ts",
+      "filePath": "src/core/collections/requestTypes.ts",
+      "location": "src/core/collections/requestTypes.ts:67:57"
+    },
+    "src/core/collections/requestTypes.ts:86:63": {
+      "scopeId": "src/core/collections/requestTypes.ts:86:63",
+      "name": "src/core/collections/requestTypes.ts:86",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/requestTypes.ts",
+      "filePath": "src/core/collections/requestTypes.ts",
+      "location": "src/core/collections/requestTypes.ts:86:63"
+    },
+    "src/core/settings.ts": {
+      "scopeId": "src/core/settings.ts",
+      "name": "src/core/settings.ts",
+      "kind": "module",
+      "filePath": "src/core/settings.ts",
+      "location": "src/core/settings.ts:1:1"
+    },
+    "src/lib/fileUtils.ts": {
+      "scopeId": "src/lib/fileUtils.ts",
+      "name": "src/lib/fileUtils.ts",
+      "kind": "module",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:1:1"
+    },
+    "src/lib/fileUtils.ts:17:1": {
+      "scopeId": "src/lib/fileUtils.ts:17:1",
+      "name": "getfiles",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:17:1"
+    },
+    "src/lib/fileUtils.ts:29:1": {
+      "scopeId": "src/lib/fileUtils.ts:29:1",
+      "name": "setfiles",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:29:1"
+    },
+    "src/lib/fileUtils.ts:38:1": {
+      "scopeId": "src/lib/fileUtils.ts:38:1",
+      "name": "fileExists",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:38:1"
+    },
+    "src/lib/fileUtils.ts:50:1": {
+      "scopeId": "src/lib/fileUtils.ts:50:1",
+      "name": "getMtime",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:50:1"
+    },
+    "src/lib/fileUtils.ts:62:1": {
+      "scopeId": "src/lib/fileUtils.ts:62:1",
+      "name": "mkdirp",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:62:1"
+    },
+    "src/lib/fileUtils.ts:69:1": {
+      "scopeId": "src/lib/fileUtils.ts:69:1",
+      "name": "removeRecursive",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:69:1"
+    },
+    "src/lib/fileUtils.ts:70:47": {
+      "scopeId": "src/lib/fileUtils.ts:70:47",
+      "name": "src/lib/fileUtils.ts:70",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/fileUtils.ts:69:1",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:70:47"
+    },
+    "src/lib/fileUtils.ts:89:1": {
+      "scopeId": "src/lib/fileUtils.ts:89:1",
+      "name": "paths",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:89:1"
+    },
+    "src/lib/fileUtils.ts:101:1": {
+      "scopeId": "src/lib/fileUtils.ts:101:1",
+      "name": "parseHeader",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:101:1"
+    },
+    "src/lib/fileUtils.ts:114:1": {
+      "scopeId": "src/lib/fileUtils.ts:114:1",
+      "name": "loadPageFiles",
+      "kind": "function",
+      "parentScopeId": "src/lib/fileUtils.ts",
+      "filePath": "src/lib/fileUtils.ts",
+      "location": "src/lib/fileUtils.ts:114:1"
+    },
+    "src/lib/pageStore.ts": {
+      "scopeId": "src/lib/pageStore.ts",
+      "name": "src/lib/pageStore.ts",
+      "kind": "module",
+      "filePath": "src/lib/pageStore.ts",
+      "location": "src/lib/pageStore.ts:1:1"
+    },
+    "src/lib/pageStore.ts:16:1": {
+      "scopeId": "src/lib/pageStore.ts:16:1",
+      "name": "getPage",
+      "kind": "function",
+      "parentScopeId": "src/lib/pageStore.ts",
+      "filePath": "src/lib/pageStore.ts",
+      "location": "src/lib/pageStore.ts:16:1"
+    },
+    "src/lib/pageStore.ts:39:1": {
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "name": "setPage",
+      "kind": "function",
+      "parentScopeId": "src/lib/pageStore.ts",
+      "filePath": "src/lib/pageStore.ts",
+      "location": "src/lib/pageStore.ts:39:1"
+    },
+    "src/core/collections/engineTypes.ts": {
+      "scopeId": "src/core/collections/engineTypes.ts",
+      "name": "src/core/collections/engineTypes.ts",
+      "kind": "module",
+      "filePath": "src/core/collections/engineTypes.ts",
+      "location": "src/core/collections/engineTypes.ts:1:1"
+    },
+    "src/core/collections/engineTypes.ts:22:54": {
+      "scopeId": "src/core/collections/engineTypes.ts:22:54",
+      "name": "src/core/collections/engineTypes.ts:22",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/engineTypes.ts",
+      "filePath": "src/core/collections/engineTypes.ts",
+      "location": "src/core/collections/engineTypes.ts:22:54"
+    },
+    "src/core/collections/engineTypes.ts:33:62": {
+      "scopeId": "src/core/collections/engineTypes.ts:33:62",
+      "name": "src/core/collections/engineTypes.ts:33",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/engineTypes.ts",
+      "filePath": "src/core/collections/engineTypes.ts",
+      "location": "src/core/collections/engineTypes.ts:33:62"
+    },
+    "src/core/collections/engineTypes.ts:40:62": {
+      "scopeId": "src/core/collections/engineTypes.ts:40:62",
+      "name": "src/core/collections/engineTypes.ts:40",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/engineTypes.ts",
+      "filePath": "src/core/collections/engineTypes.ts",
+      "location": "src/core/collections/engineTypes.ts:40:62"
+    },
+    "src/core/collections/engineTypes.ts:47:64": {
+      "scopeId": "src/core/collections/engineTypes.ts:47:64",
+      "name": "src/core/collections/engineTypes.ts:47",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/engineTypes.ts",
+      "filePath": "src/core/collections/engineTypes.ts",
+      "location": "src/core/collections/engineTypes.ts:47:64"
+    },
+    "src/core/collections/engineTypes.ts:54:70": {
+      "scopeId": "src/core/collections/engineTypes.ts:54:70",
+      "name": "src/core/collections/engineTypes.ts:54",
+      "kind": "function",
+      "parentScopeId": "src/core/collections/engineTypes.ts",
+      "filePath": "src/core/collections/engineTypes.ts",
+      "location": "src/core/collections/engineTypes.ts:54:70"
+    },
+    "src/lib/chainTrace.ts": {
+      "scopeId": "src/lib/chainTrace.ts",
+      "name": "src/lib/chainTrace.ts",
+      "kind": "module",
+      "filePath": "src/lib/chainTrace.ts",
+      "location": "src/lib/chainTrace.ts:1:1"
+    },
+    "src/lib/chainTrace.ts:18:1": {
+      "scopeId": "src/lib/chainTrace.ts:18:1",
+      "name": "traceChain",
+      "kind": "function",
+      "parentScopeId": "src/lib/chainTrace.ts",
+      "filePath": "src/lib/chainTrace.ts",
+      "location": "src/lib/chainTrace.ts:18:1"
+    },
+    "src/lib/chainTrace.ts:21:2": {
+      "scopeId": "src/lib/chainTrace.ts:21:2",
+      "name": "walk",
+      "kind": "function",
+      "parentScopeId": "src/lib/chainTrace.ts:18:1",
+      "filePath": "src/lib/chainTrace.ts",
+      "location": "src/lib/chainTrace.ts:21:2"
+    },
+    "src/lib/chainTrace.ts:62:1": {
+      "scopeId": "src/lib/chainTrace.ts:62:1",
+      "name": "formatChainTrace",
+      "kind": "function",
+      "parentScopeId": "src/lib/chainTrace.ts",
+      "filePath": "src/lib/chainTrace.ts",
+      "location": "src/lib/chainTrace.ts:62:1"
+    },
+    "src/lib/chainTrace.ts:63:19": {
+      "scopeId": "src/lib/chainTrace.ts:63:19",
+      "name": "src/lib/chainTrace.ts:63",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/chainTrace.ts:62:1",
+      "filePath": "src/lib/chainTrace.ts",
+      "location": "src/lib/chainTrace.ts:63:19"
+    },
+    "src/lib/chainTrace.ts:75:1": {
+      "scopeId": "src/lib/chainTrace.ts:75:1",
+      "name": "getRequestId",
+      "kind": "function",
+      "parentScopeId": "src/lib/chainTrace.ts",
+      "filePath": "src/lib/chainTrace.ts",
+      "location": "src/lib/chainTrace.ts:75:1"
+    },
+    "src/plugins/pino-logger.ts": {
+      "scopeId": "src/plugins/pino-logger.ts",
+      "name": "src/plugins/pino-logger.ts",
+      "kind": "module",
+      "filePath": "src/plugins/pino-logger.ts",
+      "location": "src/plugins/pino-logger.ts:1:1"
+    },
+    "src/plugins/pino-logger.ts:22:1": {
+      "scopeId": "src/plugins/pino-logger.ts:22:1",
+      "name": "createLogger",
+      "kind": "function",
+      "parentScopeId": "src/plugins/pino-logger.ts",
+      "filePath": "src/plugins/pino-logger.ts",
+      "location": "src/plugins/pino-logger.ts:22:1"
+    },
+    "src/plugins/pino-logger.ts:31:1": {
+      "scopeId": "src/plugins/pino-logger.ts:31:1",
+      "name": "setupCollectionLogging",
+      "kind": "function",
+      "parentScopeId": "src/plugins/pino-logger.ts",
+      "filePath": "src/plugins/pino-logger.ts",
+      "location": "src/plugins/pino-logger.ts:31:1"
+    },
+    "src/plugins/pino-logger.ts:36:41": {
+      "scopeId": "src/plugins/pino-logger.ts:36:41",
+      "name": "src/plugins/pino-logger.ts:36",
+      "kind": "arrow",
+      "parentScopeId": "src/plugins/pino-logger.ts:31:1",
+      "filePath": "src/plugins/pino-logger.ts",
+      "location": "src/plugins/pino-logger.ts:36:41"
+    },
+    "src/plugins/pino-logger.ts:53:42": {
+      "scopeId": "src/plugins/pino-logger.ts:53:42",
+      "name": "src/plugins/pino-logger.ts:53",
+      "kind": "arrow",
+      "parentScopeId": "src/plugins/pino-logger.ts:31:1",
+      "filePath": "src/plugins/pino-logger.ts",
+      "location": "src/plugins/pino-logger.ts:53:42"
+    },
+    "src/plugins/pino-logger.ts:76:43": {
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "name": "src/plugins/pino-logger.ts:76",
+      "kind": "arrow",
+      "parentScopeId": "src/plugins/pino-logger.ts:31:1",
+      "filePath": "src/plugins/pino-logger.ts",
+      "location": "src/plugins/pino-logger.ts:76:43"
+    },
+    "src/plugins/static-cache.ts": {
+      "scopeId": "src/plugins/static-cache.ts",
+      "name": "src/plugins/static-cache.ts",
+      "kind": "module",
+      "filePath": "src/plugins/static-cache.ts",
+      "location": "src/plugins/static-cache.ts:1:1"
+    },
+    "src/plugins/static-cache.ts:17:1": {
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "name": "checkStaticCache",
+      "kind": "function",
+      "parentScopeId": "src/plugins/static-cache.ts",
+      "filePath": "src/plugins/static-cache.ts",
+      "location": "src/plugins/static-cache.ts:17:1"
+    },
+    "src/plugins/static-cache.ts:42:1": {
+      "scopeId": "src/plugins/static-cache.ts:42:1",
+      "name": "writeStaticCache",
+      "kind": "function",
+      "parentScopeId": "src/plugins/static-cache.ts",
+      "filePath": "src/plugins/static-cache.ts",
+      "location": "src/plugins/static-cache.ts:42:1"
+    },
+    "src/routes/engine/settings.ts": {
+      "scopeId": "src/routes/engine/settings.ts",
+      "name": "src/routes/engine/settings.ts",
+      "kind": "module",
+      "filePath": "src/routes/engine/settings.ts",
+      "location": "src/routes/engine/settings.ts:1:1"
+    },
+    "src/routes/engine/settings.ts:18:1": {
+      "scopeId": "src/routes/engine/settings.ts:18:1",
+      "name": "loadSettings",
+      "kind": "function",
+      "parentScopeId": "src/routes/engine/settings.ts",
+      "filePath": "src/routes/engine/settings.ts",
+      "location": "src/routes/engine/settings.ts:18:1"
+    },
+    "src/routes/engine/settings.ts:27:1": {
+      "scopeId": "src/routes/engine/settings.ts:27:1",
+      "name": "saveSettings",
+      "kind": "function",
+      "parentScopeId": "src/routes/engine/settings.ts",
+      "filePath": "src/routes/engine/settings.ts",
+      "location": "src/routes/engine/settings.ts:27:1"
+    },
+    "src/routes/engine/settings.ts:35:32": {
+      "scopeId": "src/routes/engine/settings.ts:35:32",
+      "name": "src/routes/engine/settings.ts:35",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/settings.ts",
+      "filePath": "src/routes/engine/settings.ts",
+      "location": "src/routes/engine/settings.ts:35:32"
+    },
+    "src/routes/engine/settings.ts:40:33": {
+      "scopeId": "src/routes/engine/settings.ts:40:33",
+      "name": "src/routes/engine/settings.ts:40",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/settings.ts",
+      "filePath": "src/routes/engine/settings.ts",
+      "location": "src/routes/engine/settings.ts:40:33"
+    },
+    "src/lib/engineActions.ts": {
+      "scopeId": "src/lib/engineActions.ts",
+      "name": "src/lib/engineActions.ts",
+      "kind": "module",
+      "filePath": "src/lib/engineActions.ts",
+      "location": "src/lib/engineActions.ts:1:1"
+    },
+    "src/lib/engineActions.ts:9:1": {
+      "scopeId": "src/lib/engineActions.ts:9:1",
+      "name": "handleContentGet",
+      "kind": "function",
+      "parentScopeId": "src/lib/engineActions.ts",
+      "filePath": "src/lib/engineActions.ts",
+      "location": "src/lib/engineActions.ts:9:1"
+    },
+    "src/lib/engineActions.ts:18:1": {
+      "scopeId": "src/lib/engineActions.ts:18:1",
+      "name": "handleContentSet",
+      "kind": "function",
+      "parentScopeId": "src/lib/engineActions.ts",
+      "filePath": "src/lib/engineActions.ts",
+      "location": "src/lib/engineActions.ts:18:1"
+    },
+    "src/lib/engineActions.ts:27:1": {
+      "scopeId": "src/lib/engineActions.ts:27:1",
+      "name": "handleSet",
+      "kind": "function",
+      "parentScopeId": "src/lib/engineActions.ts",
+      "filePath": "src/lib/engineActions.ts",
+      "location": "src/lib/engineActions.ts:27:1"
+    },
+    "src/lib/engineActions.ts:41:1": {
+      "scopeId": "src/lib/engineActions.ts:41:1",
+      "name": "handleMkdir",
+      "kind": "function",
+      "parentScopeId": "src/lib/engineActions.ts",
+      "filePath": "src/lib/engineActions.ts",
+      "location": "src/lib/engineActions.ts:41:1"
+    },
+    "src/lib/engineActions.ts:47:1": {
+      "scopeId": "src/lib/engineActions.ts:47:1",
+      "name": "handleDel",
+      "kind": "function",
+      "parentScopeId": "src/lib/engineActions.ts",
+      "filePath": "src/lib/engineActions.ts",
+      "location": "src/lib/engineActions.ts:47:1"
+    },
+    "src/routes/engine/tree_pages.ts": {
+      "scopeId": "src/routes/engine/tree_pages.ts",
+      "name": "src/routes/engine/tree_pages.ts",
+      "kind": "module",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:1:1"
+    },
+    "src/routes/engine/tree_pages.ts:25:28": {
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "name": "src/routes/engine/tree_pages.ts:25",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:25:28"
+    },
+    "src/routes/engine/tree_pages.ts:32:12": {
+      "scopeId": "src/routes/engine/tree_pages.ts:32:12",
+      "name": "src/routes/engine/tree_pages.ts:32",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:32:12"
+    },
+    "src/routes/engine/tree_pages.ts:33:9": {
+      "scopeId": "src/routes/engine/tree_pages.ts:33:9",
+      "name": "src/routes/engine/tree_pages.ts:33",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:33:9"
+    },
+    "src/routes/engine/tree_pages.ts:37:13": {
+      "scopeId": "src/routes/engine/tree_pages.ts:37:13",
+      "name": "src/routes/engine/tree_pages.ts:37",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:33:9",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:37:13"
+    },
+    "src/routes/engine/tree_pages.ts:38:40": {
+      "scopeId": "src/routes/engine/tree_pages.ts:38:40",
+      "name": "src/routes/engine/tree_pages.ts:38",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:33:9",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:38:40"
+    },
+    "src/routes/engine/tree_pages.ts:51:28": {
+      "scopeId": "src/routes/engine/tree_pages.ts:51:28",
+      "name": "src/routes/engine/tree_pages.ts:51",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:51:28"
+    },
+    "src/routes/engine/tree_pages.ts:61:29": {
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "name": "src/routes/engine/tree_pages.ts:61",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:61:29"
+    },
+    "src/routes/engine/tree_pages.ts:84:13": {
+      "scopeId": "src/routes/engine/tree_pages.ts:84:13",
+      "name": "src/routes/engine/tree_pages.ts:84",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:84:13"
+    },
+    "src/routes/engine/tree_pages.ts:85:10": {
+      "scopeId": "src/routes/engine/tree_pages.ts:85:10",
+      "name": "src/routes/engine/tree_pages.ts:85",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:85:10"
+    },
+    "src/routes/engine/tree_pages.ts:89:14": {
+      "scopeId": "src/routes/engine/tree_pages.ts:89:14",
+      "name": "src/routes/engine/tree_pages.ts:89",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:85:10",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:89:14"
+    },
+    "src/routes/engine/tree_pages.ts:90:41": {
+      "scopeId": "src/routes/engine/tree_pages.ts:90:41",
+      "name": "src/routes/engine/tree_pages.ts:90",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/tree_pages.ts:85:10",
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "location": "src/routes/engine/tree_pages.ts:90:41"
+    },
+    "src/routes/engine/template.ts": {
+      "scopeId": "src/routes/engine/template.ts",
+      "name": "src/routes/engine/template.ts",
+      "kind": "module",
+      "filePath": "src/routes/engine/template.ts",
+      "location": "src/routes/engine/template.ts:1:1"
+    },
+    "src/routes/engine/template.ts:13:32": {
+      "scopeId": "src/routes/engine/template.ts:13:32",
+      "name": "src/routes/engine/template.ts:13",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/template.ts",
+      "filePath": "src/routes/engine/template.ts",
+      "location": "src/routes/engine/template.ts:13:32"
+    },
+    "src/routes/engine/template.ts:18:11": {
+      "scopeId": "src/routes/engine/template.ts:18:11",
+      "name": "src/routes/engine/template.ts:18",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/template.ts:13:32",
+      "filePath": "src/routes/engine/template.ts",
+      "location": "src/routes/engine/template.ts:18:11"
+    },
+    "src/routes/engine/template.ts:19:8": {
+      "scopeId": "src/routes/engine/template.ts:19:8",
+      "name": "src/routes/engine/template.ts:19",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/template.ts:13:32",
+      "filePath": "src/routes/engine/template.ts",
+      "location": "src/routes/engine/template.ts:19:8"
+    },
+    "src/routes/engine/template_action.ts": {
+      "scopeId": "src/routes/engine/template_action.ts",
+      "name": "src/routes/engine/template_action.ts",
+      "kind": "module",
+      "filePath": "src/routes/engine/template_action.ts",
+      "location": "src/routes/engine/template_action.ts:1:1"
+    },
+    "src/routes/engine/template_action.ts:15:1": {
+      "scopeId": "src/routes/engine/template_action.ts:15:1",
+      "name": "readTemplate",
+      "kind": "function",
+      "parentScopeId": "src/routes/engine/template_action.ts",
+      "filePath": "src/routes/engine/template_action.ts",
+      "location": "src/routes/engine/template_action.ts:15:1"
+    },
+    "src/routes/engine/template_action.ts:27:1": {
+      "scopeId": "src/routes/engine/template_action.ts:27:1",
+      "name": "writeTemplate",
+      "kind": "function",
+      "parentScopeId": "src/routes/engine/template_action.ts",
+      "filePath": "src/routes/engine/template_action.ts",
+      "location": "src/routes/engine/template_action.ts:27:1"
+    },
+    "src/routes/engine/template_action.ts:37:39": {
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "name": "src/routes/engine/template_action.ts:37",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/template_action.ts",
+      "filePath": "src/routes/engine/template_action.ts",
+      "location": "src/routes/engine/template_action.ts:37:39"
+    },
+    "src/routes/engine/template_action.ts:76:40": {
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "name": "src/routes/engine/template_action.ts:76",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/template_action.ts",
+      "filePath": "src/routes/engine/template_action.ts",
+      "location": "src/routes/engine/template_action.ts:76:40"
+    },
+    "src/routes/engine/api.ts": {
+      "scopeId": "src/routes/engine/api.ts",
+      "name": "src/routes/engine/api.ts",
+      "kind": "module",
+      "filePath": "src/routes/engine/api.ts",
+      "location": "src/routes/engine/api.ts:1:1"
+    },
+    "src/routes/engine/api.ts:27:28": {
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "name": "src/routes/engine/api.ts:27",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/api.ts",
+      "filePath": "src/routes/engine/api.ts",
+      "location": "src/routes/engine/api.ts:27:28"
+    },
+    "src/routes/engine/admin.ts": {
+      "scopeId": "src/routes/engine/admin.ts",
+      "name": "src/routes/engine/admin.ts",
+      "kind": "module",
+      "filePath": "src/routes/engine/admin.ts",
+      "location": "src/routes/engine/admin.ts:1:1"
+    },
+    "src/routes/engine/admin.ts:31:29": {
+      "scopeId": "src/routes/engine/admin.ts:31:29",
+      "name": "src/routes/engine/admin.ts:31",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/engine/admin.ts",
+      "filePath": "src/routes/engine/admin.ts",
+      "location": "src/routes/engine/admin.ts:31:29"
+    },
+    "src/lib/templateEngine.ts": {
+      "scopeId": "src/lib/templateEngine.ts",
+      "name": "src/lib/templateEngine.ts",
+      "kind": "module",
+      "filePath": "src/lib/templateEngine.ts",
+      "location": "src/lib/templateEngine.ts:1:1"
+    },
+    "src/lib/templateEngine.ts:13:1": {
+      "scopeId": "src/lib/templateEngine.ts:13:1",
+      "name": "registerHelper",
+      "kind": "function",
+      "parentScopeId": "src/lib/templateEngine.ts",
+      "filePath": "src/lib/templateEngine.ts",
+      "location": "src/lib/templateEngine.ts:13:1"
+    },
+    "src/lib/templateEngine.ts:17:1": {
+      "scopeId": "src/lib/templateEngine.ts:17:1",
+      "name": "get",
+      "kind": "function",
+      "parentScopeId": "src/lib/templateEngine.ts",
+      "filePath": "src/lib/templateEngine.ts",
+      "location": "src/lib/templateEngine.ts:17:1"
+    },
+    "src/lib/templateEngine.ts:27:1": {
+      "scopeId": "src/lib/templateEngine.ts:27:1",
+      "name": "compile",
+      "kind": "function",
+      "parentScopeId": "src/lib/templateEngine.ts",
+      "filePath": "src/lib/templateEngine.ts",
+      "location": "src/lib/templateEngine.ts:27:1"
+    },
+    "src/lib/templateEngine.ts:51:1": {
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "name": "render",
+      "kind": "function",
+      "parentScopeId": "src/lib/templateEngine.ts",
+      "filePath": "src/lib/templateEngine.ts",
+      "location": "src/lib/templateEngine.ts:51:1"
+    },
+    "src/lib/components.ts": {
+      "scopeId": "src/lib/components.ts",
+      "name": "src/lib/components.ts",
+      "kind": "module",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:1:1"
+    },
+    "src/lib/components.ts:15:1": {
+      "scopeId": "src/lib/components.ts:15:1",
+      "name": "jsonInfo",
+      "kind": "function",
+      "parentScopeId": "src/lib/components.ts",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:15:1"
+    },
+    "src/lib/components.ts:29:1": {
+      "scopeId": "src/lib/components.ts:29:1",
+      "name": "headAdditional",
+      "kind": "function",
+      "parentScopeId": "src/lib/components.ts",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:29:1"
+    },
+    "src/lib/components.ts:36:1": {
+      "scopeId": "src/lib/components.ts:36:1",
+      "name": "contentParser",
+      "kind": "function",
+      "parentScopeId": "src/lib/components.ts",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:36:1"
+    },
+    "src/lib/components.ts:57:1": {
+      "scopeId": "src/lib/components.ts:57:1",
+      "name": "menuMain",
+      "kind": "function",
+      "parentScopeId": "src/lib/components.ts",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:57:1"
+    },
+    "src/lib/components.ts:61:57": {
+      "scopeId": "src/lib/components.ts:61:57",
+      "name": "src/lib/components.ts:61",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/components.ts:57:1",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:61:57"
+    },
+    "src/lib/components.ts:70:25": {
+      "scopeId": "src/lib/components.ts:70:25",
+      "name": "src/lib/components.ts:70",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/components.ts:57:1",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:70:25"
+    },
+    "src/lib/components.ts:74:35": {
+      "scopeId": "src/lib/components.ts:74:35",
+      "name": "src/lib/components.ts:74",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/components.ts:70:25",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:74:35"
+    },
+    "src/lib/components.ts:97:1": {
+      "scopeId": "src/lib/components.ts:97:1",
+      "name": "menuLeft",
+      "kind": "function",
+      "parentScopeId": "src/lib/components.ts",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:97:1"
+    },
+    "src/lib/components.ts:101:57": {
+      "scopeId": "src/lib/components.ts:101:57",
+      "name": "src/lib/components.ts:101",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/components.ts:97:1",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:101:57"
+    },
+    "src/lib/components.ts:110:25": {
+      "scopeId": "src/lib/components.ts:110:25",
+      "name": "src/lib/components.ts:110",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/components.ts:97:1",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:110:25"
+    },
+    "src/lib/components.ts:114:35": {
+      "scopeId": "src/lib/components.ts:114:35",
+      "name": "src/lib/components.ts:114",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/components.ts:110:25",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:114:35"
+    },
+    "src/lib/components.ts:139:1": {
+      "scopeId": "src/lib/components.ts:139:1",
+      "name": "menuDocuments",
+      "kind": "function",
+      "parentScopeId": "src/lib/components.ts",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:139:1"
+    },
+    "src/lib/components.ts:143:2": {
+      "scopeId": "src/lib/components.ts:143:2",
+      "name": "readDirs",
+      "kind": "function",
+      "parentScopeId": "src/lib/components.ts:139:1",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:143:2"
+    },
+    "src/lib/components.ts:152:68": {
+      "scopeId": "src/lib/components.ts:152:68",
+      "name": "src/lib/components.ts:152",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/components.ts:143:2",
+      "filePath": "src/lib/components.ts",
+      "location": "src/lib/components.ts:152:68"
+    },
+    "src/lib/registerHelpers.ts": {
+      "scopeId": "src/lib/registerHelpers.ts",
+      "name": "src/lib/registerHelpers.ts",
+      "kind": "module",
+      "filePath": "src/lib/registerHelpers.ts",
+      "location": "src/lib/registerHelpers.ts:1:1"
+    },
+    "src/lib/registerHelpers.ts:8:28": {
+      "scopeId": "src/lib/registerHelpers.ts:8:28",
+      "name": "src/lib/registerHelpers.ts:8",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/registerHelpers.ts",
+      "filePath": "src/lib/registerHelpers.ts",
+      "location": "src/lib/registerHelpers.ts:8:28"
+    },
+    "src/lib/registerHelpers.ts:9:34": {
+      "scopeId": "src/lib/registerHelpers.ts:9:34",
+      "name": "src/lib/registerHelpers.ts:9",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/registerHelpers.ts",
+      "filePath": "src/lib/registerHelpers.ts",
+      "location": "src/lib/registerHelpers.ts:9:34"
+    },
+    "src/lib/registerHelpers.ts:10:33": {
+      "scopeId": "src/lib/registerHelpers.ts:10:33",
+      "name": "src/lib/registerHelpers.ts:10",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/registerHelpers.ts",
+      "filePath": "src/lib/registerHelpers.ts",
+      "location": "src/lib/registerHelpers.ts:10:33"
+    },
+    "src/lib/registerHelpers.ts:11:28": {
+      "scopeId": "src/lib/registerHelpers.ts:11:28",
+      "name": "src/lib/registerHelpers.ts:11",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/registerHelpers.ts",
+      "filePath": "src/lib/registerHelpers.ts",
+      "location": "src/lib/registerHelpers.ts:11:28"
+    },
+    "src/lib/registerHelpers.ts:12:28": {
+      "scopeId": "src/lib/registerHelpers.ts:12:28",
+      "name": "src/lib/registerHelpers.ts:12",
+      "kind": "arrow",
+      "parentScopeId": "src/lib/registerHelpers.ts",
+      "filePath": "src/lib/registerHelpers.ts",
+      "location": "src/lib/registerHelpers.ts:12:28"
+    },
+    "src/routes/frontend.ts": {
+      "scopeId": "src/routes/frontend.ts",
+      "name": "src/routes/frontend.ts",
+      "kind": "module",
+      "filePath": "src/routes/frontend.ts",
+      "location": "src/routes/frontend.ts:1:1"
+    },
+    "src/routes/frontend.ts:24:1": {
+      "scopeId": "src/routes/frontend.ts:24:1",
+      "name": "parseUrl",
+      "kind": "function",
+      "parentScopeId": "src/routes/frontend.ts",
+      "filePath": "src/routes/frontend.ts",
+      "location": "src/routes/frontend.ts:24:1"
+    },
+    "src/routes/frontend.ts:36:12": {
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "name": "src/routes/frontend.ts:36",
+      "kind": "arrow",
+      "parentScopeId": "src/routes/frontend.ts",
+      "filePath": "src/routes/frontend.ts",
+      "location": "src/routes/frontend.ts:36:12"
+    },
+    "src/core/server.ts": {
+      "scopeId": "src/core/server.ts",
+      "name": "src/core/server.ts",
+      "kind": "module",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:1:1"
+    },
+    "src/core/server.ts:18:33": {
+      "scopeId": "src/core/server.ts:18:33",
+      "name": "src/core/server.ts:18",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:18:33"
+    },
+    "src/core/server.ts:24:34": {
+      "scopeId": "src/core/server.ts:24:34",
+      "name": "src/core/server.ts:24",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:24:34"
+    },
+    "src/core/server.ts:55:42": {
+      "scopeId": "src/core/server.ts:55:42",
+      "name": "src/core/server.ts:55",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:55:42"
+    },
+    "src/core/server.ts:66:43": {
+      "scopeId": "src/core/server.ts:66:43",
+      "name": "src/core/server.ts:66",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:66:43"
+    },
+    "src/core/server.ts:72:73": {
+      "scopeId": "src/core/server.ts:72:73",
+      "name": "src/core/server.ts:72",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts:66:43",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:72:73"
+    },
+    "src/core/server.ts:80:20": {
+      "scopeId": "src/core/server.ts:80:20",
+      "name": "src/core/server.ts:80",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:80:20"
+    },
+    "src/core/server.ts:85:24": {
+      "scopeId": "src/core/server.ts:85:24",
+      "name": "src/core/server.ts:85",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:85:24"
+    },
+    "src/core/server.ts:154:30": {
+      "scopeId": "src/core/server.ts:154:30",
+      "name": "src/core/server.ts:154",
+      "kind": "arrow",
+      "parentScopeId": "src/core/server.ts",
+      "filePath": "src/core/server.ts",
+      "location": "src/core/server.ts:154:30"
+    }
+  },
+  "variables": [
+    {
+      "name": "sdk",
+      "scopeId": "src/tracing.ts",
+      "declaration": "src/tracing.ts:16:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "NodeSDK"
+    },
+    {
+      "name": "err",
+      "scopeId": "src/tracing.ts:36:1",
+      "declaration": "src/tracing.ts:36:37",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Error"
+    },
+    {
+      "name": "kind",
+      "scopeId": "src/tracing.ts:36:1",
+      "declaration": "src/tracing.ts:36:50",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "ProcessErrorKind"
+    },
+    {
+      "name": "tracer",
+      "scopeId": "src/tracing.ts:36:1",
+      "declaration": "src/tracing.ts:37:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "span",
+      "scopeId": "src/tracing.ts:36:1",
+      "declaration": "src/tracing.ts:38:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "RequestData",
+      "scopeId": "src/core/collections/requestTypes.ts",
+      "declaration": "src/core/collections/requestTypes.ts:8:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/requestTypes.ts:8:50",
+      "declaration": "src/core/collections/requestTypes.ts:9:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{\n\t\tmethod: string;\n\t\turl: string;\n\t\tquery: Record<string, unknown>;\n\t\tparams: Record<string, unknown>;\n\t\tbody: Record<string, unknown>;\n\t\theaders: Record<string, unknown>;\n\t\trequestId: string;\n\t}"
+    },
+    {
+      "name": "req",
+      "scopeId": "src/core/collections/requestTypes.ts:8:50",
+      "declaration": "src/core/collections/requestTypes.ts:18:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "{\n\t\tmethod: string;\n\t\turl: string;\n\t\tquery: Record<string, unknown>;\n\t\tparams: Record<string, unknown>;\n\t\tbody: Record<string, unknown>;\n\t\theaders: Record<string, unknown>;\n\t\tid: string;\n\t}"
+    },
+    {
+      "name": "RouteData",
+      "scopeId": "src/core/collections/requestTypes.ts",
+      "declaration": "src/core/collections/requestTypes.ts:37:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/requestTypes.ts:37:58",
+      "declaration": "src/core/collections/requestTypes.ts:38:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{\n\t\tpagePath: string;\n\t\tisMain: boolean;\n\t\tdeep: string;\n\t}"
+    },
+    {
+      "name": "routeInfo",
+      "scopeId": "src/core/collections/requestTypes.ts:37:58",
+      "declaration": "src/core/collections/requestTypes.ts:43:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "RouteInfo"
+    },
+    {
+      "name": "PageData",
+      "scopeId": "src/core/collections/requestTypes.ts",
+      "declaration": "src/core/collections/requestTypes.ts:50:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/requestTypes.ts:50:54",
+      "declaration": "src/core/collections/requestTypes.ts:51:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{\n\t\theader: PageFiles['header'];\n\t\tcontent: string;\n\t\tinfo: Record<string, unknown>;\n\t\tblocks: Array<{ name: string; value: string }>;\n\t\tpath: string;\n\t}"
+    },
+    {
+      "name": "pageFiles",
+      "scopeId": "src/core/collections/requestTypes.ts:50:54",
+      "declaration": "src/core/collections/requestTypes.ts:58:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "PageFiles"
+    },
+    {
+      "name": "RenderData",
+      "scopeId": "src/core/collections/requestTypes.ts",
+      "declaration": "src/core/collections/requestTypes.ts:67:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/requestTypes.ts:67:57",
+      "declaration": "src/core/collections/requestTypes.ts:68:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{\n\t\theader: PageFiles['header'];\n\t\tcontent: string;\n\t\tinfo: Record<string, unknown>;\n\t\tblocks: Array<{ name: string; value: string }>;\n\t\tpath: string;\n\t\tisMain: boolean;\n\t\tdeep: string;\n\t\tpagePath: string;\n\t\tcomponents: Record<string, string | Promise<string>>;\n\t\ttemplate: string | undefined;\n\t}"
+    },
+    {
+      "name": "components",
+      "scopeId": "src/core/collections/requestTypes.ts:67:57",
+      "declaration": "src/core/collections/requestTypes.ts:80:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Record<string, string | Promise<string>>"
+    },
+    {
+      "name": "ResponseData",
+      "scopeId": "src/core/collections/requestTypes.ts",
+      "declaration": "src/core/collections/requestTypes.ts:86:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/requestTypes.ts:86:63",
+      "declaration": "src/core/collections/requestTypes.ts:87:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{\n\t\tbody: string;\n\t\tcontentType: string;\n\t\tstatusCode: number;\n\t\tfromCache: boolean;\n\t}"
+    },
+    {
+      "name": "output",
+      "scopeId": "src/core/collections/requestTypes.ts:86:63",
+      "declaration": "src/core/collections/requestTypes.ts:93:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "ResponseOutput"
+    },
+    {
+      "name": "settings",
+      "scopeId": "src/core/settings.ts",
+      "declaration": "src/core/settings.ts:7:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "Settings"
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/lib/fileUtils.ts",
+      "declaration": "src/lib/fileUtils.ts:12:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "name",
+      "scopeId": "src/lib/fileUtils.ts:17:1",
+      "declaration": "src/lib/fileUtils.ts:17:33",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "dirPath",
+      "scopeId": "src/lib/fileUtils.ts:17:1",
+      "declaration": "src/lib/fileUtils.ts:17:47",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "filePath",
+      "scopeId": "src/lib/fileUtils.ts:17:1",
+      "declaration": "src/lib/fileUtils.ts:18:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "name",
+      "scopeId": "src/lib/fileUtils.ts:29:1",
+      "declaration": "src/lib/fileUtils.ts:29:33",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "dirPath",
+      "scopeId": "src/lib/fileUtils.ts:29:1",
+      "declaration": "src/lib/fileUtils.ts:29:47",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "content",
+      "scopeId": "src/lib/fileUtils.ts:29:1",
+      "declaration": "src/lib/fileUtils.ts:29:64",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "filePath",
+      "scopeId": "src/lib/fileUtils.ts:29:1",
+      "declaration": "src/lib/fileUtils.ts:30:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "filePath",
+      "scopeId": "src/lib/fileUtils.ts:38:1",
+      "declaration": "src/lib/fileUtils.ts:38:35",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "filePath",
+      "scopeId": "src/lib/fileUtils.ts:50:1",
+      "declaration": "src/lib/fileUtils.ts:50:33",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "stat",
+      "scopeId": "src/lib/fileUtils.ts:50:1",
+      "declaration": "src/lib/fileUtils.ts:52:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "dirPath",
+      "scopeId": "src/lib/fileUtils.ts:62:1",
+      "declaration": "src/lib/fileUtils.ts:62:31",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "targetPath",
+      "scopeId": "src/lib/fileUtils.ts:69:1",
+      "declaration": "src/lib/fileUtils.ts:69:40",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "stat",
+      "scopeId": "src/lib/fileUtils.ts:69:1",
+      "declaration": "src/lib/fileUtils.ts:70:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "entries",
+      "scopeId": "src/lib/fileUtils.ts:69:1",
+      "declaration": "src/lib/fileUtils.ts:74:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "entry",
+      "scopeId": "src/lib/fileUtils.ts:69:1",
+      "declaration": "src/lib/fileUtils.ts:75:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/lib/fileUtils.ts:89:1",
+      "declaration": "src/lib/fileUtils.ts:89:24",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "pagesPath",
+      "scopeId": "src/lib/fileUtils.ts:89:1",
+      "declaration": "src/lib/fileUtils.ts:90:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "cleanLeaf",
+      "scopeId": "src/lib/fileUtils.ts:89:1",
+      "declaration": "src/lib/fileUtils.ts:93:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "dirPath",
+      "scopeId": "src/lib/fileUtils.ts:101:1",
+      "declaration": "src/lib/fileUtils.ts:101:36",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "content",
+      "scopeId": "src/lib/fileUtils.ts:101:1",
+      "declaration": "src/lib/fileUtils.ts:102:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "pagePath",
+      "scopeId": "src/lib/fileUtils.ts:114:1",
+      "declaration": "src/lib/fileUtils.ts:114:38",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "info",
+      "scopeId": "src/lib/fileUtils.ts:114:1",
+      "declaration": "src/lib/fileUtils.ts:122:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "Record<string, unknown>"
+    },
+    {
+      "name": "blocks",
+      "scopeId": "src/lib/fileUtils.ts:114:1",
+      "declaration": "src/lib/fileUtils.ts:125:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "BlockItem[]"
+    },
+    {
+      "name": "pagePath",
+      "scopeId": "src/lib/pageStore.ts:16:1",
+      "declaration": "src/lib/pageStore.ts:16:32",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "blocksContent",
+      "scopeId": "src/lib/pageStore.ts:16:1",
+      "declaration": "src/lib/pageStore.ts:25:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/pageStore.ts:27:9",
+        "src/lib/pageStore.ts:28:11"
+      ]
+    },
+    {
+      "name": "pagePath",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:40:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "data",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:40:20",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Record<string, unknown>"
+    },
+    {
+      "name": "rawHeader",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:42:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/pageStore.ts:44:3"
+      ]
+    },
+    {
+      "name": "header",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:46:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/pageStore.ts:71:4"
+      ]
+    },
+    {
+      "name": "content",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:48:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "rawBlocks",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:50:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/pageStore.ts:52:3"
+      ]
+    },
+    {
+      "name": "blocks",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:54:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "infoContent",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:56:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/pageStore.ts:65:4"
+      ]
+    },
+    {
+      "name": "isEmpty",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:57:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:59:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:62:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "snippetPath",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:63:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templateHeaderPath",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:68:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "headerRaw",
+      "scopeId": "src/lib/pageStore.ts:39:1",
+      "declaration": "src/lib/pageStore.ts:70:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "EngineRequest",
+      "scopeId": "src/core/collections/engineTypes.ts",
+      "declaration": "src/core/collections/engineTypes.ts:22:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/engineTypes.ts:22:54",
+      "declaration": "src/core/collections/engineTypes.ts:23:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "EngineRequestData"
+    },
+    {
+      "name": "req",
+      "scopeId": "src/core/collections/engineTypes.ts:22:54",
+      "declaration": "src/core/collections/engineTypes.ts:24:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "{ body: Record<string, unknown> }"
+    },
+    {
+      "name": "TreeResult",
+      "scopeId": "src/core/collections/engineTypes.ts",
+      "declaration": "src/core/collections/engineTypes.ts:33:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/engineTypes.ts:33:62",
+      "declaration": "src/core/collections/engineTypes.ts:34:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{ tree: TreeItem[] }"
+    },
+    {
+      "name": "result",
+      "scopeId": "src/core/collections/engineTypes.ts:33:62",
+      "declaration": "src/core/collections/engineTypes.ts:35:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "{ tree: TreeItem[] }"
+    },
+    {
+      "name": "PageResult",
+      "scopeId": "src/core/collections/engineTypes.ts",
+      "declaration": "src/core/collections/engineTypes.ts:40:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/engineTypes.ts:40:62",
+      "declaration": "src/core/collections/engineTypes.ts:41:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{ page: rawPageFiles }"
+    },
+    {
+      "name": "pageData",
+      "scopeId": "src/core/collections/engineTypes.ts:40:62",
+      "declaration": "src/core/collections/engineTypes.ts:42:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "rawPageFiles"
+    },
+    {
+      "name": "CacheResult",
+      "scopeId": "src/core/collections/engineTypes.ts",
+      "declaration": "src/core/collections/engineTypes.ts:47:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/engineTypes.ts:47:64",
+      "declaration": "src/core/collections/engineTypes.ts:48:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{ cleared: boolean }"
+    },
+    {
+      "name": "cleared",
+      "scopeId": "src/core/collections/engineTypes.ts:47:64",
+      "declaration": "src/core/collections/engineTypes.ts:49:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "boolean"
+    },
+    {
+      "name": "TemplateResult",
+      "scopeId": "src/core/collections/engineTypes.ts",
+      "declaration": "src/core/collections/engineTypes.ts:54:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "this",
+      "scopeId": "src/core/collections/engineTypes.ts:54:70",
+      "declaration": "src/core/collections/engineTypes.ts:55:2",
+      "isParameter": true,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "{ template: { source?: string; snippet?: string; header?: string } }"
+    },
+    {
+      "name": "templateData",
+      "scopeId": "src/core/collections/engineTypes.ts:54:70",
+      "declaration": "src/core/collections/engineTypes.ts:56:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "{ source?: string; snippet?: string; header?: string }"
+    },
+    {
+      "name": "instance",
+      "scopeId": "src/lib/chainTrace.ts:18:1",
+      "declaration": "src/lib/chainTrace.ts:18:29",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "object"
+    },
+    {
+      "name": "steps",
+      "scopeId": "src/lib/chainTrace.ts:18:1",
+      "declaration": "src/lib/chainTrace.ts:19:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "ChainStep[]"
+    },
+    {
+      "name": "current",
+      "scopeId": "src/lib/chainTrace.ts:21:2",
+      "declaration": "src/lib/chainTrace.ts:21:17",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "object"
+    },
+    {
+      "name": "props",
+      "scopeId": "src/lib/chainTrace.ts:21:2",
+      "declaration": "src/lib/chainTrace.ts:22:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "typeName",
+      "scopeId": "src/lib/chainTrace.ts:21:2",
+      "declaration": "src/lib/chainTrace.ts:32:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "properties",
+      "scopeId": "src/lib/chainTrace.ts:21:2",
+      "declaration": "src/lib/chainTrace.ts:36:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "Record<string, unknown>"
+    },
+    {
+      "name": "steps",
+      "scopeId": "src/lib/chainTrace.ts:62:1",
+      "declaration": "src/lib/chainTrace.ts:62:35",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "ChainStep[]"
+    },
+    {
+      "name": "step",
+      "scopeId": "src/lib/chainTrace.ts:63:19",
+      "declaration": "src/lib/chainTrace.ts:63:20",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "i",
+      "scopeId": "src/lib/chainTrace.ts:63:19",
+      "declaration": "src/lib/chainTrace.ts:63:26",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "indent",
+      "scopeId": "src/lib/chainTrace.ts:63:19",
+      "declaration": "src/lib/chainTrace.ts:64:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "args",
+      "scopeId": "src/lib/chainTrace.ts:63:19",
+      "declaration": "src/lib/chainTrace.ts:65:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "instance",
+      "scopeId": "src/lib/chainTrace.ts:75:1",
+      "declaration": "src/lib/chainTrace.ts:75:31",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "object"
+    },
+    {
+      "name": "steps",
+      "scopeId": "src/lib/chainTrace.ts:75:1",
+      "declaration": "src/lib/chainTrace.ts:76:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "root",
+      "scopeId": "src/lib/chainTrace.ts:75:1",
+      "declaration": "src/lib/chainTrace.ts:77:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "collection",
+      "scopeId": "src/plugins/pino-logger.ts:31:1",
+      "declaration": "src/plugins/pino-logger.ts:31:41",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "TypesCollection"
+    },
+    {
+      "name": "log",
+      "scopeId": "src/plugins/pino-logger.ts:31:1",
+      "declaration": "src/plugins/pino-logger.ts:31:70",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "ReturnType<typeof createLogger>"
+    },
+    {
+      "name": "timings",
+      "scopeId": "src/plugins/pino-logger.ts:31:1",
+      "declaration": "src/plugins/pino-logger.ts:34:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "Map"
+    },
+    {
+      "name": "hookData",
+      "scopeId": "src/plugins/pino-logger.ts:36:41",
+      "declaration": "src/plugins/pino-logger.ts:36:42",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "hooksOpts<HookInstance>"
+    },
+    {
+      "name": "requestId",
+      "scopeId": "src/plugins/pino-logger.ts:36:41",
+      "declaration": "src/plugins/pino-logger.ts:37:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "hookData",
+      "scopeId": "src/plugins/pino-logger.ts:53:42",
+      "declaration": "src/plugins/pino-logger.ts:53:43",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "hooksOpts<HookInstance>"
+    },
+    {
+      "name": "requestId",
+      "scopeId": "src/plugins/pino-logger.ts:53:42",
+      "declaration": "src/plugins/pino-logger.ts:54:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "start",
+      "scopeId": "src/plugins/pino-logger.ts:53:42",
+      "declaration": "src/plugins/pino-logger.ts:57:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "duration",
+      "scopeId": "src/plugins/pino-logger.ts:53:42",
+      "declaration": "src/plugins/pino-logger.ts:58:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "hookData",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:76:44",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "hooksOpts<HookInstance>"
+    },
+    {
+      "name": "existentInstance",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:77:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "inheritedInstance",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:78:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "error",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:82:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "chainSteps",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:87:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "requestId",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:88:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "chainDepth",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:89:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "chainTrace",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:90:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "instanceParse",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:94:7",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/plugins/pino-logger.ts:98:5"
+      ],
+      "inferredType": "Record<string, unknown> | undefined"
+    },
+    {
+      "name": "parseFn",
+      "scopeId": "src/plugins/pino-logger.ts:76:43",
+      "declaration": "src/plugins/pino-logger.ts:96:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/plugins/static-cache.ts",
+      "declaration": "src/plugins/static-cache.ts:11:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "pagePath",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:17:41",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "header",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:17:59",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "PageHeader | null"
+    },
+    {
+      "name": "staticFilePath",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:20:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "staticMtime",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:23:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "dynamicMtime",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:24:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "settingsMtime",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:25:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "engineMtime",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:26:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:27:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templateMtime",
+      "scopeId": "src/plugins/static-cache.ts:17:1",
+      "declaration": "src/plugins/static-cache.ts:28:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "pagePath",
+      "scopeId": "src/plugins/static-cache.ts:42:1",
+      "declaration": "src/plugins/static-cache.ts:42:41",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "html",
+      "scopeId": "src/plugins/static-cache.ts:42:1",
+      "declaration": "src/plugins/static-cache.ts:42:59",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "staticFilePath",
+      "scopeId": "src/plugins/static-cache.ts:42:1",
+      "declaration": "src/plugins/static-cache.ts:45:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/routes/engine/settings.ts",
+      "declaration": "src/routes/engine/settings.ts:13:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "SETTINGS_PATH",
+      "scopeId": "src/routes/engine/settings.ts",
+      "declaration": "src/routes/engine/settings.ts:14:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "EngineRequest",
+      "scopeId": "src/routes/engine/settings.ts",
+      "declaration": "src/routes/engine/settings.ts:16:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "raw",
+      "scopeId": "src/routes/engine/settings.ts:18:1",
+      "declaration": "src/routes/engine/settings.ts:20:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "partial",
+      "scopeId": "src/routes/engine/settings.ts:27:1",
+      "declaration": "src/routes/engine/settings.ts:27:30",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Partial<Settings>"
+    },
+    {
+      "name": "merged",
+      "scopeId": "src/routes/engine/settings.ts:27:1",
+      "declaration": "src/routes/engine/settings.ts:28:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "router",
+      "scopeId": "src/routes/engine/settings.ts",
+      "declaration": "src/routes/engine/settings.ts:33:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "_req",
+      "scopeId": "src/routes/engine/settings.ts:35:32",
+      "declaration": "src/routes/engine/settings.ts:35:39",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/settings.ts:35:32",
+      "declaration": "src/routes/engine/settings.ts:35:54",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "current",
+      "scopeId": "src/routes/engine/settings.ts:35:32",
+      "declaration": "src/routes/engine/settings.ts:36:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/engine/settings.ts:40:33",
+      "declaration": "src/routes/engine/settings.ts:40:40",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/settings.ts:40:33",
+      "declaration": "src/routes/engine/settings.ts:40:54",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "engineRequest",
+      "scopeId": "src/routes/engine/settings.ts:40:33",
+      "declaration": "src/routes/engine/settings.ts:41:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "EngineRequest",
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "data",
+      "scopeId": "src/routes/engine/settings.ts:40:33",
+      "declaration": "src/routes/engine/settings.ts:44:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "updated",
+      "scopeId": "src/routes/engine/settings.ts:40:33",
+      "declaration": "src/routes/engine/settings.ts:51:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/lib/engineActions.ts:9:1",
+      "declaration": "src/lib/engineActions.ts:9:41",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "pagesPath",
+      "scopeId": "src/lib/engineActions.ts:9:1",
+      "declaration": "src/lib/engineActions.ts:10:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "page",
+      "scopeId": "src/lib/engineActions.ts:9:1",
+      "declaration": "src/lib/engineActions.ts:14:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/lib/engineActions.ts:18:1",
+      "declaration": "src/lib/engineActions.ts:19:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "data",
+      "scopeId": "src/lib/engineActions.ts:18:1",
+      "declaration": "src/lib/engineActions.ts:20:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Record<string, unknown>"
+    },
+    {
+      "name": "target",
+      "scopeId": "src/lib/engineActions.ts:18:1",
+      "declaration": "src/lib/engineActions.ts:22:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "page",
+      "scopeId": "src/lib/engineActions.ts:18:1",
+      "declaration": "src/lib/engineActions.ts:23:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/lib/engineActions.ts:27:1",
+      "declaration": "src/lib/engineActions.ts:28:2",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "pageName",
+      "scopeId": "src/lib/engineActions.ts:27:1",
+      "declaration": "src/lib/engineActions.ts:28:16",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "data",
+      "scopeId": "src/lib/engineActions.ts:27:1",
+      "declaration": "src/lib/engineActions.ts:28:34",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Record<string, unknown>"
+    },
+    {
+      "name": "target",
+      "scopeId": "src/lib/engineActions.ts:27:1",
+      "declaration": "src/lib/engineActions.ts:30:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/lib/engineActions.ts:41:1",
+      "declaration": "src/lib/engineActions.ts:41:36",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "pageName",
+      "scopeId": "src/lib/engineActions.ts:41:1",
+      "declaration": "src/lib/engineActions.ts:41:50",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "target",
+      "scopeId": "src/lib/engineActions.ts:41:1",
+      "declaration": "src/lib/engineActions.ts:42:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/lib/engineActions.ts:47:1",
+      "declaration": "src/lib/engineActions.ts:47:34",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "pageName",
+      "scopeId": "src/lib/engineActions.ts:47:1",
+      "declaration": "src/lib/engineActions.ts:47:48",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "target",
+      "scopeId": "src/lib/engineActions.ts:47:1",
+      "declaration": "src/lib/engineActions.ts:48:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ok",
+      "scopeId": "src/lib/engineActions.ts:47:1",
+      "declaration": "src/lib/engineActions.ts:49:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "EngineRequest",
+      "scopeId": "src/routes/engine/tree_pages.ts",
+      "declaration": "src/routes/engine/tree_pages.ts:21:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "router",
+      "scopeId": "src/routes/engine/tree_pages.ts",
+      "declaration": "src/routes/engine/tree_pages.ts:23:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:25:35",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:25:49",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:26:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "pagesPath",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:27:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "entries",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:29:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "tree",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:30:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "e",
+      "scopeId": "src/routes/engine/tree_pages.ts:32:12",
+      "declaration": "src/routes/engine/tree_pages.ts:32:12",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "e",
+      "scopeId": "src/routes/engine/tree_pages.ts:33:9",
+      "declaration": "src/routes/engine/tree_pages.ts:33:15",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "subEntries",
+      "scopeId": "src/routes/engine/tree_pages.ts:33:9",
+      "declaration": "src/routes/engine/tree_pages.ts:34:11",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "hasSubdirs",
+      "scopeId": "src/routes/engine/tree_pages.ts:33:9",
+      "declaration": "src/routes/engine/tree_pages.ts:38:11",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "se",
+      "scopeId": "src/routes/engine/tree_pages.ts:38:40",
+      "declaration": "src/routes/engine/tree_pages.ts:38:40",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "engineRequest",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:43:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "EngineRequest",
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "treeResult",
+      "scopeId": "src/routes/engine/tree_pages.ts:25:28",
+      "declaration": "src/routes/engine/tree_pages.ts:46:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest.TreeResult"
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/engine/tree_pages.ts:51:28",
+      "declaration": "src/routes/engine/tree_pages.ts:51:35",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/tree_pages.ts:51:28",
+      "declaration": "src/routes/engine/tree_pages.ts:51:49",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/routes/engine/tree_pages.ts:51:28",
+      "declaration": "src/routes/engine/tree_pages.ts:52:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "result",
+      "scopeId": "src/routes/engine/tree_pages.ts:51:28",
+      "declaration": "src/routes/engine/tree_pages.ts:54:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:61:36",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:61:50",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "body",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:62:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "action",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:63:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:64:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "pageName",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:65:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "rawData",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:66:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/engine/tree_pages.ts:68:9"
+      ]
+    },
+    {
+      "name": "data",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:71:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "engineRequest",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:75:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "EngineRequest",
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "pagesPath",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:80:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "entries",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:81:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "tree",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:82:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "e",
+      "scopeId": "src/routes/engine/tree_pages.ts:84:13",
+      "declaration": "src/routes/engine/tree_pages.ts:84:13",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "e",
+      "scopeId": "src/routes/engine/tree_pages.ts:85:10",
+      "declaration": "src/routes/engine/tree_pages.ts:85:16",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "subEntries",
+      "scopeId": "src/routes/engine/tree_pages.ts:85:10",
+      "declaration": "src/routes/engine/tree_pages.ts:86:12",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "hasSubdirs",
+      "scopeId": "src/routes/engine/tree_pages.ts:85:10",
+      "declaration": "src/routes/engine/tree_pages.ts:90:12",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "se",
+      "scopeId": "src/routes/engine/tree_pages.ts:90:41",
+      "declaration": "src/routes/engine/tree_pages.ts:90:41",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "treeResult",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:94:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest.TreeResult"
+    },
+    {
+      "name": "result",
+      "scopeId": "src/routes/engine/tree_pages.ts:61:29",
+      "declaration": "src/routes/engine/tree_pages.ts:136:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/routes/engine/template.ts",
+      "declaration": "src/routes/engine/template.ts:9:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "router",
+      "scopeId": "src/routes/engine/template.ts",
+      "declaration": "src/routes/engine/template.ts:11:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "_req",
+      "scopeId": "src/routes/engine/template.ts:13:32",
+      "declaration": "src/routes/engine/template.ts:13:39",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/template.ts:13:32",
+      "declaration": "src/routes/engine/template.ts:13:54",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "templatesPath",
+      "scopeId": "src/routes/engine/template.ts:13:32",
+      "declaration": "src/routes/engine/template.ts:14:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "entries",
+      "scopeId": "src/routes/engine/template.ts:13:32",
+      "declaration": "src/routes/engine/template.ts:15:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templates",
+      "scopeId": "src/routes/engine/template.ts:13:32",
+      "declaration": "src/routes/engine/template.ts:17:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "e",
+      "scopeId": "src/routes/engine/template.ts:18:11",
+      "declaration": "src/routes/engine/template.ts:18:11",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "e",
+      "scopeId": "src/routes/engine/template.ts:19:8",
+      "declaration": "src/routes/engine/template.ts:19:8",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/routes/engine/template_action.ts",
+      "declaration": "src/routes/engine/template_action.ts:11:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "EngineRequest",
+      "scopeId": "src/routes/engine/template_action.ts",
+      "declaration": "src/routes/engine/template_action.ts:13:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/routes/engine/template_action.ts:15:1",
+      "declaration": "src/routes/engine/template_action.ts:15:30",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "indexPath",
+      "scopeId": "src/routes/engine/template_action.ts:15:1",
+      "declaration": "src/routes/engine/template_action.ts:16:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "snippetPath",
+      "scopeId": "src/routes/engine/template_action.ts:15:1",
+      "declaration": "src/routes/engine/template_action.ts:17:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "headerPath",
+      "scopeId": "src/routes/engine/template_action.ts:15:1",
+      "declaration": "src/routes/engine/template_action.ts:18:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/routes/engine/template_action.ts:27:1",
+      "declaration": "src/routes/engine/template_action.ts:27:31",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "source",
+      "scopeId": "src/routes/engine/template_action.ts:27:1",
+      "declaration": "src/routes/engine/template_action.ts:27:53",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "snippet",
+      "scopeId": "src/routes/engine/template_action.ts:27:1",
+      "declaration": "src/routes/engine/template_action.ts:27:69",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "header",
+      "scopeId": "src/routes/engine/template_action.ts:27:1",
+      "declaration": "src/routes/engine/template_action.ts:27:86",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "router",
+      "scopeId": "src/routes/engine/template_action.ts",
+      "declaration": "src/routes/engine/template_action.ts:35:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:37:46",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:37:60",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "action",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:38:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "template",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:39:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:46:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "engineRequest",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:47:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "EngineRequest",
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "data",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:56:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templateResult",
+      "scopeId": "src/routes/engine/template_action.ts:37:39",
+      "declaration": "src/routes/engine/template_action.ts:68:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest.TemplateResult"
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:76:47",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:76:61",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "body",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:77:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "action",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:78:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "template",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:79:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "source",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:80:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "snippet",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:81:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "header",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:82:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:88:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "data",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:95:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "engineRequest",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:110:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "EngineRequest",
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "templateResult",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:113:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest.TemplateResult"
+    },
+    {
+      "name": "ok",
+      "scopeId": "src/routes/engine/template_action.ts:76:40",
+      "declaration": "src/routes/engine/template_action.ts:140:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/routes/engine/api.ts",
+      "declaration": "src/routes/engine/api.ts:20:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "SETTINGS_PATH",
+      "scopeId": "src/routes/engine/api.ts",
+      "declaration": "src/routes/engine/api.ts:21:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "EngineRequest",
+      "scopeId": "src/routes/engine/api.ts",
+      "declaration": "src/routes/engine/api.ts:23:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "router",
+      "scopeId": "src/routes/engine/api.ts",
+      "declaration": "src/routes/engine/api.ts:25:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:27:35",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:27:49",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "body",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:28:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "action",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:29:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "leaf",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:30:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "pathName",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:31:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "rawData",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:32:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/engine/api.ts:34:9"
+      ]
+    },
+    {
+      "name": "data",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:37:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "engineRequest",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:41:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "EngineRequest",
+      "typePath": "EngineRequest"
+    },
+    {
+      "name": "staticPath",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:46:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ok",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:47:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "cacheResult",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:48:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "EngineRequest.CacheResult"
+    },
+    {
+      "name": "result",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:114:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "dataVal",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:89:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "storeVal",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:91:8",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/engine/api.ts:95:6"
+      ]
+    },
+    {
+      "name": "parsed",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:93:11",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "current",
+      "scopeId": "src/routes/engine/api.ts:27:28",
+      "declaration": "src/routes/engine/api.ts:102:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/routes/engine/admin.ts",
+      "declaration": "src/routes/engine/admin.ts:14:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "roots",
+      "scopeId": "src/routes/engine/admin.ts",
+      "declaration": "src/routes/engine/admin.ts:19:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "Array<unknown>"
+    },
+    {
+      "name": "router",
+      "scopeId": "src/routes/engine/admin.ts",
+      "declaration": "src/routes/engine/admin.ts:28:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "_req",
+      "scopeId": "src/routes/engine/admin.ts:31:29",
+      "declaration": "src/routes/engine/admin.ts:31:30",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/engine/admin.ts:31:29",
+      "declaration": "src/routes/engine/admin.ts:31:45",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "helpers",
+      "scopeId": "src/lib/templateEngine.ts",
+      "declaration": "src/lib/templateEngine.ts:11:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "Map"
+    },
+    {
+      "name": "name",
+      "scopeId": "src/lib/templateEngine.ts:13:1",
+      "declaration": "src/lib/templateEngine.ts:13:33",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "fn",
+      "scopeId": "src/lib/templateEngine.ts:13:1",
+      "declaration": "src/lib/templateEngine.ts:13:47",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "HelperFn"
+    },
+    {
+      "name": "obj",
+      "scopeId": "src/lib/templateEngine.ts:17:1",
+      "declaration": "src/lib/templateEngine.ts:17:15",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Record<string, unknown>"
+    },
+    {
+      "name": "path",
+      "scopeId": "src/lib/templateEngine.ts:17:1",
+      "declaration": "src/lib/templateEngine.ts:17:45",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "parts",
+      "scopeId": "src/lib/templateEngine.ts:17:1",
+      "declaration": "src/lib/templateEngine.ts:18:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "result",
+      "scopeId": "src/lib/templateEngine.ts:17:1",
+      "declaration": "src/lib/templateEngine.ts:19:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/templateEngine.ts:22:3"
+      ],
+      "inferredType": "unknown"
+    },
+    {
+      "name": "part",
+      "scopeId": "src/lib/templateEngine.ts:17:1",
+      "declaration": "src/lib/templateEngine.ts:20:13",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "template",
+      "scopeId": "src/lib/templateEngine.ts:27:1",
+      "declaration": "src/lib/templateEngine.ts:27:26",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "escaped",
+      "scopeId": "src/lib/templateEngine.ts:27:1",
+      "declaration": "src/lib/templateEngine.ts:32:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "code",
+      "scopeId": "src/lib/templateEngine.ts:27:1",
+      "declaration": "src/lib/templateEngine.ts:37:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:51:31",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "context",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:51:53",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "TemplateContext"
+    },
+    {
+      "name": "template",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:53:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/templateEngine.ts:69:3"
+      ]
+    },
+    {
+      "name": "helperPattern",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:57:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "match",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:58:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/templateEngine.ts:60:10"
+      ],
+      "inferredType": "RegExpExecArray | null"
+    },
+    {
+      "name": "replacements",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:59:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "Array<{ match: string; result: string }>"
+    },
+    {
+      "name": "name",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:61:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "fn",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:72:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "result",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:64:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "r",
+      "scopeId": "src/lib/templateEngine.ts:51:1",
+      "declaration": "src/lib/templateEngine.ts:68:13",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/lib/components.ts",
+      "declaration": "src/lib/components.ts:10:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/components.ts:15:1",
+      "declaration": "src/lib/components.ts:15:27",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "PageContext"
+    },
+    {
+      "name": "info",
+      "scopeId": "src/lib/components.ts:15:1",
+      "declaration": "src/lib/components.ts:16:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "lines",
+      "scopeId": "src/lib/components.ts:15:1",
+      "declaration": "src/lib/components.ts:17:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "string[]"
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/components.ts:36:1",
+      "declaration": "src/lib/components.ts:36:38",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "PageContext"
+    },
+    {
+      "name": "content",
+      "scopeId": "src/lib/components.ts:36:1",
+      "declaration": "src/lib/components.ts:37:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/components.ts:43:3",
+        "src/lib/components.ts:44:3",
+        "src/lib/components.ts:45:3",
+        "src/lib/components.ts:46:3",
+        "src/lib/components.ts:50:2"
+      ]
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/components.ts:57:1",
+      "declaration": "src/lib/components.ts:57:33",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "PageContext"
+    },
+    {
+      "name": "menuFile",
+      "scopeId": "src/lib/components.ts:57:1",
+      "declaration": "src/lib/components.ts:58:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "raw",
+      "scopeId": "src/lib/components.ts:57:1",
+      "declaration": "src/lib/components.ts:61:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "menu",
+      "scopeId": "src/lib/components.ts:57:1",
+      "declaration": "src/lib/components.ts:62:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "activeLink",
+      "scopeId": "src/lib/components.ts:57:1",
+      "declaration": "src/lib/components.ts:68:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "items",
+      "scopeId": "src/lib/components.ts:57:1",
+      "declaration": "src/lib/components.ts:70:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "item",
+      "scopeId": "src/lib/components.ts:70:25",
+      "declaration": "src/lib/components.ts:70:26",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "isActive",
+      "scopeId": "src/lib/components.ts:70:25",
+      "declaration": "src/lib/components.ts:72:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "subItems",
+      "scopeId": "src/lib/components.ts:70:25",
+      "declaration": "src/lib/components.ts:74:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "sub",
+      "scopeId": "src/lib/components.ts:74:35",
+      "declaration": "src/lib/components.ts:74:36",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/components.ts:97:1",
+      "declaration": "src/lib/components.ts:97:33",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "PageContext"
+    },
+    {
+      "name": "menuFile",
+      "scopeId": "src/lib/components.ts:97:1",
+      "declaration": "src/lib/components.ts:98:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "raw",
+      "scopeId": "src/lib/components.ts:97:1",
+      "declaration": "src/lib/components.ts:101:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "menu",
+      "scopeId": "src/lib/components.ts:97:1",
+      "declaration": "src/lib/components.ts:102:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "activeLink",
+      "scopeId": "src/lib/components.ts:97:1",
+      "declaration": "src/lib/components.ts:108:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "items",
+      "scopeId": "src/lib/components.ts:97:1",
+      "declaration": "src/lib/components.ts:110:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "item",
+      "scopeId": "src/lib/components.ts:110:25",
+      "declaration": "src/lib/components.ts:110:26",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "isActive",
+      "scopeId": "src/lib/components.ts:110:25",
+      "declaration": "src/lib/components.ts:112:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "subItems",
+      "scopeId": "src/lib/components.ts:110:25",
+      "declaration": "src/lib/components.ts:114:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "sub",
+      "scopeId": "src/lib/components.ts:114:35",
+      "declaration": "src/lib/components.ts:114:36",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "subActive",
+      "scopeId": "src/lib/components.ts:114:35",
+      "declaration": "src/lib/components.ts:116:12",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "href",
+      "scopeId": "src/lib/components.ts:114:35",
+      "declaration": "src/lib/components.ts:117:12",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "cls",
+      "scopeId": "src/lib/components.ts:114:35",
+      "declaration": "src/lib/components.ts:118:12",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "_ctx",
+      "scopeId": "src/lib/components.ts:139:1",
+      "declaration": "src/lib/components.ts:139:38",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "PageContext"
+    },
+    {
+      "name": "docsPath",
+      "scopeId": "src/lib/components.ts:139:1",
+      "declaration": "src/lib/components.ts:140:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "dir",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:143:27",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "prefix",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:143:40",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "entries",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:144:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "items",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:145:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "string[]"
+    },
+    {
+      "name": "entry",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:146:14",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "entryPath",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:148:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "headerPath",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:149:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "title",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:150:8",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/lib/components.ts:155:24"
+      ]
+    },
+    {
+      "name": "headerRaw",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:152:11",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "header",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:154:12",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "link",
+      "scopeId": "src/lib/components.ts:143:2",
+      "declaration": "src/lib/components.ts:158:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/registerHelpers.ts:8:28",
+      "declaration": "src/lib/registerHelpers.ts:8:29",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "TemplateContext"
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/registerHelpers.ts:10:33",
+      "declaration": "src/lib/registerHelpers.ts:10:34",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "TemplateContext"
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/registerHelpers.ts:11:28",
+      "declaration": "src/lib/registerHelpers.ts:11:29",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "TemplateContext"
+    },
+    {
+      "name": "ctx",
+      "scopeId": "src/lib/registerHelpers.ts:12:28",
+      "declaration": "src/lib/registerHelpers.ts:12:29",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "TemplateContext"
+    },
+    {
+      "name": "RequestData",
+      "scopeId": "src/routes/frontend.ts",
+      "declaration": "src/routes/frontend.ts:20:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData"
+    },
+    {
+      "name": "ROOT",
+      "scopeId": "src/routes/frontend.ts",
+      "declaration": "src/routes/frontend.ts:22:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "url",
+      "scopeId": "src/routes/frontend.ts:24:1",
+      "declaration": "src/routes/frontend.ts:24:20",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "string"
+    },
+    {
+      "name": "uri",
+      "scopeId": "src/routes/frontend.ts:24:1",
+      "declaration": "src/routes/frontend.ts:25:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/frontend.ts:26:2",
+        "src/routes/frontend.ts:27:2",
+        "src/routes/frontend.ts:28:2"
+      ]
+    },
+    {
+      "name": "router",
+      "scopeId": "src/routes/frontend.ts",
+      "declaration": "src/routes/frontend.ts:32:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "req",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:36:19",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:36:33",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "pagePath",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:43:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/frontend.ts:58:3",
+        "src/routes/frontend.ts:62:4"
+      ],
+      "inferredType": "string"
+    },
+    {
+      "name": "chainInstance",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:44:6",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/frontend.ts:56:3",
+        "src/routes/frontend.ts:78:3",
+        "src/routes/frontend.ts:82:3",
+        "src/routes/frontend.ts:110:3",
+        "src/routes/frontend.ts:137:3"
+      ],
+      "inferredType": "object | undefined"
+    },
+    {
+      "name": "requestData",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:47:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "RequestData",
+      "typePath": "RequestData"
+    },
+    {
+      "name": "isMain",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:59:7",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/frontend.ts:63:4"
+      ],
+      "inferredType": "boolean"
+    },
+    {
+      "name": "fullPagePath",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:66:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "routeData",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:73:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData"
+    },
+    {
+      "name": "pageFiles",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:80:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "pageData",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:81:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData.PageData"
+    },
+    {
+      "name": "cached",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:85:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "cachedRenderData",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:87:10",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData.PageData.RenderData"
+    },
+    {
+      "name": "responseData",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:131:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData.PageData.RenderData.ResponseData"
+    },
+    {
+      "name": "components",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:101:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "renderData",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:109:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData.PageData.RenderData"
+    },
+    {
+      "name": "templatePath",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:111:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "context",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:117:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "TemplateContext"
+    },
+    {
+      "name": "html",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:129:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "error",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:144:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "displayError",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:147:7",
+      "isParameter": false,
+      "isMutable": true,
+      "reassignments": [
+        "src/routes/frontend.ts:153:6"
+      ]
+    },
+    {
+      "name": "instance",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:150:11",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "exceptionCtor",
+      "scopeId": "src/routes/frontend.ts:36:12",
+      "declaration": "src/routes/frontend.ts:151:11",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "routeLogger",
+      "scopeId": "src/routes/frontend.ts",
+      "declaration": "src/routes/frontend.ts:167:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "err",
+      "scopeId": "src/core/server.ts:18:33",
+      "declaration": "src/core/server.ts:18:40",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "reason",
+      "scopeId": "src/core/server.ts:24:34",
+      "declaration": "src/core/server.ts:24:41",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "logger",
+      "scopeId": "src/core/server.ts",
+      "declaration": "src/core/server.ts:41:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "RequestData",
+      "scopeId": "src/core/server.ts",
+      "declaration": "src/core/server.ts:43:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData"
+    },
+    {
+      "name": "app",
+      "scopeId": "src/core/server.ts",
+      "declaration": "src/core/server.ts:45:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "hookData",
+      "scopeId": "src/core/server.ts:55:42",
+      "declaration": "src/core/server.ts:55:43",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": []
+    },
+    {
+      "name": "args",
+      "scopeId": "src/core/server.ts:55:42",
+      "declaration": "src/core/server.ts:57:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "path",
+      "scopeId": "src/core/server.ts:55:42",
+      "declaration": "src/core/server.ts:58:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "hookData",
+      "scopeId": "src/core/server.ts:66:43",
+      "declaration": "src/core/server.ts:66:44",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "hooksOpts<ResponseLike>"
+    },
+    {
+      "name": "instance",
+      "scopeId": "src/core/server.ts:66:43",
+      "declaration": "src/core/server.ts:68:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "fromCache",
+      "scopeId": "src/core/server.ts:66:43",
+      "declaration": "src/core/server.ts:69:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "statusCode",
+      "scopeId": "src/core/server.ts:66:43",
+      "declaration": "src/core/server.ts:70:9",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    },
+    {
+      "name": "err",
+      "scopeId": "src/core/server.ts:72:73",
+      "declaration": "src/core/server.ts:72:74",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Error"
+    },
+    {
+      "name": "_req",
+      "scopeId": "src/core/server.ts:80:20",
+      "declaration": "src/core/server.ts:80:21",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/core/server.ts:80:20",
+      "declaration": "src/core/server.ts:80:36",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "_req",
+      "scopeId": "src/core/server.ts:85:24",
+      "declaration": "src/core/server.ts:85:25",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Request"
+    },
+    {
+      "name": "res",
+      "scopeId": "src/core/server.ts:85:24",
+      "declaration": "src/core/server.ts:85:40",
+      "isParameter": true,
+      "isMutable": true,
+      "reassignments": [],
+      "inferredType": "Response"
+    },
+    {
+      "name": "requestData",
+      "scopeId": "src/core/server.ts:85:24",
+      "declaration": "src/core/server.ts:86:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "inferredType": "RequestData",
+      "typePath": "RequestData"
+    },
+    {
+      "name": "routeData",
+      "scopeId": "src/core/server.ts:85:24",
+      "declaration": "src/core/server.ts:95:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData"
+    },
+    {
+      "name": "pageData",
+      "scopeId": "src/core/server.ts:85:24",
+      "declaration": "src/core/server.ts:100:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData.PageData"
+    },
+    {
+      "name": "renderData",
+      "scopeId": "src/core/server.ts:85:24",
+      "declaration": "src/core/server.ts:114:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData.PageData.RenderData"
+    },
+    {
+      "name": "responseData",
+      "scopeId": "src/core/server.ts:85:24",
+      "declaration": "src/core/server.ts:115:8",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": [],
+      "typePath": "RequestData.RouteData.PageData.RenderData.ResponseData"
+    },
+    {
+      "name": "PORT",
+      "scopeId": "src/core/server.ts",
+      "declaration": "src/core/server.ts:150:7",
+      "isParameter": false,
+      "isMutable": false,
+      "reassignments": []
+    }
+  ]
+}

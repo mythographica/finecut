@@ -7,6 +7,7 @@ import {
 	reportProcessError,
 	flushTracing,
 	attachObservability,
+	unblind,
 	tracer,
 	otel,
 	asyncFlow,
@@ -23,10 +24,8 @@ import {
 } from './collections/engineTypes.js';
 import { defaultTypes } from 'mnemonica';
 import {
-	runInRequestScope,
-	feedPreRootFromRequest,
-	buildUnblindReport,
-	recordUnblindTelemetry,
+	runInEntryScope,
+	feedPreRoot,
 } from '@mnemonica/otel';
 import { wrap } from '@mnemonica/dive';
 import { createLogger, setupCollectionLogging } from '../plugins/pino-logger.js';
@@ -81,20 +80,38 @@ attachObservability(defaultTypes);
 // async-flow root frame) around everything downstream. Registered BEFORE
 // any route so every handler runs inside the scope.
 app.addHook('onRequest', (request, reply, done) => {
-	feedPreRootFromRequest(request);
-	// request.raw is an IncomingMessage whose method is optional — build the
-	// structural minimum HttpRequestLike needs instead (same values).
-	const rawRequest = { method: request.method, url: request.url };
-	runInRequestScope(rawRequest, reply.raw, { tracer, otel, asyncFlow }, () => done());
+	feedPreRoot({
+		method  : request.method,
+		url     : request.url,
+		params  : request.params,
+		query   : request.query,
+		body    : request.body,
+		headers : request.headers,
+	});
+	// the caller owns the ending: the span closes on the raw response's
+	// 'finish'
+	runInEntryScope({
+		name        : `HTTP ${request.method} ${request.url}`,
+		attributes  : {
+			'http.method' : request.method,
+			'http.url'    : request.url,
+		},
+		endOnReturn : false,
+	}, { tracer, otel, asyncFlow }, (span) => {
+		reply.raw.on('finish', () => {
+			span.setAttribute('http.status_code', reply.raw.statusCode);
+			span.end();
+		});
+		done();
+	});
 });
 
 // Error boundary: anything that escaped a route handler lands here. The
-// Unblinder report carries the dive branch + errored construction +
-// attempted args; recordUnblindTelemetry emits the pinned
-// 'mnemonica.caught-exception' span and the '[unblind]' stdout marker.
+// Unblinder report carries the analysed dive chain + errored construction
+// + attempted args; the analysis rides the request span as a
+// 'mnemonica.error' event and the '[unblind]' stdout marker.
 app.setErrorHandler((error: Error, _request, reply) => {
-	const report = buildUnblindReport(error);
-	recordUnblindTelemetry(report, error);
+	const report = unblind(error);
 	logger.error({ err: error.message }, 'unhandled route error');
 	return reply.code(500).send(report);
 });

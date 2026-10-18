@@ -53,7 +53,7 @@ declare module 'mnemonica' {
 		'StressEntity.StressChild': new (data: { forceError?: boolean }) => StressEntity_StressChild;
 		'CrashDemoEntity': new (data: { uuid: string; payload: string; mode: 'sync' | 'async' }) => CrashDemoEntity;
 		'InvoiceEntity': new (data: { title: string; price: number; quantity: number; total: number }) => InvoiceEntity;
-		'InvoiceEntityAsync': new (data: { requestId: string; title: string; price: number; quantity: number; total: number }) => InvoiceEntityAsync;
+		'InvoiceEntityAsync': new (data: { requestId: string; title: string; price: number; quantity: number; total: number }) => Promise<InvoiceEntityAsync>;
 		'StrictInvoiceEntity': new (data: { requestId: string; title: string; total: number }) => StrictInvoiceEntity;
 		'ProofEntity': new (data: { uuid: string; marker: number; expect: 'ok' | 'fail' }) => ProofEntity;
 	}

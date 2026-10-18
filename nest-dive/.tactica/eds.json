@@ -1,127 +1,251 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-09T11:22:27.917Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:11:06.332Z",
   "eds": {
     "unknown": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts:27:8",
+        "location": "src/lib/dive-test/queue.ts:27:8",
         "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\tconst inst = instance as Record<string, unknown>;\n\t\t\tconst value = inst.value;\n\n\t\t\ti"
+        "code": "wrap(() => {\n\t\t\tconst inst = instance as Record<string, unknown>;\n\t\t\tconst value = inst.value;\n\n\t\t\ti",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-test/queue.ts:27:13",
+        "scopeId": "src/lib/dive-test/queue.ts:24:1"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/worker.ts:17:15",
+        "location": "src/lib/dive-test/worker.ts:17:15",
         "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\t\tresolve();\n\t\t\t})"
+        "code": "wrap(() => {\n\t\t\t\tresolve();\n\t\t\t})",
+        "fn": "wrap",
+        "callbackScopeId": "src/lib/dive-test/worker.ts:17:20",
+        "scopeId": "src/lib/dive-test/worker.ts:16:27"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:50:22",
+        "location": "src/lib/dive-stress/queue.ts:50:22",
         "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\t\tthrow new Error(`sync throw: ${uuid}`);\n\t\t\t}, instance)"
+        "code": "wrap(() => {\n\t\t\t\tthrow new Error(`sync throw: ${uuid}`);\n\t\t\t}, instance)",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-stress/queue.ts:50:27",
+        "scopeId": "src/lib/dive-stress/queue.ts:26:2"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:58:24",
+        "location": "src/lib/dive-stress/queue.ts:58:24",
         "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\t\tconst err = new Error(`async rejection: ${uuid}`);\n\t\t\t\tconst rejection = Promise.re"
+        "code": "wrap(() => {\n\t\t\t\tconst err = new Error(`async rejection: ${uuid}`);\n\t\t\t\tconst rejection = Promise.re",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-stress/queue.ts:58:29",
+        "scopeId": "src/lib/dive-stress/queue.ts:26:2"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:70:28",
+        "location": "src/lib/dive-stress/queue.ts:70:28",
         "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\t\t\tconst child = new (childCtor as new (data: unknown) => object)({ forceError: true "
+        "code": "wrap(() => {\n\t\t\t\t\tconst child = new (childCtor as new (data: unknown) => object)({ forceError: true ",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-stress/queue.ts:70:33",
+        "scopeId": "src/lib/dive-stress/queue.ts:26:2"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:77:25",
+        "location": "src/lib/dive-stress/queue.ts:77:25",
         "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\t\t\tthrow new Error(`no child ctor: ${uuid}`);\n\t\t\t\t}, instance)"
+        "code": "wrap(() => {\n\t\t\t\t\tthrow new Error(`no child ctor: ${uuid}`);\n\t\t\t\t}, instance)",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-stress/queue.ts:77:30",
+        "scopeId": "src/lib/dive-stress/queue.ts:26:2"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:13:13",
+        "location": "src/lib/dive-demo/machine.ts:13:13",
         "kind": "wrap",
-        "code": "wrap(() => {\n\t\tresolve();\n\t})"
+        "code": "wrap(() => {\n\t\tresolve();\n\t})",
+        "fn": "wrap",
+        "callbackScopeId": "src/lib/dive-demo/machine.ts:13:18",
+        "scopeId": "src/lib/dive-demo/machine.ts:12:65"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:30:22",
+        "location": "src/lib/dive-demo/machine.ts:30:22",
         "kind": "wrap",
-        "code": "wrap(function crashAsync () {\n\t\t\tconst rejection = Promise.reject(\n\t\t\t\tnew Error(`crash-demo unhandl"
+        "code": "wrap(function crashAsync () {\n\t\t\tconst rejection = Promise.reject(\n\t\t\t\tnew Error(`crash-demo unhandl",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-demo/machine.ts:30:27",
+        "scopeId": "src/lib/dive-demo/machine.ts:25:1"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:40:20",
+        "location": "src/lib/dive-demo/machine.ts:40:20",
         "kind": "wrap",
-        "code": "wrap(function crashSync () {\n\t\tthrow new Error(`crash-demo uncaught exception: ${uuid}`);\n\t}, instan"
+        "code": "wrap(function crashSync () {\n\t\tthrow new Error(`crash-demo uncaught exception: ${uuid}`);\n\t}, instan",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-demo/machine.ts:40:25",
+        "scopeId": "src/lib/dive-demo/machine.ts:25:1"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:52:19",
+        "location": "src/lib/dive-demo/machine.ts:52:19",
         "kind": "wrap",
-        "code": "wrap(async function validate () {\n\t\tawait tick(5);\n\t}, instance)"
+        "code": "wrap(async function validate () {\n\t\tawait tick(5);\n\t}, instance)",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-demo/machine.ts:52:24",
+        "scopeId": "src/lib/dive-demo/machine.ts:51:1"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:57:20",
+        "location": "src/lib/dive-demo/machine.ts:57:20",
         "kind": "wrap",
-        "code": "wrap(async function transform () {\n\t\tawait tick(5);\n\t}, instance)"
+        "code": "wrap(async function transform () {\n\t\tawait tick(5);\n\t}, instance)",
+        "fn": "wrap",
+        "instanceArg": "instance",
+        "callbackScopeId": "src/lib/dive-demo/machine.ts:57:25",
+        "scopeId": "src/lib/dive-demo/machine.ts:51:1"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:45:19",
+        "location": "src/lib/dive-demo/report.ts:45:19",
         "kind": "contextConsume",
         "code": "getErrorInstance(err)"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:342:54",
-        "kind": "wrap",
-        "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst cb = args[0] as () => object |"
+        "location": "src/engine/engine.controller.ts:321:16",
+        "kind": "contextConsume",
+        "code": "current()"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:370:48",
-        "kind": "wrap",
-        "code": "wrap(function () {\n\t\t\tthrow new Error('dive-sync-error');\n\t\t}, treeResult)"
+        "location": "src/engine/engine.controller.ts:355:10",
+        "kind": "contextConsume",
+        "code": "current()"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:378:21",
+        "location": "src/engine/engine.controller.ts:378:21",
         "kind": "contextConsume",
         "code": "getErrorInstance(err as Error)"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:406:25",
-        "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\tconst enriched = new ExceptionCtor(treeResult, new Error('dive-uncaught-exception'))"
+        "location": "src/engine/engine.controller.ts:412:16",
+        "kind": "contextConsume",
+        "code": "current()"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:449:47",
+        "location": "src/engine/engine.controller.ts:476:19",
         "kind": "wrap",
-        "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst task = args[0] as (instance: o"
+        "code": "wrap(nextTick)",
+        "fn": "wrap",
+        "callbackScopeId": "src/engine/engine.controller.ts:471:23",
+        "via": "src/engine/engine.controller.ts:525:17",
+        "scopeId": "src/engine/engine.controller.ts:471:23"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:476:19",
+        "location": "src/engine/engine.controller.ts:482:30",
         "kind": "wrap",
-        "code": "wrap(nextTick)"
+        "code": "wrap(() => {\n\t\t\t\t\t\t\tconst ctx = current();\n\t\t\t\t\t\t\tconst ctxType = ctx\n\t\t\t\t\t\t\t\t? (() => {\n\t\t\t\t\t\t\t\t\ttr",
+        "fn": "wrap",
+        "via": "src/engine/engine.controller.ts:525:17",
+        "callbackScopeId": "src/engine/engine.controller.ts:482:35",
+        "scopeId": "src/engine/engine.controller.ts:471:23"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:482:30",
-        "kind": "wrap",
-        "code": "wrap(() => {\n\t\t\t\t\t\t\tconst ctx = current();\n\t\t\t\t\t\t\tconst ctxType = ctx\n\t\t\t\t\t\t\t\t? (() => {\n\t\t\t\t\t\t\t\t\ttr"
+        "location": "src/engine/engine.controller.ts:483:20",
+        "kind": "contextConsume",
+        "code": "current()"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:525:17",
-        "kind": "wrap",
-        "code": "wrap(nextTick)"
+        "location": "src/engine/engine.controller.ts:503:24",
+        "kind": "contextConsume",
+        "code": "current()"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:42:19",
+        "location": "src/engine/engine.controller.ts:525:17",
+        "kind": "wrap",
+        "code": "wrap(nextTick)",
+        "fn": "wrap",
+        "callbackScopeId": "src/engine/engine.controller.ts:471:23",
+        "scopeId": "src/engine/engine.controller.ts:467:5"
+      },
+      {
+        "location": "src/lib/dive-proof/store.ts:42:19",
         "kind": "contextConsume",
         "code": "getErrorInstance(err)"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:75:3",
+        "location": "src/lib/dive-stress/dlq.ts:32:14",
+        "kind": "contextConsume",
+        "code": "current()"
+      },
+      {
+        "location": "src/app.module.ts:75:3",
         "kind": "hookAttach",
         "code": "attachHooks(defaultTypes)"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:80:25",
+        "location": "src/app.module.ts:80:25",
         "kind": "contextConsume",
         "code": "getErrorInstance(err)"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:172:25",
+        "location": "src/app.module.ts:103:25",
+        "kind": "contextConsume",
+        "code": "getFlow(err)"
+      },
+      {
+        "location": "src/app.module.ts:125:20",
+        "kind": "contextConsume",
+        "code": "current()"
+      },
+      {
+        "location": "src/app.module.ts:172:25",
         "kind": "contextConsume",
         "code": "getErrorInstance(reason)"
+      },
+      {
+        "location": "src/app.module.ts:193:25",
+        "kind": "contextConsume",
+        "code": "getFlow(reason)"
+      }
+    ],
+    "EngineRequest.TreeResult": [
+      {
+        "location": "src/engine/engine.controller.ts:342:54",
+        "kind": "wrap",
+        "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst cb = args[0] as () => object |",
+        "scope": "EngineRequest.TreeResult",
+        "fn": "wrap",
+        "instanceArg": "treeResult",
+        "callbackScopeId": "src/engine/engine.controller.ts:342:59",
+        "scopeId": "src/engine/engine.controller.ts:335:2",
+        "wrapsTypePath": "EngineRequest.TreeResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:370:48",
+        "kind": "wrap",
+        "code": "wrap(function () {\n\t\t\tthrow new Error('dive-sync-error');\n\t\t}, treeResult)",
+        "scope": "EngineRequest.TreeResult",
+        "fn": "wrap",
+        "instanceArg": "treeResult",
+        "callbackScopeId": "src/engine/engine.controller.ts:370:53",
+        "scopeId": "src/engine/engine.controller.ts:364:2",
+        "wrapsTypePath": "EngineRequest.TreeResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:406:25",
+        "kind": "wrap",
+        "code": "wrap(() => {\n\t\t\tconst enriched = new ExceptionCtor(treeResult, new Error('dive-uncaught-exception'))",
+        "scope": "EngineRequest.TreeResult",
+        "fn": "wrap",
+        "instanceArg": "treeResult",
+        "callbackScopeId": "src/engine/engine.controller.ts:406:30",
+        "scopeId": "src/engine/engine.controller.ts:391:2",
+        "wrapsTypePath": "EngineRequest.TreeResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:449:47",
+        "kind": "wrap",
+        "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst task = args[0] as (instance: o",
+        "scope": "EngineRequest.TreeResult",
+        "fn": "wrap",
+        "instanceArg": "treeResult",
+        "callbackScopeId": "src/engine/engine.controller.ts:449:52",
+        "scopeId": "src/engine/engine.controller.ts:440:2",
+        "wrapsTypePath": "EngineRequest.TreeResult"
       }
     ]
   }

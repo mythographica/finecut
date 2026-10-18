@@ -1,338 +1,338 @@
 {
-  "version": "1.0",
-  "generatedAt": "2026-09-09T11:22:27.917Z",
+  "version": "1.2",
+  "generatedAt": "2026-10-18T23:11:06.333Z",
   "flow": {
     "Map": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts:11:17",
+        "location": "src/lib/templateEngine.ts:11:17",
         "kind": "instantiation",
         "code": "new Map<string, HelperFn>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts:14:2",
+        "location": "src/lib/templateEngine.ts:14:2",
         "kind": "methodCall",
         "code": "helpers.set(name, fn)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts:14:2",
+        "location": "src/lib/templateEngine.ts:14:2",
         "kind": "propertyRead",
         "code": "helpers.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts:62:14",
+        "location": "src/lib/templateEngine.ts:62:14",
         "kind": "methodCall",
         "code": "helpers.get(name)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts:62:14",
+        "location": "src/lib/templateEngine.ts:62:14",
         "kind": "propertyRead",
         "code": "helpers.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts:73:9",
+        "location": "src/lib/templateEngine.ts:73:9",
         "kind": "passAsArg",
         "code": "fn(context, helpers, get)",
         "targetType": "Map",
         "context": "arg 1 to fn"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:33:17",
+        "location": "src/lib/dive-demo/report.ts:33:17",
         "kind": "instantiation",
         "code": "new Map<string, CrashReport>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:66:2",
+        "location": "src/lib/dive-demo/report.ts:66:2",
         "kind": "methodCall",
         "code": "reports.set(uuid, report)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:66:2",
+        "location": "src/lib/dive-demo/report.ts:66:2",
         "kind": "propertyRead",
         "code": "reports.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:90:17",
+        "location": "src/lib/dive-demo/report.ts:90:17",
         "kind": "methodCall",
         "code": "reports.get(uuid)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:90:17",
+        "location": "src/lib/dive-demo/report.ts:90:17",
         "kind": "propertyRead",
         "code": "reports.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts:36:17",
+        "location": "src/lib/full-bundle/rejection-report.ts:36:17",
         "kind": "instantiation",
         "code": "new Map<string, RejectionReport>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts:65:2",
+        "location": "src/lib/full-bundle/rejection-report.ts:65:2",
         "kind": "methodCall",
         "code": "reports.set(requestId, report)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts:65:2",
+        "location": "src/lib/full-bundle/rejection-report.ts:65:2",
         "kind": "propertyRead",
         "code": "reports.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts:84:17",
+        "location": "src/lib/full-bundle/rejection-report.ts:84:17",
         "kind": "methodCall",
         "code": "reports.get(requestId)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts:84:17",
+        "location": "src/lib/full-bundle/rejection-report.ts:84:17",
         "kind": "propertyRead",
         "code": "reports.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:36:17",
+        "location": "src/lib/full-bundle/strict-report.ts:36:17",
         "kind": "instantiation",
         "code": "new Map<string, StrictReport>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:95:3",
+        "location": "src/lib/full-bundle/strict-report.ts:95:3",
         "kind": "methodCall",
         "code": "reports.set(requestId, report)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:95:3",
+        "location": "src/lib/full-bundle/strict-report.ts:95:3",
         "kind": "propertyRead",
         "code": "reports.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:100:17",
+        "location": "src/lib/full-bundle/strict-report.ts:100:17",
         "kind": "methodCall",
         "code": "reports.get(requestId)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:100:17",
+        "location": "src/lib/full-bundle/strict-report.ts:100:17",
         "kind": "propertyRead",
         "code": "reports.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:25:18",
+        "location": "src/lib/dive-proof/store.ts:25:18",
         "kind": "instantiation",
         "code": "new Map<string, ProofOutcome>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:33:2",
+        "location": "src/lib/dive-proof/store.ts:33:2",
         "kind": "methodCall",
         "code": "outcomes.set(result.uuid, outcome)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:33:2",
+        "location": "src/lib/dive-proof/store.ts:33:2",
         "kind": "propertyRead",
         "code": "outcomes.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:55:2",
+        "location": "src/lib/dive-proof/store.ts:55:2",
         "kind": "methodCall",
         "code": "outcomes.set(uuid, outcome)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:55:2",
+        "location": "src/lib/dive-proof/store.ts:55:2",
         "kind": "propertyRead",
         "code": "outcomes.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:59:17",
+        "location": "src/lib/dive-proof/store.ts:59:17",
         "kind": "methodCall",
         "code": "outcomes.get(uuid)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:59:17",
+        "location": "src/lib/dive-proof/store.ts:59:17",
         "kind": "propertyRead",
         "code": "outcomes.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:38:20",
+        "location": "src/lib/dive-stress/dlq.ts:38:20",
         "kind": "instantiation",
         "code": "new Map<string, number>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:39:17",
+        "location": "src/lib/dive-stress/dlq.ts:39:17",
         "kind": "instantiation",
         "code": "new Map<string, number>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:43:3",
+        "location": "src/lib/dive-stress/dlq.ts:43:3",
         "kind": "methodCall",
         "code": "byRequest.set(item.requestId, (byRequest.get(item.requestId) || 0) + 1)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:43:3",
+        "location": "src/lib/dive-stress/dlq.ts:43:3",
         "kind": "propertyRead",
         "code": "byRequest.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:43:34",
+        "location": "src/lib/dive-stress/dlq.ts:43:34",
         "kind": "methodCall",
         "code": "byRequest.get(item.requestId)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:43:34",
+        "location": "src/lib/dive-stress/dlq.ts:43:34",
         "kind": "propertyRead",
         "code": "byRequest.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:44:3",
+        "location": "src/lib/dive-stress/dlq.ts:44:3",
         "kind": "methodCall",
         "code": "byType.set(item.errorType, (byType.get(item.errorType) || 0) + 1)",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:44:3",
+        "location": "src/lib/dive-stress/dlq.ts:44:3",
         "kind": "propertyRead",
         "code": "byType.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:44:31",
+        "location": "src/lib/dive-stress/dlq.ts:44:31",
         "kind": "methodCall",
         "code": "byType.get(item.errorType)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:44:31",
+        "location": "src/lib/dive-stress/dlq.ts:44:31",
         "kind": "propertyRead",
         "code": "byType.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:55:43",
+        "location": "src/lib/dive-stress/dlq.ts:55:43",
         "kind": "methodCall",
         "code": "byType.entries()",
         "propertyName": "entries",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:55:43",
+        "location": "src/lib/dive-stress/dlq.ts:55:43",
         "kind": "propertyRead",
         "code": "byType.entries",
         "propertyName": "entries",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:57:43",
+        "location": "src/lib/dive-stress/dlq.ts:57:43",
         "kind": "methodCall",
         "code": "byRequest.entries()",
         "propertyName": "entries",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:57:43",
+        "location": "src/lib/dive-stress/dlq.ts:57:43",
         "kind": "propertyRead",
         "code": "byRequest.entries",
         "propertyName": "entries",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:34:18",
+        "location": "src/plugins/pino-logger.ts:34:18",
         "kind": "instantiation",
         "code": "new Map<string, number>()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:40:4",
+        "location": "src/plugins/pino-logger.ts:40:4",
         "kind": "methodCall",
         "code": "timings.set(requestId, performance.now())",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:40:4",
+        "location": "src/plugins/pino-logger.ts:40:4",
         "kind": "propertyRead",
         "code": "timings.set",
         "propertyName": "set",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:57:18",
+        "location": "src/plugins/pino-logger.ts:57:18",
         "kind": "methodCall",
         "code": "timings.get(requestId)",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:57:18",
+        "location": "src/plugins/pino-logger.ts:57:18",
         "kind": "propertyRead",
         "code": "timings.get",
         "propertyName": "get",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:59:4",
+        "location": "src/plugins/pino-logger.ts:59:4",
         "kind": "methodCall",
         "code": "timings.delete(requestId)",
         "propertyName": "delete",
         "targetType": "Map"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:59:4",
+        "location": "src/plugins/pino-logger.ts:59:4",
         "kind": "propertyRead",
         "code": "timings.delete",
         "propertyName": "delete",
@@ -341,7 +341,7 @@
     ],
     "Function": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts:44:9",
+        "location": "src/lib/templateEngine.ts:44:9",
         "kind": "instantiation",
         "code": "new Function('ctx', 'helpers', 'get', `return \\`${code}\\`;`)",
         "context": "new expression"
@@ -349,13 +349,13 @@
     ],
     "RequestData": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:35:24",
+        "location": "src/frontend/frontend.controller.ts:35:24",
         "kind": "instantiation",
         "code": "new RequestData({\n\t\t\t\tmethod  : req.method,\n\t\t\t\turl     : req.url,\n\t\t\t\tquery   : req.query as Record",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:61:26",
+        "location": "src/frontend/frontend.controller.ts:61:26",
         "kind": "propertyRead",
         "code": "requestData.RouteData",
         "propertyName": "RouteData",
@@ -364,13 +364,13 @@
     ],
     "RequestData.RouteData": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:61:22",
+        "location": "src/frontend/frontend.controller.ts:61:22",
         "kind": "instantiation",
         "code": "new requestData.RouteData({\n\t\t\t\tpagePath,\n\t\t\t\tisMain,\n\t\t\t\tdeep : ''\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:69:25",
+        "location": "src/frontend/frontend.controller.ts:69:25",
         "kind": "propertyRead",
         "code": "routeData.PageData",
         "propertyName": "PageData",
@@ -379,48 +379,48 @@
     ],
     "RequestData.RouteData.PageData": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:69:21",
+        "location": "src/frontend/frontend.controller.ts:69:21",
         "kind": "instantiation",
         "code": "new routeData.PageData(pageFiles)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:75:34",
+        "location": "src/frontend/frontend.controller.ts:75:34",
         "kind": "propertyRead",
         "code": "pageData.RenderData",
         "propertyName": "RenderData",
         "targetType": "RequestData.RouteData.PageData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:90:22",
+        "location": "src/frontend/frontend.controller.ts:90:22",
         "kind": "passAsArg",
         "code": "jsonInfo(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to jsonInfo"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:92:28",
+        "location": "src/frontend/frontend.controller.ts:92:28",
         "kind": "passAsArg",
         "code": "contentParser(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to contentParser"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:93:28",
+        "location": "src/frontend/frontend.controller.ts:93:28",
         "kind": "passAsArg",
         "code": "menuMain(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to menuMain"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:94:28",
+        "location": "src/frontend/frontend.controller.ts:94:28",
         "kind": "passAsArg",
         "code": "menuLeft(pageData)",
         "targetType": "RequestData.RouteData.PageData",
         "context": "arg 0 to menuLeft"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:97:27",
+        "location": "src/frontend/frontend.controller.ts:97:27",
         "kind": "propertyRead",
         "code": "pageData.RenderData",
         "propertyName": "RenderData",
@@ -429,96 +429,96 @@
     ],
     "RequestData.RouteData.PageData.RenderData": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:75:30",
+        "location": "src/frontend/frontend.controller.ts:75:30",
         "kind": "instantiation",
         "code": "new pageData.RenderData({})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:76:30",
+        "location": "src/frontend/frontend.controller.ts:76:30",
         "kind": "propertyRead",
         "code": "cachedRenderData.ResponseData",
         "propertyName": "ResponseData",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:97:23",
+        "location": "src/frontend/frontend.controller.ts:97:23",
         "kind": "instantiation",
         "code": "new pageData.RenderData(components)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:100:5",
+        "location": "src/frontend/frontend.controller.ts:100:5",
         "kind": "propertyRead",
         "code": "renderData.template",
         "propertyName": "template",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:104:18",
+        "location": "src/frontend/frontend.controller.ts:104:18",
         "kind": "propertyRead",
         "code": "renderData.header",
         "propertyName": "header",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:105:18",
+        "location": "src/frontend/frontend.controller.ts:105:18",
         "kind": "propertyRead",
         "code": "renderData.content",
         "propertyName": "content",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:106:18",
+        "location": "src/frontend/frontend.controller.ts:106:18",
         "kind": "propertyRead",
         "code": "renderData.info",
         "propertyName": "info",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:107:18",
+        "location": "src/frontend/frontend.controller.ts:107:18",
         "kind": "propertyRead",
         "code": "renderData.blocks",
         "propertyName": "blocks",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:108:18",
+        "location": "src/frontend/frontend.controller.ts:108:18",
         "kind": "propertyRead",
         "code": "renderData.components",
         "propertyName": "components",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:109:18",
+        "location": "src/frontend/frontend.controller.ts:109:18",
         "kind": "propertyRead",
         "code": "renderData.isMain",
         "propertyName": "isMain",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:110:18",
+        "location": "src/frontend/frontend.controller.ts:110:18",
         "kind": "propertyRead",
         "code": "renderData.deep",
         "propertyName": "deep",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:111:18",
+        "location": "src/frontend/frontend.controller.ts:111:18",
         "kind": "propertyRead",
         "code": "renderData.pagePath",
         "propertyName": "pagePath",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:112:18",
+        "location": "src/frontend/frontend.controller.ts:112:18",
         "kind": "propertyRead",
         "code": "renderData.path",
         "propertyName": "path",
         "targetType": "RequestData.RouteData.PageData.RenderData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:117:29",
+        "location": "src/frontend/frontend.controller.ts:117:29",
         "kind": "propertyRead",
         "code": "renderData.ResponseData",
         "propertyName": "ResponseData",
@@ -527,96 +527,96 @@
     ],
     "RequestData.RouteData.PageData.RenderData.ResponseData": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:76:26",
+        "location": "src/frontend/frontend.controller.ts:76:26",
         "kind": "instantiation",
         "code": "new cachedRenderData.ResponseData({\n\t\t\t\t\tbody : cached,\n\t\t\t\t\tcontentType : 'text/html',\n\t\t\t\t\tstatusC",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:82:5",
+        "location": "src/frontend/frontend.controller.ts:82:5",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t\t.type(responseData.contentType)\n\t\t\t\t\t.send(responseData.bod",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:82:5",
+        "location": "src/frontend/frontend.controller.ts:82:5",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t\t.type(responseData.contentType)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to type"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:82:5",
+        "location": "src/frontend/frontend.controller.ts:82:5",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to status"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:82:16",
+        "location": "src/frontend/frontend.controller.ts:82:16",
         "kind": "propertyRead",
         "code": "responseData.statusCode",
         "propertyName": "statusCode",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:83:12",
+        "location": "src/frontend/frontend.controller.ts:83:12",
         "kind": "propertyRead",
         "code": "responseData.contentType",
         "propertyName": "contentType",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:84:12",
+        "location": "src/frontend/frontend.controller.ts:84:12",
         "kind": "propertyRead",
         "code": "responseData.body",
         "propertyName": "body",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:117:25",
+        "location": "src/frontend/frontend.controller.ts:117:25",
         "kind": "instantiation",
         "code": "new renderData.ResponseData({\n\t\t\t\tbody : html,\n\t\t\t\tcontentType : 'text/html',\n\t\t\t\tstatusCode : 200,\n",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:125:4",
+        "location": "src/frontend/frontend.controller.ts:125:4",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t.type(responseData.contentType)\n\t\t\t\t.send(responseData.body)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:125:4",
+        "location": "src/frontend/frontend.controller.ts:125:4",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)\n\t\t\t\t.type(responseData.contentType)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to type"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:125:4",
+        "location": "src/frontend/frontend.controller.ts:125:4",
         "kind": "passAsArg",
         "code": "res.status(responseData.statusCode)",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData",
         "context": "arg 0 to status"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:125:15",
+        "location": "src/frontend/frontend.controller.ts:125:15",
         "kind": "propertyRead",
         "code": "responseData.statusCode",
         "propertyName": "statusCode",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:126:11",
+        "location": "src/frontend/frontend.controller.ts:126:11",
         "kind": "propertyRead",
         "code": "responseData.contentType",
         "propertyName": "contentType",
         "targetType": "RequestData.RouteData.PageData.RenderData.ResponseData"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:127:11",
+        "location": "src/frontend/frontend.controller.ts:127:11",
         "kind": "propertyRead",
         "code": "responseData.body",
         "propertyName": "body",
@@ -625,13 +625,13 @@
     ],
     "ExceptionCtor": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts:153:28",
+        "location": "src/frontend/frontend.controller.ts:153:28",
         "kind": "instantiation",
         "code": "new ExceptionCtor(chainInstance, error)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:407:21",
+        "location": "src/engine/engine.controller.ts:407:21",
         "kind": "instantiation",
         "code": "new ExceptionCtor(treeResult, new Error('dive-uncaught-exception'))",
         "context": "new expression"
@@ -639,271 +639,264 @@
     ],
     "Error": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts:12:9",
+        "location": "src/lib/engineActions.ts:12:9",
         "kind": "instantiation",
         "code": "new Error('404:Page not found')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts:32:9",
+        "location": "src/lib/engineActions.ts:32:9",
         "kind": "instantiation",
         "code": "new Error('409:Page already exists')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts:32:17",
+        "location": "src/lib/dive-test/queue.ts:32:17",
         "kind": "instantiation",
         "code": "new Error(\n\t\t\t\t\t`validation failed: expected number 1-10, got: ${String(value)} (type: ${typeof valu",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts:34:9",
+        "location": "src/lib/dive-stress/types.ts:34:9",
         "kind": "instantiation",
         "code": "new Error('forced child construction error')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:51:11",
+        "location": "src/lib/dive-stress/queue.ts:51:11",
         "kind": "instantiation",
         "code": "new Error(`sync throw: ${uuid}`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:59:17",
+        "location": "src/lib/dive-stress/queue.ts:59:17",
         "kind": "instantiation",
         "code": "new Error(`async rejection: ${uuid}`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:60:23",
+        "location": "src/lib/dive-stress/queue.ts:60:23",
         "kind": "passAsArg",
         "code": "Promise.reject(err)",
         "targetType": "Error",
         "context": "arg 0 to reject"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts:78:12",
+        "location": "src/lib/dive-stress/queue.ts:78:12",
         "kind": "instantiation",
         "code": "new Error(`no child ctor: ${uuid}`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:32:5",
+        "location": "src/lib/dive-demo/machine.ts:32:5",
         "kind": "instantiation",
         "code": "new Error(`crash-demo unhandled rejection: ${uuid}`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:34:4",
+        "location": "src/lib/dive-demo/machine.ts:34:4",
         "kind": "return",
         "code": "return rejection;",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:41:9",
+        "location": "src/lib/dive-demo/machine.ts:41:9",
         "kind": "instantiation",
         "code": "new Error(`crash-demo uncaught exception: ${uuid}`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:43:2",
-        "kind": "passAsArg",
-        "code": "setImmediate(crashSync)",
-        "targetType": "Error",
-        "context": "arg 0 to setImmediate"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:45:19",
+        "location": "src/lib/dive-demo/report.ts:45:19",
         "kind": "passAsArg",
         "code": "getErrorInstance(err)",
         "targetType": "Error",
         "context": "arg 0 to getErrorInstance"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:54:15",
+        "location": "src/lib/dive-demo/report.ts:54:15",
         "kind": "passAsArg",
         "code": "formatFlow(err)",
         "targetType": "Error",
         "context": "arg 0 to formatFlow"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:59:18",
+        "location": "src/lib/dive-demo/report.ts:59:18",
         "kind": "propertyRead",
         "code": "err.name",
         "propertyName": "name",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:60:18",
+        "location": "src/lib/dive-demo/report.ts:60:18",
         "kind": "propertyRead",
         "code": "err.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:80:3",
+        "location": "src/lib/dive-demo/report.ts:80:3",
         "kind": "passAsArg",
         "code": "capture(err)",
         "targetType": "Error",
         "context": "arg 0 to capture"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:371:10",
+        "location": "src/engine/engine.controller.ts:371:10",
         "kind": "instantiation",
         "code": "new Error('dive-sync-error')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:407:51",
+        "location": "src/engine/engine.controller.ts:407:51",
         "kind": "instantiation",
         "code": "new Error('dive-uncaught-exception')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/admin/admin.controller.ts:91:11",
+        "location": "src/admin/admin.controller.ts:92:11",
         "kind": "instantiation",
         "code": "new Error(`'${cmd}' is not implemented by volume driver`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts:46:9",
+        "location": "src/lib/dive-proof/types.ts:46:9",
         "kind": "instantiation",
         "code": "new Error(`proof failure for marker ${this.marker}`)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:42:19",
+        "location": "src/lib/dive-proof/store.ts:42:19",
         "kind": "passAsArg",
         "code": "getErrorInstance(err)",
         "targetType": "Error",
         "context": "arg 0 to getErrorInstance"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:52:18",
+        "location": "src/lib/dive-proof/store.ts:52:18",
         "kind": "propertyRead",
         "code": "err.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:53:18",
+        "location": "src/lib/dive-proof/store.ts:53:18",
         "kind": "passAsArg",
         "code": "formatFlow(err)",
         "targetType": "Error",
         "context": "arg 0 to formatFlow"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts:49:3",
+        "location": "src/lib/dive-proof/queue.ts:49:3",
         "kind": "passAsArg",
         "code": "recordFailure(err)",
         "targetType": "Error",
         "context": "arg 0 to recordFailure"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:50:12",
+        "location": "src/app.module.ts:50:12",
         "kind": "instantiation",
         "code": "new Error('PageData requires a valid path')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:66:32",
+        "location": "src/app.module.ts:66:32",
         "kind": "propertyRead",
         "code": "err.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:80:25",
+        "location": "src/app.module.ts:80:25",
         "kind": "passAsArg",
         "code": "getErrorInstance(err)",
         "targetType": "Error",
         "context": "arg 0 to getErrorInstance"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:103:25",
+        "location": "src/app.module.ts:103:25",
         "kind": "passAsArg",
         "code": "getFlow(err)",
         "targetType": "Error",
         "context": "arg 0 to getFlow"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:109:4",
+        "location": "src/app.module.ts:109:4",
         "kind": "passAsArg",
         "code": "reportProcessError(err, 'uncaughtException', spanAttributes)",
         "targetType": "Error",
         "context": "arg 0 to reportProcessError"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:122:18",
+        "location": "src/app.module.ts:122:18",
         "kind": "passAsArg",
         "code": "getProps(err)",
         "targetType": "Error",
         "context": "arg 0 to getProps"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:138:4",
+        "location": "src/app.module.ts:138:4",
         "kind": "passAsArg",
         "code": "console.error('error.message        :', err.message)",
         "targetType": "Error",
         "context": "arg 1 to error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:138:44",
+        "location": "src/app.module.ts:138:44",
         "kind": "propertyRead",
         "code": "err.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:157:18",
+        "location": "src/app.module.ts:157:18",
         "kind": "methodCall",
         "code": "err.stack?.split('\\n')",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:157:18",
+        "location": "src/app.module.ts:157:18",
         "kind": "propertyRead",
         "code": "err.stack?.split",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:157:18",
+        "location": "src/app.module.ts:157:18",
         "kind": "propertyRead",
         "code": "err.stack",
         "propertyName": "stack",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:84:6",
+        "location": "src/plugins/pino-logger.ts:84:6",
         "kind": "instantiation",
         "code": "new Error('Unknown creation error')",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:109:18",
+        "location": "src/plugins/pino-logger.ts:109:18",
         "kind": "propertyRead",
         "code": "error.message",
         "propertyName": "message",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:110:18",
         "kind": "methodCall",
         "code": "error.stack?.split('\\n')",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:110:18",
         "kind": "propertyRead",
         "code": "error.stack?.split",
         "propertyName": "split",
         "targetType": "Error"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts:110:18",
+        "location": "src/plugins/pino-logger.ts:110:18",
         "kind": "propertyRead",
         "code": "error.stack",
         "propertyName": "stack",
@@ -912,283 +905,417 @@
     ],
     "Promise": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/worker.ts:16:9",
+        "location": "src/lib/dive-test/worker.ts:16:9",
         "kind": "instantiation",
         "code": "new Promise<void>((resolve) => {\n\t\t\tsetTimeout(wrap(() => {\n\t\t\t\tresolve();\n\t\t\t}), 10);\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts:12:47",
+        "location": "src/lib/dive-demo/machine.ts:12:47",
         "kind": "instantiation",
         "code": "new Promise<void>((resolve) => {\n\tsetTimeout(wrap(() => {\n\t\tresolve();\n\t}), ms);\n})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:457:24",
+        "location": "src/engine/engine.controller.ts:457:24",
         "kind": "instantiation",
         "code": "new Promise<{\n\t\t\tticks: number;\n\t\t\tcontextPreserved: boolean;\n\t\t\tcontextType: string | null;\n\t\t\terro",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:530:3",
+        "location": "src/engine/engine.controller.ts:530:3",
         "kind": "return",
         "code": "return report;",
         "targetType": "Promise"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:677:10",
+        "location": "src/engine/engine.controller.ts:677:10",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(report)",
         "targetType": "Promise",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts:44:8",
+        "location": "src/lib/full-bundle/invoice-async.types.ts:44:8",
         "kind": "instantiation",
         "code": "new Promise<void>((resolve) => {\n\t\tsetImmediate(resolve);\n\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts:42:8",
+        "location": "src/lib/dive-proof/types.ts:42:8",
         "kind": "instantiation",
         "code": "new Promise<void>((resolve) => {\n\t\tsetTimeout(resolve, delay);\n\t})",
         "context": "new expression"
+      }
+    ],
+    "DiveTestEntity": [
+      {
+        "location": "src/lib/dive-test/types.ts:26:1",
+        "kind": "propertyWrite",
+        "code": "DiveTestEntity.prototype.process = async function (this : DiveTestEntityData) {\n\tconst { doWork } = ",
+        "propertyName": "process",
+        "targetType": "DiveTestEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts:23:3",
-        "kind": "passAsArg",
-        "code": "setTimeout(tick, 25)",
-        "targetType": "Promise",
-        "context": "arg 0 to setTimeout"
+        "location": "src/lib/dive-test/types.ts:26:1",
+        "kind": "propertyRead",
+        "code": "DiveTestEntity.prototype.process",
+        "propertyName": "process",
+        "targetType": "DiveTestEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts:35:3",
+        "location": "src/lib/dive-test/types.ts:26:1",
+        "kind": "propertyRead",
+        "code": "DiveTestEntity.prototype",
+        "propertyName": "prototype",
+        "targetType": "DiveTestEntity"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:552:20",
+        "kind": "instantiation",
+        "code": "new DiveTestEntity({\n\t\t\tuuid,\n\t\t\tvalue: 'not-a-number' // deliberately invalid — validator expects 1",
+        "context": "new expression"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:559:3",
+        "kind": "methodCall",
+        "code": "instance.process()",
+        "propertyName": "process",
+        "targetType": "DiveTestEntity"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:559:3",
+        "kind": "propertyRead",
+        "code": "instance.process",
+        "propertyName": "process",
+        "targetType": "DiveTestEntity"
+      }
+    ],
+    "CrashDemoEntity": [
+      {
+        "location": "src/lib/dive-demo/types.ts:33:1",
+        "kind": "propertyWrite",
+        "code": "CrashDemoEntity.prototype.run = async function (this : CrashDemoEntityData) {\n\tconst { execute } = a",
+        "propertyName": "run",
+        "targetType": "CrashDemoEntity"
+      },
+      {
+        "location": "src/lib/dive-demo/types.ts:33:1",
+        "kind": "propertyRead",
+        "code": "CrashDemoEntity.prototype.run",
+        "propertyName": "run",
+        "targetType": "CrashDemoEntity"
+      },
+      {
+        "location": "src/lib/dive-demo/types.ts:33:1",
+        "kind": "propertyRead",
+        "code": "CrashDemoEntity.prototype",
+        "propertyName": "prototype",
+        "targetType": "CrashDemoEntity"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:645:20",
+        "kind": "instantiation",
+        "code": "new CrashDemoEntity({\n\t\t\tuuid,\n\t\t\tpayload,\n\t\t\tmode : mode === 'async' ? 'async' : 'sync'\n\t\t})",
+        "context": "new expression"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:653:3",
+        "kind": "methodCall",
+        "code": "instance.run()",
+        "propertyName": "run",
+        "targetType": "CrashDemoEntity"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:653:3",
+        "kind": "propertyRead",
+        "code": "instance.run",
+        "propertyName": "run",
+        "targetType": "CrashDemoEntity"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:658:16",
+        "kind": "propertyRead",
+        "code": "instance.mode",
+        "propertyName": "mode",
+        "targetType": "CrashDemoEntity"
+      },
+      {
+        "location": "src/lib/full-bundle/strict-report.ts:51:15",
+        "kind": "propertyRead",
+        "code": "instance?.dto",
+        "propertyName": "dto",
+        "targetType": "CrashDemoEntity"
+      },
+      {
+        "location": "src/lib/dive-proof/store.ts:46:15",
         "kind": "passAsArg",
-        "code": "setTimeout(tick, 5 + Math.floor(Math.random() * 15))",
-        "targetType": "Promise",
-        "context": "arg 0 to setTimeout"
+        "code": "utils.extract(instance)",
+        "targetType": "CrashDemoEntity",
+        "context": "arg 0 to extract"
+      },
+      {
+        "location": "src/lib/dive-proof/queue.ts:20:2",
+        "kind": "passAsArg",
+        "code": "pending.push(instance)",
+        "targetType": "CrashDemoEntity",
+        "context": "arg 0 to push"
+      },
+      {
+        "location": "src/lib/dive-proof/queue.ts:40:7",
+        "kind": "passAsArg",
+        "code": "processOne(instance)",
+        "targetType": "CrashDemoEntity",
+        "context": "arg 0 to processOne"
+      },
+      {
+        "location": "src/lib/dive-proof/queue.ts:46:24",
+        "kind": "passAsArg",
+        "code": "proc.call(instance)",
+        "targetType": "CrashDemoEntity",
+        "context": "arg 0 to call"
+      }
+    ],
+    "toISOString": [
+      {
+        "location": "src/lib/dive-demo/report.ts:64:18",
+        "kind": "instantiation",
+        "code": "new Date().toISOString()",
+        "context": "chained construction"
+      },
+      {
+        "location": "src/lib/dive-demo/report.ts:66:2",
+        "kind": "passAsArg",
+        "code": "reports.set(uuid, report)",
+        "targetType": "toISOString",
+        "context": "arg 1 to set"
+      },
+      {
+        "location": "src/lib/full-bundle/rejection-report.ts:63:16",
+        "kind": "instantiation",
+        "code": "new Date().toISOString()",
+        "context": "chained construction"
+      },
+      {
+        "location": "src/lib/full-bundle/rejection-report.ts:65:2",
+        "kind": "passAsArg",
+        "code": "reports.set(requestId, report)",
+        "targetType": "toISOString",
+        "context": "arg 1 to set"
+      },
+      {
+        "location": "src/lib/full-bundle/strict-report.ts:93:25",
+        "kind": "instantiation",
+        "code": "new Date().toISOString()",
+        "context": "chained construction"
+      },
+      {
+        "location": "src/lib/full-bundle/strict-report.ts:95:3",
+        "kind": "passAsArg",
+        "code": "reports.set(requestId, report)",
+        "targetType": "toISOString",
+        "context": "arg 1 to set"
+      },
+      {
+        "location": "src/lib/full-bundle/bundle.controller.ts:91:10",
+        "kind": "passAsArg",
+        "code": "res.type('application/json').send(report)",
+        "targetType": "toISOString",
+        "context": "arg 0 to send"
+      },
+      {
+        "location": "src/lib/full-bundle/bundle.controller.ts:118:10",
+        "kind": "passAsArg",
+        "code": "res.type('application/json').send(report)",
+        "targetType": "toISOString",
+        "context": "arg 0 to send"
       }
     ],
     "Date": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:64:18",
+        "location": "src/lib/dive-demo/report.ts:64:18",
         "kind": "instantiation",
         "code": "new Date()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts:66:2",
-        "kind": "passAsArg",
-        "code": "reports.set(uuid, report)",
-        "targetType": "Date",
-        "context": "arg 1 to set"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts:63:16",
+        "location": "src/lib/full-bundle/rejection-report.ts:63:16",
         "kind": "instantiation",
         "code": "new Date()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts:65:2",
-        "kind": "passAsArg",
-        "code": "reports.set(requestId, report)",
-        "targetType": "Date",
-        "context": "arg 1 to set"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:93:25",
+        "location": "src/lib/full-bundle/strict-report.ts:93:25",
         "kind": "instantiation",
         "code": "new Date()",
         "context": "new expression"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:95:3",
-        "kind": "passAsArg",
-        "code": "reports.set(requestId, report)",
-        "targetType": "Date",
-        "context": "arg 1 to set"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:91:10",
-        "kind": "passAsArg",
-        "code": "res.type('application/json').send(report)",
-        "targetType": "Date",
-        "context": "arg 0 to send"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:118:10",
-        "kind": "passAsArg",
-        "code": "res.type('application/json').send(report)",
-        "targetType": "Date",
-        "context": "arg 0 to send"
       }
     ],
     "EngineRequest": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:30:25",
+        "location": "src/engine/engine.controller.ts:30:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:31:16",
+        "location": "src/engine/engine.controller.ts:31:16",
         "kind": "propertyRead",
         "code": "engineRequest.data",
         "propertyName": "data",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:42:25",
+        "location": "src/engine/engine.controller.ts:42:25",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\tbody: { action: 'get', leaf },\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:45:26",
+        "location": "src/engine/engine.controller.ts:45:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:63:25",
+        "location": "src/engine/engine.controller.ts:63:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:67:27",
+        "location": "src/engine/engine.controller.ts:67:27",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:143:26",
+        "location": "src/engine/engine.controller.ts:143:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:146:31",
+        "location": "src/engine/engine.controller.ts:146:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:155:26",
+        "location": "src/engine/engine.controller.ts:155:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:158:31",
+        "location": "src/engine/engine.controller.ts:158:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:188:26",
+        "location": "src/engine/engine.controller.ts:188:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:191:31",
+        "location": "src/engine/engine.controller.ts:191:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:200:26",
+        "location": "src/engine/engine.controller.ts:200:26",
         "kind": "instantiation",
         "code": "new EngineRequest({\n\t\t\t\tbody: { action, template },\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:203:31",
+        "location": "src/engine/engine.controller.ts:203:31",
         "kind": "propertyRead",
         "code": "engineRequest.TemplateResult",
         "propertyName": "TemplateResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:249:25",
+        "location": "src/engine/engine.controller.ts:249:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:253:28",
+        "location": "src/engine/engine.controller.ts:253:28",
         "kind": "propertyRead",
         "code": "engineRequest.CacheResult",
         "propertyName": "CacheResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:318:25",
+        "location": "src/engine/engine.controller.ts:318:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body: { action: 'test' } })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:319:26",
+        "location": "src/engine/engine.controller.ts:319:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:337:25",
+        "location": "src/engine/engine.controller.ts:337:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body: { action: 'test' } })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:338:26",
+        "location": "src/engine/engine.controller.ts:338:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:366:25",
+        "location": "src/engine/engine.controller.ts:366:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body: { action: 'test' } })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:367:26",
+        "location": "src/engine/engine.controller.ts:367:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:393:25",
+        "location": "src/engine/engine.controller.ts:393:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body: { action: 'test' } })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:394:26",
+        "location": "src/engine/engine.controller.ts:394:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
         "targetType": "EngineRequest"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:442:25",
+        "location": "src/engine/engine.controller.ts:442:25",
         "kind": "instantiation",
         "code": "new EngineRequest({ body: { action: 'deep-test', payload: 'dto-data' } })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:443:26",
+        "location": "src/engine/engine.controller.ts:443:26",
         "kind": "propertyRead",
         "code": "engineRequest.TreeResult",
         "propertyName": "TreeResult",
@@ -1197,118 +1324,118 @@
     ],
     "EngineRequest.TreeResult": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:45:22",
+        "location": "src/engine/engine.controller.ts:45:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:46:3",
+        "location": "src/engine/engine.controller.ts:46:3",
         "kind": "return",
         "code": "return treeResult.tree;",
         "targetType": "EngineRequest.TreeResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:46:10",
+        "location": "src/engine/engine.controller.ts:46:10",
         "kind": "propertyRead",
         "code": "treeResult.tree",
         "propertyName": "tree",
         "targetType": "EngineRequest.TreeResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:67:23",
+        "location": "src/engine/engine.controller.ts:67:23",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:68:11",
+        "location": "src/engine/engine.controller.ts:68:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(treeResult.tree)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:68:45",
+        "location": "src/engine/engine.controller.ts:68:45",
         "kind": "propertyRead",
         "code": "treeResult.tree",
         "propertyName": "tree",
         "targetType": "EngineRequest.TreeResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:319:22",
+        "location": "src/engine/engine.controller.ts:319:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree: [] })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:338:22",
+        "location": "src/engine/engine.controller.ts:338:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree: [] })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:342:3",
+        "location": "src/engine/engine.controller.ts:342:3",
         "kind": "passAsArg",
         "code": "Object.getPrototypeOf(treeResult)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 0 to getPrototypeOf"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:342:54",
+        "location": "src/engine/engine.controller.ts:342:54",
         "kind": "passAsArg",
         "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst cb = args[0] as () => object |",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:367:22",
+        "location": "src/engine/engine.controller.ts:367:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({ tree: [] })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:370:3",
+        "location": "src/engine/engine.controller.ts:370:3",
         "kind": "passAsArg",
         "code": "Object.getPrototypeOf(treeResult)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 0 to getPrototypeOf"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:370:48",
+        "location": "src/engine/engine.controller.ts:370:48",
         "kind": "passAsArg",
         "code": "wrap(function () {\n\t\t\tthrow new Error('dive-sync-error');\n\t\t}, treeResult)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:394:22",
+        "location": "src/engine/engine.controller.ts:394:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({\n\t\t\ttree: [{ name: 'uncaught-test', folder: false }],\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:406:25",
+        "location": "src/engine/engine.controller.ts:406:25",
         "kind": "passAsArg",
         "code": "wrap(() => {\n\t\t\tconst enriched = new ExceptionCtor(treeResult, new Error('dive-uncaught-exception'))",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 1 to wrap"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:443:22",
+        "location": "src/engine/engine.controller.ts:443:22",
         "kind": "instantiation",
         "code": "new engineRequest.TreeResult({\n\t\t\ttree: [{ name: 'deep-test-node', folder: false }],\n\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:449:3",
+        "location": "src/engine/engine.controller.ts:449:3",
         "kind": "passAsArg",
         "code": "Object.getPrototypeOf(treeResult)",
         "targetType": "EngineRequest.TreeResult",
         "context": "arg 0 to getPrototypeOf"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:449:47",
+        "location": "src/engine/engine.controller.ts:449:47",
         "kind": "passAsArg",
         "code": "wrap(function (\n\t\t\tthis: object,\n\t\t\t...args: unknown[]\n\t\t) {\n\t\t\tconst task = args[0] as (instance: o",
         "targetType": "EngineRequest.TreeResult",
@@ -1317,80 +1444,80 @@
     ],
     "EngineRequest.TemplateResult": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:146:27",
+        "location": "src/engine/engine.controller.ts:146:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult(data)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:147:11",
+        "location": "src/engine/engine.controller.ts:147:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:147:45",
+        "location": "src/engine/engine.controller.ts:147:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:158:27",
+        "location": "src/engine/engine.controller.ts:158:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult({\n\t\t\t\tsnippet: data.snippet,\n\t\t\t\theader: data.header,\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:162:11",
+        "location": "src/engine/engine.controller.ts:162:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:162:45",
+        "location": "src/engine/engine.controller.ts:162:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:191:27",
+        "location": "src/engine/engine.controller.ts:191:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult(data)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:192:11",
+        "location": "src/engine/engine.controller.ts:192:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:192:45",
+        "location": "src/engine/engine.controller.ts:192:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
         "targetType": "EngineRequest.TemplateResult"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:203:27",
+        "location": "src/engine/engine.controller.ts:203:27",
         "kind": "instantiation",
         "code": "new engineRequest.TemplateResult({\n\t\t\t\tsnippet: data.snippet,\n\t\t\t\theader: data.header,\n\t\t\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:207:11",
+        "location": "src/engine/engine.controller.ts:207:11",
         "kind": "passAsArg",
         "code": "res.type('application/json').send(templateResult.template)",
         "targetType": "EngineRequest.TemplateResult",
         "context": "arg 0 to send"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:207:45",
+        "location": "src/engine/engine.controller.ts:207:45",
         "kind": "propertyRead",
         "code": "templateResult.template",
         "propertyName": "template",
@@ -1399,123 +1526,73 @@
     ],
     "EngineRequest.CacheResult": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:253:24",
+        "location": "src/engine/engine.controller.ts:253:24",
         "kind": "instantiation",
         "code": "new engineRequest.CacheResult(ok)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:254:56",
+        "location": "src/engine/engine.controller.ts:254:56",
         "kind": "propertyRead",
         "code": "cacheResult.cleared",
         "propertyName": "cleared",
         "targetType": "EngineRequest.CacheResult"
       }
     ],
-    "DiveTestEntity": [
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:552:20",
-        "kind": "instantiation",
-        "code": "new DiveTestEntity({\n\t\t\tuuid,\n\t\t\tvalue: 'not-a-number' // deliberately invalid — validator expects 1",
-        "context": "new expression"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:559:3",
-        "kind": "methodCall",
-        "code": "instance.process()",
-        "propertyName": "process",
-        "targetType": "DiveTestEntity"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:559:3",
-        "kind": "propertyRead",
-        "code": "instance.process",
-        "propertyName": "process",
-        "targetType": "DiveTestEntity"
-      }
-    ],
     "StressEntity": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:596:21",
+        "location": "src/engine/engine.controller.ts:596:21",
         "kind": "instantiation",
         "code": "new StressEntity({\n\t\t\t\tuuid,\n\t\t\t\trequestId,\n\t\t\t\tvalue: Math.random() > 0.5 ? Math.floor(Math.random(",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:601:4",
+        "location": "src/engine/engine.controller.ts:601:4",
         "kind": "passAsArg",
         "code": "instances.push(instance)",
         "targetType": "StressEntity",
         "context": "arg 0 to push"
       }
     ],
-    "CrashDemoEntity": [
+    "DriverRegistry": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:645:20",
+        "location": "src/admin/admin.controller.ts:21:24",
         "kind": "instantiation",
-        "code": "new CrashDemoEntity({\n\t\t\tuuid,\n\t\t\tpayload,\n\t\t\tmode : mode === 'async' ? 'async' : 'sync'\n\t\t})",
+        "code": "new DriverRegistry()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:653:3",
+        "location": "src/admin/admin.controller.ts:22:1",
         "kind": "methodCall",
-        "code": "instance.run()",
-        "propertyName": "run",
-        "targetType": "CrashDemoEntity"
+        "code": "driverRegistry.initialize(roots)",
+        "propertyName": "initialize",
+        "targetType": "DriverRegistry"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:653:3",
+        "location": "src/admin/admin.controller.ts:22:1",
         "kind": "propertyRead",
-        "code": "instance.run",
-        "propertyName": "run",
-        "targetType": "CrashDemoEntity"
+        "code": "driverRegistry.initialize",
+        "propertyName": "initialize",
+        "targetType": "DriverRegistry"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts:658:16",
+        "location": "src/admin/admin.controller.ts:90:19",
+        "kind": "methodCall",
+        "code": "driverRegistry.getDriverForRequest(params)",
+        "propertyName": "getDriverForRequest",
+        "targetType": "DriverRegistry"
+      },
+      {
+        "location": "src/admin/admin.controller.ts:90:19",
         "kind": "propertyRead",
-        "code": "instance.mode",
-        "propertyName": "mode",
-        "targetType": "CrashDemoEntity"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:51:15",
-        "kind": "propertyRead",
-        "code": "instance?.dto",
-        "propertyName": "dto",
-        "targetType": "CrashDemoEntity"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts:46:15",
-        "kind": "passAsArg",
-        "code": "utils.extract(instance)",
-        "targetType": "CrashDemoEntity",
-        "context": "arg 0 to extract"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts:20:2",
-        "kind": "passAsArg",
-        "code": "pending.push(instance)",
-        "targetType": "CrashDemoEntity",
-        "context": "arg 0 to push"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts:40:7",
-        "kind": "passAsArg",
-        "code": "processOne(instance)",
-        "targetType": "CrashDemoEntity",
-        "context": "arg 0 to processOne"
-      },
-      {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts:46:24",
-        "kind": "passAsArg",
-        "code": "proc.call(instance)",
-        "targetType": "CrashDemoEntity",
-        "context": "arg 0 to call"
+        "code": "driverRegistry.getDriverForRequest",
+        "propertyName": "getDriverForRequest",
+        "targetType": "DriverRegistry"
       }
     ],
     "TypeError": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts:15:9",
+        "location": "src/lib/full-bundle/guard.ts:15:9",
         "kind": "instantiation",
         "code": "new TypeError(\n\t\t\t`invoice \"${data.title}\" total ${data.total} does not match price × quantity (${ex",
         "context": "new expression"
@@ -1523,111 +1600,111 @@
     ],
     "StrictInvoice": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts:52:14",
+        "location": "src/lib/full-bundle/strict-invoice.types.ts:52:14",
         "kind": "instantiation",
         "code": "new StrictInvoice(data.requestId)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts:56:2",
+        "location": "src/lib/full-bundle/strict-invoice.types.ts:56:2",
         "kind": "propertyWrite",
         "code": "dto.title = data.title",
         "propertyName": "title",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts:56:2",
+        "location": "src/lib/full-bundle/strict-invoice.types.ts:56:2",
         "kind": "propertyRead",
         "code": "dto.title",
         "propertyName": "title",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts:57:2",
+        "location": "src/lib/full-bundle/strict-invoice.types.ts:57:2",
         "kind": "propertyWrite",
         "code": "dto.total = data.total",
         "propertyName": "total",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts:57:2",
+        "location": "src/lib/full-bundle/strict-invoice.types.ts:57:2",
         "kind": "propertyRead",
         "code": "dto.total",
         "propertyName": "total",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:58:21",
+        "location": "src/lib/full-bundle/strict-report.ts:58:21",
         "kind": "methodCall",
         "code": "dto.requestId.valueOf()",
         "propertyName": "valueOf",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:58:21",
+        "location": "src/lib/full-bundle/strict-report.ts:58:21",
         "kind": "propertyRead",
         "code": "dto.requestId.valueOf",
         "propertyName": "valueOf",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:58:21",
+        "location": "src/lib/full-bundle/strict-report.ts:58:21",
         "kind": "propertyRead",
         "code": "dto.requestId",
         "propertyName": "requestId",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:63:23",
+        "location": "src/lib/full-bundle/strict-report.ts:63:23",
         "kind": "passAsArg",
         "code": "getConstructedFields(dto)",
         "targetType": "StrictInvoice",
         "context": "arg 0 to getConstructedFields"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:64:18",
+        "location": "src/lib/full-bundle/strict-report.ts:64:18",
         "kind": "passAsArg",
         "code": "Reflect.ownKeys(dto)",
         "targetType": "StrictInvoice",
         "context": "arg 0 to ownKeys"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:71:3",
+        "location": "src/lib/full-bundle/strict-report.ts:71:3",
         "kind": "passAsArg",
         "code": "finalize(dto)",
         "targetType": "StrictInvoice",
         "context": "arg 0 to finalize"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:86:25",
+        "location": "src/lib/full-bundle/strict-report.ts:86:25",
         "kind": "passAsArg",
         "code": "isFinalized(dto)",
         "targetType": "StrictInvoice",
         "context": "arg 0 to isFinalized"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:90:13",
+        "location": "src/lib/full-bundle/strict-report.ts:90:13",
         "kind": "passAsArg",
         "code": "String(dto.title)",
         "targetType": "StrictInvoice",
         "context": "arg 0 to String"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:90:20",
+        "location": "src/lib/full-bundle/strict-report.ts:90:20",
         "kind": "propertyRead",
         "code": "dto.title",
         "propertyName": "title",
         "targetType": "StrictInvoice"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:91:13",
+        "location": "src/lib/full-bundle/strict-report.ts:91:13",
         "kind": "passAsArg",
         "code": "Number(dto.total)",
         "targetType": "StrictInvoice",
         "context": "arg 0 to Number"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts:91:20",
+        "location": "src/lib/full-bundle/strict-report.ts:91:20",
         "kind": "propertyRead",
         "code": "dto.total",
         "propertyName": "total",
@@ -1636,7 +1713,7 @@
     ],
     "InvoiceEntity": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:53:9",
+        "location": "src/lib/full-bundle/bundle.controller.ts:53:9",
         "kind": "passAsArg",
         "code": "mvp.forType(InvoiceEntity, CreateInvoiceDto)",
         "targetType": "InvoiceEntity",
@@ -1645,7 +1722,7 @@
     ],
     "InvoiceEntityAsync": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:74:8",
+        "location": "src/lib/full-bundle/bundle.controller.ts:74:8",
         "kind": "instantiation",
         "code": "new InvoiceEntityAsync(body)",
         "context": "new expression"
@@ -1653,34 +1730,34 @@
     ],
     "StrictInvoiceEntity": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:104:18",
+        "location": "src/lib/full-bundle/bundle.controller.ts:104:18",
         "kind": "instantiation",
         "code": "new StrictInvoiceEntity(body)",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:106:23",
+        "location": "src/lib/full-bundle/bundle.controller.ts:106:23",
         "kind": "methodCall",
         "code": "entity.dto.requestId.valueOf()",
         "propertyName": "valueOf",
         "targetType": "StrictInvoiceEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:106:23",
+        "location": "src/lib/full-bundle/bundle.controller.ts:106:23",
         "kind": "propertyRead",
         "code": "entity.dto.requestId.valueOf",
         "propertyName": "valueOf",
         "targetType": "StrictInvoiceEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:106:23",
+        "location": "src/lib/full-bundle/bundle.controller.ts:106:23",
         "kind": "propertyRead",
         "code": "entity.dto.requestId",
         "propertyName": "requestId",
         "targetType": "StrictInvoiceEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts:106:23",
+        "location": "src/lib/full-bundle/bundle.controller.ts:106:23",
         "kind": "propertyRead",
         "code": "entity.dto",
         "propertyName": "dto",
@@ -1689,62 +1766,83 @@
     ],
     "ProofEntity": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts:26:20",
+        "location": "src/lib/dive-proof/types.ts:40:1",
+        "kind": "propertyWrite",
+        "code": "ProofEntity.prototype.process = async function (this : ProofData) : Promise<ProofResult> {\n\tconst de",
+        "propertyName": "process",
+        "targetType": "ProofEntity"
+      },
+      {
+        "location": "src/lib/dive-proof/types.ts:40:1",
+        "kind": "propertyRead",
+        "code": "ProofEntity.prototype.process",
+        "propertyName": "process",
+        "targetType": "ProofEntity"
+      },
+      {
+        "location": "src/lib/dive-proof/types.ts:40:1",
+        "kind": "propertyRead",
+        "code": "ProofEntity.prototype",
+        "propertyName": "prototype",
+        "targetType": "ProofEntity"
+      },
+      {
+        "location": "src/lib/dive-proof/proof.controller.ts:26:20",
         "kind": "instantiation",
         "code": "new ProofEntity({ uuid, marker, expect })",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts:27:3",
+        "location": "src/lib/dive-proof/proof.controller.ts:27:3",
         "kind": "passAsArg",
         "code": "enqueueProof(instance)",
         "targetType": "ProofEntity",
         "context": "arg 0 to enqueueProof"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts:24:13",
+        "location": "src/lib/dive-stress/dlq.ts:24:13",
         "kind": "passAsArg",
         "code": "getProps(instance)",
         "targetType": "ProofEntity",
         "context": "arg 0 to getProps"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts:55:2",
+        "location": "src/lib/chainTrace.ts:55:2",
         "kind": "passAsArg",
         "code": "walk(instance)",
         "targetType": "ProofEntity",
         "context": "arg 0 to walk"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts:76:16",
+        "location": "src/lib/chainTrace.ts:76:16",
         "kind": "passAsArg",
         "code": "traceChain(instance)",
         "targetType": "ProofEntity",
         "context": "arg 0 to traceChain"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:59:23",
+        "location": "src/app.module.ts:59:23",
         "kind": "propertyRead",
         "code": "instance?.fromCache",
         "propertyName": "fromCache",
         "targetType": "ProofEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:60:24",
+        "location": "src/app.module.ts:60:24",
         "kind": "propertyRead",
         "code": "instance?.statusCode",
         "propertyName": "statusCode",
         "targetType": "ProofEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:63:14",
+        "location": "src/app.module.ts:63:14",
         "kind": "propertyRead",
         "code": "instance.pagePath",
         "propertyName": "pagePath",
         "targetType": "ProofEntity"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:64:14",
+        "location": "src/app.module.ts:64:14",
         "kind": "propertyRead",
         "code": "instance.body",
         "propertyName": "body",
@@ -1753,7 +1851,7 @@
     ],
     "Logger": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/app.module.ts:41:28",
+        "location": "src/app.module.ts:41:28",
         "kind": "instantiation",
         "code": "new Logger(AppModule.name)",
         "context": "new expression"
@@ -1761,7 +1859,7 @@
     ],
     "NodeSDK": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/tracing.ts:20:13",
+        "location": "src/tracing.ts:20:13",
         "kind": "instantiation",
         "code": "new NodeSDK({\n\tresource        : resourceFromAttributes({\n\t\t[ ATTR_SERVICE_NAME ] : 'finecut-nest-di",
         "context": "new expression"
@@ -1769,20 +1867,20 @@
     ],
     "OTLPTraceExporter": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/tracing.ts:24:20",
+        "location": "src/tracing.ts:24:20",
         "kind": "instantiation",
         "code": "new OTLPTraceExporter({\n\t\turl : 'http://localhost:4318/v1/traces',\n\t})",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/tracing.ts:30:1",
+        "location": "src/tracing.ts:30:1",
         "kind": "methodCall",
         "code": "sdk.start()",
         "propertyName": "start",
         "targetType": "OTLPTraceExporter"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/tracing.ts:30:1",
+        "location": "src/tracing.ts:30:1",
         "kind": "propertyRead",
         "code": "sdk.start",
         "propertyName": "start",
@@ -1791,20 +1889,20 @@
     ],
     "FastifyAdapter": [
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/main.ts:18:3",
+        "location": "src/main.ts:18:3",
         "kind": "instantiation",
         "code": "new FastifyAdapter()",
         "context": "new expression"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/main.ts:21:8",
+        "location": "src/main.ts:21:8",
         "kind": "methodCall",
         "code": "app.listen(PORT, '0.0.0.0')",
         "propertyName": "listen",
         "targetType": "FastifyAdapter"
       },
       {
-        "location": "/code/mnemonica/finecut/nest-dive/src/main.ts:21:8",
+        "location": "src/main.ts:21:8",
         "kind": "propertyRead",
         "code": "app.listen",
         "propertyName": "listen",

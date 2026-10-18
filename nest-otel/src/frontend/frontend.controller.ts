@@ -8,7 +8,7 @@ import { Controller, Get, Req, Res } from '@nestjs/common';
 import type { FastifyRequest, FastifyReply } from 'fastify';
 import { lookup } from 'mnemonica/module';
 import { wrap } from '@mnemonica/dive';
-import { buildUnblindReport, recordUnblindTelemetry } from '@mnemonica/otel';
+import { unblind } from '../tracing.js';
 import '../core/request-types.js';
 import '../lib/registerHelpers.js';
 import { FrontendService } from './frontend.service.js';
@@ -143,10 +143,9 @@ export class FrontendController {
 			const error = err as Error;
 			req.log.error({ err: error.message, pagePath }, 'request failed');
 
-			// The route's own error boundary: emit the Unblinder span + marker.
-			// The dive branch and errored construction ride the error object.
-			const report = buildUnblindReport(error);
-			recordUnblindTelemetry(report, error);
+			// The route's own error boundary: the analysed dive chain rides
+			// the error object; unblind records it on the request span + the marker.
+			unblind(error);
 
 			let displayError = error;
 			if (chainInstance) {

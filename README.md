@@ -13,10 +13,10 @@ the app.
 | Capability | plain `express` / `fastify` / `nest` | `express-otel` / `fastify-otel` / `nest-otel` | `nest-dive` |
 |---|---|---|---|
 | OTel wiring | raw `NodeSDK` + auto-instrumentations | `@mnemonica/otel` explicit stack | adapter (`@mnemonica/nestjs`) wires it |
-| HTTP span per request | yes (auto) | yes (`runInRequestScope`) | yes |
+| HTTP span per request | yes (auto) | yes (`runInEntryScope`) | yes |
 | Construction spans (`mnemonica.*` / `dive.create:*`) | no | yes | yes |
 | Service-call spans (`dive.call:*`) | no | yes (`wrap` at sync-splits) | yes |
-| Caught request error | enriched 500 | + Unblinder (`mnemonica.caught-exception`, `dive.branch`) | + Unblinder |
+| Caught request error | enriched 500 | + Unblinder (`mnemonica.caught-exception` span, `mnemonica.error` event) | + Unblinder |
 | `uncaughtException` / `unhandledRejection` | root span with the stack only — manual boilerplate | Unblinder span: branch + errored construction + attempted args, recovered from the error object | same, **and the process survives dive-pinned crashes** (DLQ + live crash-report endpoint) |
 | Queue / 30-seconds-later attribution | no | yes | yes — load-tested by proof scripts |
 | The Why (which *data* failed) | gathered, not retrievable | retrievable | retrievable and queryable |
@@ -70,7 +70,7 @@ auto-instrumentations, spans via OTLP HTTP.
 
 The `-otel` apps register a plain `NodeTracerProvider` and wire the
 explicit stack (`attachObservability(collection)`): request span from
-`runInRequestScope` at the framework boundary, constructions and wrapped
+`runInEntryScope` at the framework boundary, constructions and wrapped
 calls become spans via the provider trio, error boundaries run the
 Unblinder. **Diff any `-otel` app against its frozen twin to isolate
 what the wiring buys** — the apps are otherwise identical.
@@ -92,11 +92,11 @@ what the wiring buys** — the apps are otherwise identical.
      open a root error span and `recordException(err)` — Jaeger shows
      the error with `exception.stacktrace`. All it buys is the *stack*.
   3. **dive / the Unblinder** — `getErrorInstance(err)` hands back the
-     exact mnemonica instance that failed; `buildUnblindReport` recovers
-     the branch, the errored construction and the attempted args from
-     the error OBJECT; the `mnemonica.caught-exception` span carries
-     `dive.branch`. No instrumentation layer, no collector needed for
-     the attribution itself.
+     exact mnemonica instance that failed; `analyseError(captureError(err))`
+     recovers the branch, the errored construction and the attempted args
+     from the error OBJECT; the `mnemonica.caught-exception` span carries
+     the analysis as a `mnemonica.error` event. No instrumentation layer,
+     no collector needed for the attribution itself.
 - The nest-dive error span additionally carries, as attributes:
   - `mnemonica.chain` — construction steps with arguments, root to leaf;
   - `mnemonica.instance.data` — `utils.extract` of the failed instance;

@@ -7,7 +7,7 @@ import type { FastifyRequest, FastifyReply } from 'fastify';
 import '../core/collections/requestTypes.js';
 import { lookup, utils } from 'mnemonica';
 import { wrap } from '@mnemonica/dive';
-import { buildUnblindReport, recordUnblindTelemetry } from '@mnemonica/otel';
+import { unblind } from '../tracing.js';
 import { checkStaticCache } from '../plugins/static-cache.js';
 import { fileExists, loadPageFiles } from '../lib/fileUtils.js';
 import { render } from '../lib/templateEngine.js';
@@ -160,10 +160,9 @@ export default async function (app: AppGet): Promise<void> {
 			const error = err as Error;
 			req.log.error({ err: error.message, pagePath }, 'request failed');
 
-			// The route's own error boundary: emit the Unblinder span + marker.
-			// The dive branch and errored construction ride the error object.
-			const report = buildUnblindReport(error);
-			recordUnblindTelemetry(report, error);
+			// The route's own error boundary: the analysed dive chain rides
+			// the error object; unblind records it on the request span + the marker.
+			unblind(error);
 
 			// enrich the plain error with the chain instance context:
 			// stores .args/.originalError/.instance in the error's props

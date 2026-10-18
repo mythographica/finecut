@@ -22,10 +22,11 @@ import {
 	MnemonicaOtelProvider,
 	DiveOtelProvider,
 	AsyncFlowProvider,
-	runInRequestScope,
-	feedPreRootFromRequest,
-	buildUnblindReport,
-	recordUnblindTelemetry,
+	runInEntryScope,
+	feedPreRoot,
+	captureError,
+	analyseError,
+	recordErrorAnalysis,
 } from '@mnemonica/otel';
 import { wrap, getErrorInstance } from '@mnemonica/dive';
 import { settings } from '../../src/core/settings.js';
@@ -67,10 +68,28 @@ describe('observability wiring', () => {
 		// Same hook as server.ts: pre-root feed + triple async scope, added
 		// BEFORE the routes so every handler runs inside the request span.
 		app.addHook('onRequest', (request, reply, done) => {
-			feedPreRootFromRequest(request);
-			// structural minimum — IncomingMessage.method is optional
-			const rawRequest = { method: request.method, url: request.url };
-			runInRequestScope(rawRequest, reply.raw, { tracer, otel, asyncFlow }, () => done());
+			feedPreRoot({
+				method  : request.method,
+				url     : request.url,
+				params  : request.params,
+				query   : request.query,
+				body    : request.body,
+				headers : request.headers,
+			});
+			runInEntryScope({
+				name        : `HTTP ${request.method} ${request.url}`,
+				attributes  : {
+					'http.method' : request.method,
+					'http.url'    : request.url,
+				},
+				endOnReturn : false,
+			}, { tracer, otel, asyncFlow }, (span) => {
+				reply.raw.on('finish', () => {
+					span.setAttribute('http.status_code', reply.raw.statusCode);
+					span.end();
+				});
+				done();
+			});
 		});
 		const { default: registerFrontend } = await import('../../src/routes/frontend.js');
 		await registerFrontend(app);
@@ -125,7 +144,7 @@ describe('observability wiring', () => {
 		}
 	});
 
-	it('unblind telemetry carries the dive branch onto the error span', () => {
+	it('unblind telemetry carries the dive chain onto the error span event', () => {
 		exporter.reset();
 		let thrown: Error | undefined;
 		const ctx = { marker: 'unblind-test' };
@@ -139,13 +158,25 @@ describe('observability wiring', () => {
 		}
 		if (!thrown) throw new Error('expected throw');
 
-		const report = buildUnblindReport(thrown);
-		recordUnblindTelemetry(report, thrown);
-
+		// the analysis recovers the chain from the error OBJECT (dive pinned it)
+		const analysis = analyseError(captureError(thrown));
+		expect(analysis.source).toBe('error');
+		expect(analysis.evidence).toBe(true);
+		const chainNames = analysis.edges.map((edge) => `${edge.kind}:${edge.name}`);
+		expect(chainNames).toContain('call:failingStep');
 		expect(getErrorInstance(thrown)).toBe(ctx);
+
+		// the process-boundary shape: a fresh ERROR span carries the event
+		const span = trace.getTracer('finecut-fastify-otel-test').startSpan('mnemonica.caught-exception');
+		recordErrorAnalysis(analysis, span);
+		span.end();
+
 		const spans = exporter.getFinishedSpans();
-		const span = spans.find((s) => s.name === 'mnemonica.caught-exception');
-		if (!span) throw new Error('unblind span not found');
-		expect(String(span.attributes['dive.branch'])).toContain('failingStep');
+		const errorSpan = spans.find((s) => s.name === 'mnemonica.caught-exception');
+		if (!errorSpan) throw new Error('unblind span not found');
+		const event = errorSpan.events.find((e) => e.name === 'mnemonica.error');
+		expect(event).toBeDefined();
+		expect(event?.attributes?.[ 'mnemonica.error.source' ]).toBe('error');
+		expect(event?.attributes?.[ 'mnemonica.error.evidence' ]).toBe(true);
 	});
 });

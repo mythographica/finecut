@@ -1,0 +1,290 @@
+{
+  "version": 2,
+  "generatedAt": "2026-10-18T23:11:01.303Z",
+  "points": [],
+  "creationGraph": {
+    "nodes": [
+      {
+        "scopeId": "src/engine/engine.controller.ts:234:2",
+        "name": "EngineController.postApi",
+        "kind": "method",
+        "filePath": "src/engine/engine.controller.ts",
+        "location": "src/engine/engine.controller.ts:234:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/engine/engine.module.ts",
+        "name": "src/engine/engine.module.ts",
+        "kind": "module",
+        "filePath": "src/engine/engine.module.ts",
+        "location": "src/engine/engine.module.ts:1:1",
+        "starter": false
+      },
+      {
+        "scopeId": "src/app.module.ts",
+        "name": "src/app.module.ts",
+        "kind": "module",
+        "filePath": "src/app.module.ts",
+        "location": "src/app.module.ts:1:1",
+        "starter": false
+      },
+      {
+        "scopeId": "src/main.ts",
+        "name": "src/main.ts",
+        "kind": "module",
+        "filePath": "src/main.ts",
+        "location": "src/main.ts:1:1",
+        "starter": true
+      },
+      {
+        "scopeId": "src/engine/engine.controller.ts:167:2",
+        "name": "EngineController.postTemplateAction",
+        "kind": "method",
+        "filePath": "src/engine/engine.controller.ts",
+        "location": "src/engine/engine.controller.ts:167:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/engine/engine.controller.ts:127:2",
+        "name": "EngineController.getTemplateAction",
+        "kind": "method",
+        "filePath": "src/engine/engine.controller.ts",
+        "location": "src/engine/engine.controller.ts:127:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/engine/engine.controller.ts:48:2",
+        "name": "EngineController.postTree",
+        "kind": "method",
+        "filePath": "src/engine/engine.controller.ts",
+        "location": "src/engine/engine.controller.ts:48:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/engine/engine.controller.ts:38:2",
+        "name": "EngineController.getTree",
+        "kind": "method",
+        "filePath": "src/engine/engine.controller.ts",
+        "location": "src/engine/engine.controller.ts:38:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/engine/engine.controller.ts:27:2",
+        "name": "EngineController.postSettings",
+        "kind": "method",
+        "filePath": "src/engine/engine.controller.ts",
+        "location": "src/engine/engine.controller.ts:27:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/frontend/frontend.controller.ts:28:2",
+        "name": "FrontendController.handlePage",
+        "kind": "method",
+        "filePath": "src/frontend/frontend.controller.ts",
+        "location": "src/frontend/frontend.controller.ts:28:2",
+        "starter": false
+      },
+      {
+        "scopeId": "src/frontend/frontend.module.ts",
+        "name": "src/frontend/frontend.module.ts",
+        "kind": "module",
+        "filePath": "src/frontend/frontend.module.ts",
+        "location": "src/frontend/frontend.module.ts:1:1",
+        "starter": false
+      }
+    ],
+    "edges": [
+      {
+        "caller": "src/engine/engine.module.ts",
+        "callee": "src/engine/engine.controller.ts:234:2"
+      },
+      {
+        "caller": "src/app.module.ts",
+        "callee": "src/engine/engine.module.ts"
+      },
+      {
+        "caller": "src/main.ts",
+        "callee": "src/app.module.ts"
+      },
+      {
+        "caller": "src/engine/engine.module.ts",
+        "callee": "src/engine/engine.controller.ts:167:2"
+      },
+      {
+        "caller": "src/engine/engine.module.ts",
+        "callee": "src/engine/engine.controller.ts:127:2"
+      },
+      {
+        "caller": "src/engine/engine.module.ts",
+        "callee": "src/engine/engine.controller.ts:48:2"
+      },
+      {
+        "caller": "src/engine/engine.module.ts",
+        "callee": "src/engine/engine.controller.ts:38:2"
+      },
+      {
+        "caller": "src/engine/engine.module.ts",
+        "callee": "src/engine/engine.controller.ts:27:2"
+      },
+      {
+        "caller": "src/frontend/frontend.module.ts",
+        "callee": "src/frontend/frontend.controller.ts:28:2"
+      },
+      {
+        "caller": "src/app.module.ts",
+        "callee": "src/frontend/frontend.module.ts"
+      }
+    ],
+    "anchors": [
+      {
+        "location": "src/frontend/frontend.controller.ts:34:24",
+        "holderScopeId": "src/frontend/frontend.controller.ts:28:2",
+        "typePath": "RequestData",
+        "constructorText": "RequestData",
+        "variable": "requestData"
+      },
+      {
+        "location": "src/frontend/frontend.controller.ts:60:22",
+        "holderScopeId": "src/frontend/frontend.controller.ts:28:2",
+        "typePath": "RequestData.RouteData",
+        "constructorText": "requestData.RouteData",
+        "variable": "routeData"
+      },
+      {
+        "location": "src/frontend/frontend.controller.ts:68:21",
+        "holderScopeId": "src/frontend/frontend.controller.ts:28:2",
+        "typePath": "RequestData.RouteData.PageData",
+        "constructorText": "routeData.PageData",
+        "variable": "pageData"
+      },
+      {
+        "location": "src/frontend/frontend.controller.ts:74:30",
+        "holderScopeId": "src/frontend/frontend.controller.ts:28:2",
+        "typePath": "RequestData.RouteData.PageData.RenderData",
+        "constructorText": "pageData.RenderData",
+        "variable": "cachedRenderData"
+      },
+      {
+        "location": "src/frontend/frontend.controller.ts:96:23",
+        "holderScopeId": "src/frontend/frontend.controller.ts:28:2",
+        "typePath": "RequestData.RouteData.PageData.RenderData",
+        "constructorText": "pageData.RenderData",
+        "variable": "renderData"
+      },
+      {
+        "location": "src/frontend/frontend.controller.ts:75:26",
+        "holderScopeId": "src/frontend/frontend.controller.ts:28:2",
+        "typePath": "RequestData.RouteData.PageData.RenderData.ResponseData",
+        "constructorText": "cachedRenderData.ResponseData"
+      },
+      {
+        "location": "src/frontend/frontend.controller.ts:116:25",
+        "holderScopeId": "src/frontend/frontend.controller.ts:28:2",
+        "typePath": "RequestData.RouteData.PageData.RenderData.ResponseData",
+        "constructorText": "renderData.ResponseData",
+        "variable": "responseData"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:29:25",
+        "holderScopeId": "src/engine/engine.controller.ts:27:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:41:25",
+        "holderScopeId": "src/engine/engine.controller.ts:38:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:62:25",
+        "holderScopeId": "src/engine/engine.controller.ts:48:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:142:26",
+        "holderScopeId": "src/engine/engine.controller.ts:127:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:154:26",
+        "holderScopeId": "src/engine/engine.controller.ts:127:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:187:26",
+        "holderScopeId": "src/engine/engine.controller.ts:167:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:199:26",
+        "holderScopeId": "src/engine/engine.controller.ts:167:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:248:25",
+        "holderScopeId": "src/engine/engine.controller.ts:234:2",
+        "typePath": "EngineRequest",
+        "constructorText": "EngineRequest",
+        "variable": "engineRequest"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:44:22",
+        "holderScopeId": "src/engine/engine.controller.ts:38:2",
+        "typePath": "EngineRequest.TreeResult",
+        "constructorText": "engineRequest.TreeResult",
+        "variable": "treeResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:66:23",
+        "holderScopeId": "src/engine/engine.controller.ts:48:2",
+        "typePath": "EngineRequest.TreeResult",
+        "constructorText": "engineRequest.TreeResult",
+        "variable": "treeResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:145:27",
+        "holderScopeId": "src/engine/engine.controller.ts:127:2",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:157:27",
+        "holderScopeId": "src/engine/engine.controller.ts:127:2",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult",
+        "variable": "templateResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:190:27",
+        "holderScopeId": "src/engine/engine.controller.ts:167:2",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:202:27",
+        "holderScopeId": "src/engine/engine.controller.ts:167:2",
+        "typePath": "EngineRequest.TemplateResult",
+        "constructorText": "engineRequest.TemplateResult",
+        "variable": "templateResult"
+      },
+      {
+        "location": "src/engine/engine.controller.ts:252:24",
+        "holderScopeId": "src/engine/engine.controller.ts:234:2",
+        "typePath": "EngineRequest.CacheResult",
+        "constructorText": "engineRequest.CacheResult",
+        "variable": "cacheResult"
+      }
+    ]
+  }
+}

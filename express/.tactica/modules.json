@@ -1,0 +1,1762 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-10-18T23:10:43.813Z",
+  "modules": {
+    "src/tracing.ts": {
+      "filePath": "src/tracing.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "ProcessErrorKind",
+          "kind": "type",
+          "sourceModule": "src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "reportProcessError",
+          "kind": "function",
+          "sourceModule": "src/tracing.ts",
+          "isReExport": false
+        },
+        {
+          "name": "flushTracing",
+          "kind": "function",
+          "sourceModule": "src/tracing.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "NodeSDK",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@opentelemetry/sdk-node/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "getNodeAutoInstrumentations",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@opentelemetry/auto-instrumentations-node/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "OTLPTraceExporter",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@opentelemetry/exporter-trace-otlp-http/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "resourceFromAttributes",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@opentelemetry/resources/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "ATTR_SERVICE_NAME",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@opentelemetry/semantic-conventions/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "trace",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@opentelemetry/api/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "SpanStatusCode",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@opentelemetry/api/build/src/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/types/index.ts": {
+      "filePath": "src/types/index.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageFiles",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "RouteInfo",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "ResponseOutput",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageContext",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "HelperFn",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        },
+        {
+          "name": "Settings",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "RequestData_RouteData_PageData",
+          "kind": "unknown",
+          "sourceModule": ".tactica/types.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/core/collections/requestTypes.ts": {
+      "filePath": "src/core/collections/requestTypes.ts",
+      "definedTypes": [
+        "RequestData",
+        "RequestData.RouteData",
+        "RequestData.RouteData.PageData",
+        "RequestData.RouteData.PageData.RenderData",
+        "RequestData.RouteData.PageData.RenderData.ResponseData"
+      ],
+      "exportedBindings": [
+        {
+          "name": "RequestData",
+          "kind": "const",
+          "sourceModule": "src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "RouteData",
+          "kind": "const",
+          "sourceModule": "src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageData",
+          "kind": "const",
+          "sourceModule": "src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "RenderData",
+          "kind": "const",
+          "sourceModule": "src/core/collections/requestTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "ResponseData",
+          "kind": "const",
+          "sourceModule": "src/core/collections/requestTypes.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "define",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "PageFiles",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "RouteInfo",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "ResponseOutput",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/core/settings.ts": {
+      "filePath": "src/core/settings.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "src/core/settings.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Settings",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/lib/fileUtils.ts": {
+      "filePath": "src/lib/fileUtils.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "getfiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "setfiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "getMtime",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "mkdirp",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "paths",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "parseHeader",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        },
+        {
+          "name": "loadPageFiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageFiles",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/core/settings.ts",
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "src/lib/pageStore.ts": {
+      "filePath": "src/lib/pageStore.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "rawPageFiles",
+          "kind": "type",
+          "sourceModule": "src/lib/pageStore.ts",
+          "isReExport": false
+        },
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "isReExport": false
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "getfiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setfiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/lib/fileUtils.ts",
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "src/core/collections/engineTypes.ts": {
+      "filePath": "src/core/collections/engineTypes.ts",
+      "definedTypes": [
+        "EngineRequest",
+        "EngineRequest.TreeResult",
+        "EngineRequest.PageResult",
+        "EngineRequest.CacheResult",
+        "EngineRequest.TemplateResult"
+      ],
+      "exportedBindings": [
+        {
+          "name": "TreeItem",
+          "kind": "type",
+          "sourceModule": "src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "EngineRequestData",
+          "kind": "type",
+          "sourceModule": "src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "EngineRequest",
+          "kind": "const",
+          "sourceModule": "src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "TreeResult",
+          "kind": "const",
+          "sourceModule": "src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PageResult",
+          "kind": "const",
+          "sourceModule": "src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "CacheResult",
+          "kind": "const",
+          "sourceModule": "src/core/collections/engineTypes.ts",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateResult",
+          "kind": "const",
+          "sourceModule": "src/core/collections/engineTypes.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "define",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "rawPageFiles",
+          "kind": "type",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/lib/pageStore.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/lib/chainTrace.ts": {
+      "filePath": "src/lib/chainTrace.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "ChainStep",
+          "kind": "type",
+          "sourceModule": "src/lib/chainTrace.ts",
+          "isReExport": false
+        },
+        {
+          "name": "traceChain",
+          "kind": "function",
+          "sourceModule": "src/lib/chainTrace.ts",
+          "isReExport": false
+        },
+        {
+          "name": "formatChainTrace",
+          "kind": "function",
+          "sourceModule": "src/lib/chainTrace.ts",
+          "isReExport": false
+        },
+        {
+          "name": "getRequestId",
+          "kind": "function",
+          "sourceModule": "src/lib/chainTrace.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "getProps",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/plugins/pino-logger.ts": {
+      "filePath": "src/plugins/pino-logger.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "createLogger",
+          "kind": "function",
+          "sourceModule": "src/plugins/pino-logger.ts",
+          "isReExport": false
+        },
+        {
+          "name": "setupCollectionLogging",
+          "kind": "function",
+          "sourceModule": "src/plugins/pino-logger.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "pino",
+          "kind": "unknown",
+          "sourceModule": "node_modules/pino/pino.d.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "TypesCollection",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "hooksOpts",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "traceChain",
+          "kind": "function",
+          "sourceModule": "src/lib/chainTrace.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "formatChainTrace",
+          "kind": "function",
+          "sourceModule": "src/lib/chainTrace.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "getRequestId",
+          "kind": "function",
+          "sourceModule": "src/lib/chainTrace.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/lib/chainTrace.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/plugins/static-cache.ts": {
+      "filePath": "src/plugins/static-cache.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "checkStaticCache",
+          "kind": "function",
+          "sourceModule": "src/plugins/static-cache.ts",
+          "isReExport": false
+        },
+        {
+          "name": "writeStaticCache",
+          "kind": "function",
+          "sourceModule": "src/plugins/static-cache.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "getMtime",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageHeader",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/core/settings.ts",
+        "src/lib/fileUtils.ts",
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path",
+        "fs"
+      ]
+    },
+    "src/routes/engine/settings.ts": {
+      "filePath": "src/routes/engine/settings.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/settings.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "Settings",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/core/collections/engineTypes.ts",
+        "src/core/settings.ts",
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "src/lib/engineActions.ts": {
+      "filePath": "src/lib/engineActions.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "handleContentGet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentSet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleSet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleMkdir",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "isReExport": false
+        },
+        {
+          "name": "handleDel",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "mkdirp",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "resolvePaths",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "importAlias": "paths"
+        },
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "rawPageFiles",
+          "kind": "type",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/lib/fileUtils.ts",
+        "src/lib/pageStore.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "src/routes/engine/tree_pages.ts": {
+      "filePath": "src/routes/engine/tree_pages.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        },
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/tree_pages.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "resolvePaths",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "importAlias": "paths"
+        },
+        {
+          "name": "handleContentGet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentSet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleSet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleMkdir",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleDel",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "getPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        },
+        {
+          "name": "setPage",
+          "kind": "function",
+          "sourceModule": "src/lib/pageStore.ts",
+          "importKind": "named",
+          "isReExport": true
+        }
+      ],
+      "dependencies": [
+        "src/core/collections/engineTypes.ts",
+        "src/lib/fileUtils.ts",
+        "src/lib/engineActions.ts",
+        "src/lib/pageStore.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "src/routes/engine/template.ts": {
+      "filePath": "src/routes/engine/template.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/template.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "src/routes/engine/template_action.ts": {
+      "filePath": "src/routes/engine/template_action.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/template_action.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "getfiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setfiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "mkdirp",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/core/collections/engineTypes.ts",
+        "src/lib/fileUtils.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "src/routes/engine/api.ts": {
+      "filePath": "src/routes/engine/api.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/api.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "removeRecursive",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentGet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleContentSet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleSet",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleMkdir",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "handleDel",
+          "kind": "function",
+          "sourceModule": "src/lib/engineActions.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/core/collections/engineTypes.ts",
+        "src/core/settings.ts",
+        "src/lib/fileUtils.ts",
+        "src/lib/engineActions.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "fs",
+        "path"
+      ]
+    },
+    "src/routes/engine/admin.ts": {
+      "filePath": "src/routes/engine/admin.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/admin.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "elfinder",
+          "kind": "unknown",
+          "sourceModule": "node_modules/elfinder-node/dist/elfinder.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "LocalFileStorage",
+          "kind": "unknown",
+          "sourceModule": "node_modules/elfinder-node/dist/elfinder.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        }
+      ],
+      "dependencies": [],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/lib/templateEngine.ts": {
+      "filePath": "src/lib/templateEngine.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "registerHelper",
+          "kind": "function",
+          "sourceModule": "src/lib/templateEngine.ts",
+          "isReExport": false
+        },
+        {
+          "name": "compile",
+          "kind": "function",
+          "sourceModule": "src/lib/templateEngine.ts",
+          "isReExport": false
+        },
+        {
+          "name": "render",
+          "kind": "function",
+          "sourceModule": "src/lib/templateEngine.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "HelperFn",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/lib/components.ts": {
+      "filePath": "src/lib/components.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "jsonInfo",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "headAdditional",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "contentParser",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "menuMain",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "menuLeft",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "isReExport": false
+        },
+        {
+          "name": "menuDocuments",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "PageContext",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/lib/fileUtils.ts",
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path",
+        "fs"
+      ]
+    },
+    "src/lib/registerHelpers.ts": {
+      "filePath": "src/lib/registerHelpers.ts",
+      "definedTypes": [],
+      "exportedBindings": [],
+      "importedBindings": [
+        {
+          "name": "registerHelper",
+          "kind": "function",
+          "sourceModule": "src/lib/templateEngine.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "jsonInfo",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "headAdditional",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "contentParser",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuMain",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuLeft",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/lib/templateEngine.ts",
+        "src/lib/components.ts",
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    },
+    "src/routes/frontend.ts": {
+      "filePath": "src/routes/frontend.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "default",
+          "kind": "const",
+          "sourceModule": "src/routes/frontend.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "importAlias": "router"
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "Router",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "createLogger",
+          "kind": "function",
+          "sourceModule": "src/plugins/pino-logger.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "checkStaticCache",
+          "kind": "function",
+          "sourceModule": "src/plugins/static-cache.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "fileExists",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "loadPageFiles",
+          "kind": "function",
+          "sourceModule": "src/lib/fileUtils.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "render",
+          "kind": "function",
+          "sourceModule": "src/lib/templateEngine.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "jsonInfo",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "headAdditional",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "contentParser",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuMain",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "menuLeft",
+          "kind": "function",
+          "sourceModule": "src/lib/components.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "settings",
+          "kind": "const",
+          "sourceModule": "src/core/settings.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "TemplateContext",
+          "kind": "type",
+          "sourceModule": "src/types/index.ts",
+          "importKind": "named",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/core/collections/requestTypes.ts",
+        "src/plugins/pino-logger.ts",
+        "src/plugins/static-cache.ts",
+        "src/lib/fileUtils.ts",
+        "src/lib/templateEngine.ts",
+        "src/lib/components.ts",
+        "src/lib/registerHelpers.ts",
+        "src/core/settings.ts",
+        "src/types/index.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": [
+        "path"
+      ]
+    },
+    "src/core/server.ts": {
+      "filePath": "src/core/server.ts",
+      "definedTypes": [],
+      "exportedBindings": [
+        {
+          "name": "app",
+          "kind": "const",
+          "sourceModule": "src/core/server.ts",
+          "isReExport": false
+        },
+        {
+          "name": "logger",
+          "kind": "const",
+          "sourceModule": "src/core/server.ts",
+          "isReExport": false
+        },
+        {
+          "name": "PORT",
+          "kind": "const",
+          "sourceModule": "src/core/server.ts",
+          "isReExport": false
+        }
+      ],
+      "importedBindings": [
+        {
+          "name": "reportProcessError",
+          "kind": "function",
+          "sourceModule": "src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "flushTracing",
+          "kind": "function",
+          "sourceModule": "src/tracing.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "express",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "default",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Request",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "Response",
+          "kind": "unknown",
+          "sourceModule": "node_modules/@types/express/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "lookup",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "hooksOpts",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "defaultTypes",
+          "kind": "unknown",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
+          "importKind": "named",
+          "isReExport": false,
+          "external": true
+        },
+        {
+          "name": "createLogger",
+          "kind": "function",
+          "sourceModule": "src/plugins/pino-logger.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "setupCollectionLogging",
+          "kind": "function",
+          "sourceModule": "src/plugins/pino-logger.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "writeStaticCache",
+          "kind": "function",
+          "sourceModule": "src/plugins/static-cache.ts",
+          "importKind": "named",
+          "isReExport": false
+        },
+        {
+          "name": "settingsRouter",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/settings.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "treePagesRouter",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/tree_pages.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "templateRouter",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/template.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "templateActionRouter",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/template_action.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "apiRouter",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/api.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "adminRouter",
+          "kind": "const",
+          "sourceModule": "src/routes/engine/admin.ts",
+          "importKind": "default",
+          "isReExport": false
+        },
+        {
+          "name": "frontendRouter",
+          "kind": "const",
+          "sourceModule": "src/routes/frontend.ts",
+          "importKind": "default",
+          "isReExport": false
+        }
+      ],
+      "dependencies": [
+        "src/tracing.ts",
+        "src/core/collections/requestTypes.ts",
+        "src/core/collections/engineTypes.ts",
+        "src/plugins/pino-logger.ts",
+        "src/plugins/static-cache.ts",
+        "src/routes/engine/settings.ts",
+        "src/routes/engine/tree_pages.ts",
+        "src/routes/engine/template.ts",
+        "src/routes/engine/template_action.ts",
+        "src/routes/engine/api.ts",
+        "src/routes/engine/admin.ts",
+        "src/routes/frontend.ts"
+      ],
+      "unresolvedSpecifiers": [],
+      "builtinSpecifiers": []
+    }
+  },
+  "edges": [],
+  "cycles": []
+}

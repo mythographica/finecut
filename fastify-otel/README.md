@@ -14,7 +14,7 @@ existing tests are untouched.
 One HTTP request produces ONE coherent trace:
 
 ```
-HTTP GET /                      ← request span (runInRequestScope)
+HTTP GET /                      ← request span (runInEntryScope)
 ├─ mnemonica.RequestData        ┐ construction spans (two vocabularies:
 ├─ dive.create:RequestData      │ mnemonica.* + dive.create:*)
 ├─ dive.call:loadPage           │ wrapped sync-splits, named after the
@@ -31,17 +31,16 @@ row of siblings — verified).
 | File | What it shows |
 |---|---|
 | `src/tracing.ts` | `NodeTracerProvider` + provider trio + `attachObservability` + Unblinder process reporting (imported first in `server.ts`) |
-| `src/core/server.ts` | `attachObservability(defaultTypes)`; the `onRequest` hook (`feedPreRootFromRequest(request)` + `runInRequestScope`); the `setErrorHandler` Unblinder boundary; the wrapped static-cache detach point |
+| `src/core/server.ts` | `attachObservability(defaultTypes)`; the `onRequest` hook (`feedPreRoot(request fields)` + `runInEntryScope`); the `setErrorHandler` Unblinder boundary; the wrapped static-cache detach point |
 | `src/routes/frontend.ts` | call-site wraps of the sync-splits with chain instances; Unblinder in the route catch |
 | `src/routes/engine/api.ts`, `src/routes/engine/tree_pages.ts` | engine-action wraps with the `EngineRequest` instance |
 
 Fastify-specific notes (verified):
 
-- The hook feeds the Fastify `request` to `feedPreRootFromRequest` (it
-  reads `.method/.url/.params/.query/.body/.headers`), but
-  `runInRequestScope` gets a structural `{ method, url }` plus
-  `reply.raw` — `IncomingMessage.method` is typed `string | undefined`
-  and does not satisfy `HttpRequestLike` directly.
+- The hook feeds the Fastify `request`'s fields to `feedPreRoot(...)`
+  (`.method/.url/.params/.query/.body/.headers`); `runInEntryScope` names
+  the span from `request.method`/`request.url` and closes it on
+  `reply.raw`'s `finish`.
 - The old `utils.exception as unknown as new (...)…` cast in the
   frontend catch is gone — `Reflect.construct(utils.exception,
   [chainInstance, error])` does the same with zero casts.

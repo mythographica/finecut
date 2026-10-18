@@ -1,21 +1,21 @@
 {
   "version": "1.0",
-  "generatedAt": "2026-09-09T11:22:02.154Z",
+  "generatedAt": "2026-10-18T23:11:06.354Z",
   "modules": {
-    "/code/mnemonica/finecut/nest-dive/src/lib/process-error-spans.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/process-error-spans.ts",
+    "src/lib/process-error-spans.ts": {
+      "filePath": "src/lib/process-error-spans.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "ProcessErrorKind",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/process-error-spans.ts",
+          "sourceModule": "src/lib/process-error-spans.ts",
           "isReExport": false
         },
         {
           "name": "reportProcessError",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/process-error-spans.ts",
+          "sourceModule": "src/lib/process-error-spans.ts",
           "isReExport": false
         }
       ],
@@ -23,7 +23,7 @@
         {
           "name": "trace",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/api/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/api/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -31,7 +31,7 @@
         {
           "name": "SpanStatusCode",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/api/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/api/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -41,56 +41,56 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/types/index.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+    "src/types/index.ts": {
+      "filePath": "src/types/index.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "PageHeader",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         },
         {
           "name": "PageFiles",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         },
         {
           "name": "RouteInfo",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         },
         {
           "name": "ResponseOutput",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         },
         {
           "name": "PageContext",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         },
         {
           "name": "TemplateContext",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         },
         {
           "name": "HelperFn",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         },
         {
           "name": "Settings",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "isReExport": false
         }
       ],
@@ -98,7 +98,7 @@
         {
           "name": "RequestData_RouteData_PageData",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/.tactica/types.ts",
+          "sourceModule": ".tactica/types.ts",
           "importKind": "named",
           "isReExport": false
         }
@@ -107,8 +107,8 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts",
+    "src/core/request-types.ts": {
+      "filePath": "src/core/request-types.ts",
       "definedTypes": [
         "RequestData",
         "RequestData.RouteData",
@@ -120,31 +120,31 @@
         {
           "name": "RequestData",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts",
+          "sourceModule": "src/core/request-types.ts",
           "isReExport": false
         },
         {
           "name": "RouteData",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts",
+          "sourceModule": "src/core/request-types.ts",
           "isReExport": false
         },
         {
           "name": "PageData",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts",
+          "sourceModule": "src/core/request-types.ts",
           "isReExport": false
         },
         {
           "name": "RenderData",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts",
+          "sourceModule": "src/core/request-types.ts",
           "isReExport": false
         },
         {
           "name": "ResponseData",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts",
+          "sourceModule": "src/core/request-types.ts",
           "isReExport": false
         }
       ],
@@ -152,7 +152,7 @@
         {
           "name": "define",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -160,51 +160,51 @@
         {
           "name": "PageFiles",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "RouteInfo",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "ResponseOutput",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
+    "src/lib/templateEngine.ts": {
+      "filePath": "src/lib/templateEngine.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "registerHelper",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
+          "sourceModule": "src/lib/templateEngine.ts",
           "isReExport": false
         },
         {
           "name": "compile",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
+          "sourceModule": "src/lib/templateEngine.ts",
           "isReExport": false
         },
         {
           "name": "render",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
+          "sourceModule": "src/lib/templateEngine.ts",
           "isReExport": false
         }
       ],
@@ -212,32 +212,32 @@
         {
           "name": "TemplateContext",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "HelperFn",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/core/settings.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
+    "src/core/settings.ts": {
+      "filePath": "src/core/settings.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "settings",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
+          "sourceModule": "src/core/settings.ts",
           "isReExport": false
         }
       ],
@@ -245,73 +245,73 @@
         {
           "name": "Settings",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+    "src/lib/fileUtils.ts": {
+      "filePath": "src/lib/fileUtils.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "getfiles",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "setfiles",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "fileExists",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "getMtime",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "mkdirp",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "removeRecursive",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "paths",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "parseHeader",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         },
         {
           "name": "loadPageFiles",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "isReExport": false
         }
       ],
@@ -319,28 +319,28 @@
         {
           "name": "settings",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
+          "sourceModule": "src/core/settings.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "PageFiles",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "PageHeader",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/core/settings.ts",
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": [
@@ -348,44 +348,44 @@
         "path"
       ]
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/components.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+    "src/lib/components.ts": {
+      "filePath": "src/lib/components.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "jsonInfo",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "isReExport": false
         },
         {
           "name": "headAdditional",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "isReExport": false
         },
         {
           "name": "contentParser",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "isReExport": false
         },
         {
           "name": "menuMain",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "isReExport": false
         },
         {
           "name": "menuLeft",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "isReExport": false
         },
         {
           "name": "menuDocuments",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "isReExport": false
         }
       ],
@@ -393,21 +393,21 @@
         {
           "name": "fileExists",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "PageContext",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/lib/fileUtils.ts",
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": [
@@ -415,77 +415,77 @@
         "fs"
       ]
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/registerHelpers.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/registerHelpers.ts",
+    "src/lib/registerHelpers.ts": {
+      "filePath": "src/lib/registerHelpers.ts",
       "definedTypes": [],
       "exportedBindings": [],
       "importedBindings": [
         {
           "name": "registerHelper",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
+          "sourceModule": "src/lib/templateEngine.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "jsonInfo",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "headAdditional",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "contentParser",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "menuMain",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "menuLeft",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "TemplateContext",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/lib/templateEngine.ts",
+        "src/lib/components.ts",
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.service.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.service.ts",
+    "src/frontend/frontend.service.ts": {
+      "filePath": "src/frontend/frontend.service.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "FrontendService",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.service.ts",
+          "sourceModule": "src/frontend/frontend.service.ts",
           "isReExport": false
         }
       ],
@@ -493,7 +493,7 @@
         {
           "name": "Injectable",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -501,33 +501,33 @@
         {
           "name": "settings",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
+          "sourceModule": "src/core/settings.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/core/settings.ts"
+        "src/core/settings.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": [
         "path"
       ]
     },
-    "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts",
+    "src/plugins/static-cache.ts": {
+      "filePath": "src/plugins/static-cache.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "checkStaticCache",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts",
+          "sourceModule": "src/plugins/static-cache.ts",
           "isReExport": false
         },
         {
           "name": "writeStaticCache",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts",
+          "sourceModule": "src/plugins/static-cache.ts",
           "isReExport": false
         }
       ],
@@ -535,36 +535,36 @@
         {
           "name": "settings",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
+          "sourceModule": "src/core/settings.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "fileExists",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "getMtime",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "PageHeader",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/core/settings.ts",
+        "src/lib/fileUtils.ts",
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": [
@@ -572,14 +572,14 @@
         "fs"
       ]
     },
-    "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts",
+    "src/frontend/frontend.controller.ts": {
+      "filePath": "src/frontend/frontend.controller.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "FrontendController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts",
+          "sourceModule": "src/frontend/frontend.controller.ts",
           "isReExport": false
         }
       ],
@@ -587,7 +587,7 @@
         {
           "name": "Controller",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -595,7 +595,7 @@
         {
           "name": "Get",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -603,7 +603,7 @@
         {
           "name": "Req",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -611,7 +611,7 @@
         {
           "name": "Res",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -619,7 +619,7 @@
         {
           "name": "FastifyRequest",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -627,7 +627,7 @@
         {
           "name": "FastifyReply",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -635,7 +635,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -643,7 +643,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -651,7 +651,7 @@
         {
           "name": "errorContext",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -659,110 +659,110 @@
         {
           "name": "FrontendService",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.service.ts",
+          "sourceModule": "src/frontend/frontend.service.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "checkStaticCache",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts",
+          "sourceModule": "src/plugins/static-cache.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "fileExists",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "loadPageFiles",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "render",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
+          "sourceModule": "src/lib/templateEngine.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "jsonInfo",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "headAdditional",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "contentParser",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "menuMain",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "menuLeft",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
+          "sourceModule": "src/lib/components.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "settings",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
+          "sourceModule": "src/core/settings.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "TemplateContext",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/core/request-types.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/registerHelpers.ts",
-        "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.service.ts",
-        "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/templateEngine.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/components.ts",
-        "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/core/request-types.ts",
+        "src/lib/registerHelpers.ts",
+        "src/frontend/frontend.service.ts",
+        "src/plugins/static-cache.ts",
+        "src/lib/fileUtils.ts",
+        "src/lib/templateEngine.ts",
+        "src/lib/components.ts",
+        "src/core/settings.ts",
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.module.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.module.ts",
+    "src/frontend/frontend.module.ts": {
+      "filePath": "src/frontend/frontend.module.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "FrontendModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.module.ts",
+          "sourceModule": "src/frontend/frontend.module.ts",
           "isReExport": false
         }
       ],
@@ -770,7 +770,7 @@
         {
           "name": "Module",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -778,45 +778,45 @@
         {
           "name": "FrontendController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts",
+          "sourceModule": "src/frontend/frontend.controller.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "FrontendService",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.service.ts",
+          "sourceModule": "src/frontend/frontend.service.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.controller.ts",
-        "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.service.ts"
+        "src/frontend/frontend.controller.ts",
+        "src/frontend/frontend.service.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+    "src/lib/pageStore.ts": {
+      "filePath": "src/lib/pageStore.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "rawPageFiles",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+          "sourceModule": "src/lib/pageStore.ts",
           "isReExport": false
         },
         {
           "name": "getPage",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+          "sourceModule": "src/lib/pageStore.ts",
           "isReExport": false
         },
         {
           "name": "setPage",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+          "sourceModule": "src/lib/pageStore.ts",
           "isReExport": false
         }
       ],
@@ -824,43 +824,43 @@
         {
           "name": "getfiles",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "setfiles",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "fileExists",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "PageHeader",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts"
+        "src/lib/fileUtils.ts",
+        "src/types/index.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": [
         "path"
       ]
     },
-    "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+    "src/core/engine-types.ts": {
+      "filePath": "src/core/engine-types.ts",
       "definedTypes": [
         "EngineRequest",
         "EngineRequest.TreeResult",
@@ -872,43 +872,43 @@
         {
           "name": "TreeItem",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "isReExport": false
         },
         {
           "name": "EngineRequestData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "isReExport": false
         },
         {
           "name": "EngineRequest",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "isReExport": false
         },
         {
           "name": "TreeResult",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "isReExport": false
         },
         {
           "name": "PageResult",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "isReExport": false
         },
         {
           "name": "CacheResult",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "isReExport": false
         },
         {
           "name": "TemplateResult",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "isReExport": false
         }
       ],
@@ -916,7 +916,7 @@
         {
           "name": "define",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -924,49 +924,49 @@
         {
           "name": "rawPageFiles",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+          "sourceModule": "src/lib/pageStore.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts"
+        "src/lib/pageStore.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+    "src/lib/engineActions.ts": {
+      "filePath": "src/lib/engineActions.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "handleContentGet",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "isReExport": false
         },
         {
           "name": "handleContentSet",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "isReExport": false
         },
         {
           "name": "handleSet",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "isReExport": false
         },
         {
           "name": "handleMkdir",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "isReExport": false
         },
         {
           "name": "handleDel",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "isReExport": false
         }
       ],
@@ -974,28 +974,28 @@
         {
           "name": "removeRecursive",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "fileExists",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "mkdirp",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "resolvePaths",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false,
           "importAlias": "paths"
@@ -1003,42 +1003,42 @@
         {
           "name": "getPage",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+          "sourceModule": "src/lib/pageStore.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "setPage",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+          "sourceModule": "src/lib/pageStore.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "rawPageFiles",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts",
+          "sourceModule": "src/lib/pageStore.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/pageStore.ts"
+        "src/lib/fileUtils.ts",
+        "src/lib/pageStore.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": [
         "path"
       ]
     },
-    "/code/mnemonica/finecut/nest-dive/src/engine/engine.service.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/engine/engine.service.ts",
+    "src/engine/engine.service.ts": {
+      "filePath": "src/engine/engine.service.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "EngineService",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/engine/engine.service.ts",
+          "sourceModule": "src/engine/engine.service.ts",
           "isReExport": false
         }
       ],
@@ -1046,7 +1046,7 @@
         {
           "name": "Injectable",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1054,14 +1054,14 @@
         {
           "name": "settings",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
+          "sourceModule": "src/core/settings.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "resolvePaths",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false,
           "importAlias": "paths"
@@ -1069,80 +1069,80 @@
         {
           "name": "removeRecursive",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "fileExists",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "mkdirp",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
+          "sourceModule": "src/lib/fileUtils.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "handleContentGet",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "handleContentSet",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "handleSet",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "handleMkdir",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "handleDel",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
+          "sourceModule": "src/lib/engineActions.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "Settings",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
+          "sourceModule": "src/types/index.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "TreeItem",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
+          "sourceModule": "src/core/engine-types.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/core/settings.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/fileUtils.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/engineActions.ts",
-        "/code/mnemonica/finecut/nest-dive/src/types/index.ts",
-        "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts"
+        "src/core/settings.ts",
+        "src/lib/fileUtils.ts",
+        "src/lib/engineActions.ts",
+        "src/types/index.ts",
+        "src/core/engine-types.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": [
@@ -1150,14 +1150,14 @@
         "path"
       ]
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts",
+    "src/lib/dive-test/queue.ts": {
+      "filePath": "src/lib/dive-test/queue.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "pushToQueue",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts",
+          "sourceModule": "src/lib/dive-test/queue.ts",
           "isReExport": false
         }
       ],
@@ -1165,7 +1165,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1175,14 +1175,14 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/worker.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/worker.ts",
+    "src/lib/dive-test/worker.ts": {
+      "filePath": "src/lib/dive-test/worker.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "doWork",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/worker.ts",
+          "sourceModule": "src/lib/dive-test/worker.ts",
           "isReExport": false
         }
       ],
@@ -1190,7 +1190,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1198,19 +1198,19 @@
         {
           "name": "pushToQueue",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts",
+          "sourceModule": "src/lib/dive-test/queue.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/queue.ts"
+        "src/lib/dive-test/queue.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/types.ts",
+    "src/lib/dive-test/types.ts": {
+      "filePath": "src/lib/dive-test/types.ts",
       "definedTypes": [
         "DiveTestEntity"
       ],
@@ -1218,13 +1218,13 @@
         {
           "name": "DiveTestEntityData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/types.ts",
+          "sourceModule": "src/lib/dive-test/types.ts",
           "isReExport": false
         },
         {
           "name": "DiveTestEntity",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-test/types.ts",
+          "sourceModule": "src/lib/dive-test/types.ts",
           "isReExport": false
         }
       ],
@@ -1232,7 +1232,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1242,8 +1242,8 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts",
+    "src/lib/dive-stress/types.ts": {
+      "filePath": "src/lib/dive-stress/types.ts",
       "definedTypes": [
         "StressEntity",
         "StressEntity.StressChild"
@@ -1252,19 +1252,19 @@
         {
           "name": "StressData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts",
+          "sourceModule": "src/lib/dive-stress/types.ts",
           "isReExport": false
         },
         {
           "name": "StressEntity",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts",
+          "sourceModule": "src/lib/dive-stress/types.ts",
           "isReExport": false
         },
         {
           "name": "StressChild",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/types.ts",
+          "sourceModule": "src/lib/dive-stress/types.ts",
           "isReExport": false
         }
       ],
@@ -1272,7 +1272,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1282,26 +1282,26 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/registry.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/registry.ts",
+    "src/lib/dive-stress/registry.ts": {
+      "filePath": "src/lib/dive-stress/registry.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "registerInstances",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/registry.ts",
+          "sourceModule": "src/lib/dive-stress/registry.ts",
           "isReExport": false
         },
         {
           "name": "pickRandom",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/registry.ts",
+          "sourceModule": "src/lib/dive-stress/registry.ts",
           "isReExport": false
         },
         {
           "name": "registrySize",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/registry.ts",
+          "sourceModule": "src/lib/dive-stress/registry.ts",
           "isReExport": false
         }
       ],
@@ -1310,14 +1310,14 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts",
+    "src/lib/dive-stress/queue.ts": {
+      "filePath": "src/lib/dive-stress/queue.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "startConsumer",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/queue.ts",
+          "sourceModule": "src/lib/dive-stress/queue.ts",
           "isReExport": false
         }
       ],
@@ -1325,7 +1325,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1333,25 +1333,25 @@
         {
           "name": "pickRandom",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/registry.ts",
+          "sourceModule": "src/lib/dive-stress/registry.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/registry.ts"
+        "src/lib/dive-stress/registry.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts",
+    "src/lib/dive-demo/machine.ts": {
+      "filePath": "src/lib/dive-demo/machine.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "execute",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/machine.ts",
+          "sourceModule": "src/lib/dive-demo/machine.ts",
           "isReExport": false
         }
       ],
@@ -1359,7 +1359,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1369,8 +1369,8 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/types.ts",
+    "src/lib/dive-demo/types.ts": {
+      "filePath": "src/lib/dive-demo/types.ts",
       "definedTypes": [
         "CrashDemoEntity"
       ],
@@ -1378,13 +1378,13 @@
         {
           "name": "CrashDemoEntityData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/types.ts",
+          "sourceModule": "src/lib/dive-demo/types.ts",
           "isReExport": false
         },
         {
           "name": "CrashDemoEntity",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/types.ts",
+          "sourceModule": "src/lib/dive-demo/types.ts",
           "isReExport": false
         }
       ],
@@ -1392,7 +1392,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1402,32 +1402,32 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts",
+    "src/lib/dive-demo/report.ts": {
+      "filePath": "src/lib/dive-demo/report.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "CrashReportFlowEdge",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts",
+          "sourceModule": "src/lib/dive-demo/report.ts",
           "isReExport": false
         },
         {
           "name": "CrashReport",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts",
+          "sourceModule": "src/lib/dive-demo/report.ts",
           "isReExport": false
         },
         {
           "name": "armCrashCapture",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts",
+          "sourceModule": "src/lib/dive-demo/report.ts",
           "isReExport": false
         },
         {
           "name": "readReport",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-demo/report.ts",
+          "sourceModule": "src/lib/dive-demo/report.ts",
           "isReExport": false
         }
       ],
@@ -1435,7 +1435,7 @@
         {
           "name": "getErrorInstance",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1443,7 +1443,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1451,7 +1451,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1459,7 +1459,7 @@
         {
           "name": "formatFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1467,7 +1467,7 @@
         {
           "name": "FormattedFlowEdge",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1477,14 +1477,14 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts",
+    "src/engine/engine.controller.ts": {
+      "filePath": "src/engine/engine.controller.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "EngineController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts",
+          "sourceModule": "src/engine/engine.controller.ts",
           "isReExport": false
         }
       ],
@@ -1492,7 +1492,7 @@
         {
           "name": "Controller",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1500,7 +1500,7 @@
         {
           "name": "Get",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1508,7 +1508,7 @@
         {
           "name": "Post",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1516,7 +1516,7 @@
         {
           "name": "Query",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1524,7 +1524,7 @@
         {
           "name": "Body",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1532,7 +1532,7 @@
         {
           "name": "Res",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1540,7 +1540,7 @@
         {
           "name": "FastifyReply",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1548,7 +1548,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1556,7 +1556,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1564,7 +1564,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1572,7 +1572,7 @@
         {
           "name": "current",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1580,7 +1580,7 @@
         {
           "name": "getErrorInstance",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1588,7 +1588,7 @@
         {
           "name": "wrap",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1596,26 +1596,26 @@
         {
           "name": "EngineService",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/engine/engine.service.ts",
+          "sourceModule": "src/engine/engine.service.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/core/engine-types.ts",
-        "/code/mnemonica/finecut/nest-dive/src/engine/engine.service.ts"
+        "src/core/engine-types.ts",
+        "src/engine/engine.service.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/engine/engine.module.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/engine/engine.module.ts",
+    "src/engine/engine.module.ts": {
+      "filePath": "src/engine/engine.module.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "EngineModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/engine/engine.module.ts",
+          "sourceModule": "src/engine/engine.module.ts",
           "isReExport": false
         }
       ],
@@ -1623,7 +1623,7 @@
         {
           "name": "Module",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1631,33 +1631,33 @@
         {
           "name": "EngineController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts",
+          "sourceModule": "src/engine/engine.controller.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "EngineService",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/engine/engine.service.ts",
+          "sourceModule": "src/engine/engine.service.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/engine/engine.controller.ts",
-        "/code/mnemonica/finecut/nest-dive/src/engine/engine.service.ts"
+        "src/engine/engine.controller.ts",
+        "src/engine/engine.service.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/admin/admin.controller.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/admin/admin.controller.ts",
+    "src/admin/admin.controller.ts": {
+      "filePath": "src/admin/admin.controller.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "AdminController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/admin/admin.controller.ts",
+          "sourceModule": "src/admin/admin.controller.ts",
           "isReExport": false
         }
       ],
@@ -1665,7 +1665,7 @@
         {
           "name": "Controller",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1673,7 +1673,7 @@
         {
           "name": "Get",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1681,7 +1681,7 @@
         {
           "name": "Post",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1689,7 +1689,7 @@
         {
           "name": "Query",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1697,7 +1697,7 @@
         {
           "name": "Body",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1705,7 +1705,7 @@
         {
           "name": "Res",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1713,7 +1713,7 @@
         {
           "name": "FastifyReply",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1721,15 +1721,15 @@
         {
           "name": "LFS",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/elfinder-node/dist/elfinder.d.ts",
+          "sourceModule": "node_modules/elfinder-node/dist/elfinder.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
         },
         {
-          "name": "driverRegistry",
+          "name": "DriverRegistry",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/elfinder-node/dist/elfinder.d.ts",
+          "sourceModule": "node_modules/elfinder-node/dist/elfinder.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1739,14 +1739,14 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/admin/admin.module.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/admin/admin.module.ts",
+    "src/admin/admin.module.ts": {
+      "filePath": "src/admin/admin.module.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "AdminModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/admin/admin.module.ts",
+          "sourceModule": "src/admin/admin.module.ts",
           "isReExport": false
         }
       ],
@@ -1754,7 +1754,7 @@
         {
           "name": "Module",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1762,25 +1762,25 @@
         {
           "name": "AdminController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/admin/admin.controller.ts",
+          "sourceModule": "src/admin/admin.controller.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/admin/admin.controller.ts"
+        "src/admin/admin.controller.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts",
+    "src/lib/full-bundle/guard.ts": {
+      "filePath": "src/lib/full-bundle/guard.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "assertInvoiceInvariant",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts",
+          "sourceModule": "src/lib/full-bundle/guard.ts",
           "isReExport": false
         }
       ],
@@ -1788,19 +1788,19 @@
         {
           "name": "InvoiceEntityData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice.types.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts"
+        "src/lib/full-bundle/invoice.types.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts",
+    "src/lib/full-bundle/invoice.types.ts": {
+      "filePath": "src/lib/full-bundle/invoice.types.ts",
       "definedTypes": [
         "InvoiceEntity"
       ],
@@ -1808,19 +1808,19 @@
         {
           "name": "InvoiceEntityData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice.types.ts",
           "isReExport": false
         },
         {
           "name": "InvoiceEntityInstance",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice.types.ts",
           "isReExport": false
         },
         {
           "name": "InvoiceEntity",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice.types.ts",
           "isReExport": false
         }
       ],
@@ -1828,7 +1828,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1836,7 +1836,7 @@
         {
           "name": "getPreRoot",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1844,7 +1844,7 @@
         {
           "name": "PreRootData",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1852,19 +1852,19 @@
         {
           "name": "assertInvoiceInvariant",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts",
+          "sourceModule": "src/lib/full-bundle/guard.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts"
+        "src/lib/full-bundle/guard.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts",
+    "src/lib/full-bundle/invoice-async.types.ts": {
+      "filePath": "src/lib/full-bundle/invoice-async.types.ts",
       "definedTypes": [
         "InvoiceEntityAsync"
       ],
@@ -1872,19 +1872,19 @@
         {
           "name": "InvoiceAsyncData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice-async.types.ts",
           "isReExport": false
         },
         {
           "name": "InvoiceAsyncInstance",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice-async.types.ts",
           "isReExport": false
         },
         {
           "name": "InvoiceEntityAsync",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice-async.types.ts",
           "isReExport": false
         }
       ],
@@ -1892,7 +1892,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1900,7 +1900,7 @@
         {
           "name": "getPreRoot",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1908,7 +1908,7 @@
         {
           "name": "PreRootData",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1916,19 +1916,19 @@
         {
           "name": "assertInvoiceInvariant",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts",
+          "sourceModule": "src/lib/full-bundle/guard.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts"
+        "src/lib/full-bundle/guard.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+    "src/lib/full-bundle/strict-invoice.types.ts": {
+      "filePath": "src/lib/full-bundle/strict-invoice.types.ts",
       "definedTypes": [
         "StrictInvoiceEntity"
       ],
@@ -1936,25 +1936,25 @@
         {
           "name": "StrictInvoice",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/strict-invoice.types.ts",
           "isReExport": false
         },
         {
           "name": "StrictInvoiceEntityData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/strict-invoice.types.ts",
           "isReExport": false
         },
         {
           "name": "StrictInvoiceEntityInstance",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/strict-invoice.types.ts",
           "isReExport": false
         },
         {
           "name": "StrictInvoiceEntity",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/strict-invoice.types.ts",
           "isReExport": false
         }
       ],
@@ -1962,7 +1962,7 @@
         {
           "name": "BaseClass",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/typeomatica/lib/index.d.ts",
+          "sourceModule": "node_modules/typeomatica/lib/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1970,7 +1970,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -1980,14 +1980,14 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.dto.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.dto.ts",
+    "src/lib/full-bundle/invoice.dto.ts": {
+      "filePath": "src/lib/full-bundle/invoice.dto.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "CreateInvoiceDto",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.dto.ts",
+          "sourceModule": "src/lib/full-bundle/invoice.dto.ts",
           "isReExport": false
         }
       ],
@@ -1995,7 +1995,7 @@
         {
           "name": "IsInt",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/class-validator/types/index.d.ts",
+          "sourceModule": "node_modules/class-validator/types/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2003,7 +2003,7 @@
         {
           "name": "IsString",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/class-validator/types/index.d.ts",
+          "sourceModule": "node_modules/class-validator/types/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2013,14 +2013,14 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.filter.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.filter.ts",
+    "src/lib/full-bundle/bundle.filter.ts": {
+      "filePath": "src/lib/full-bundle/bundle.filter.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "FullBundleFilter",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.filter.ts",
+          "sourceModule": "src/lib/full-bundle/bundle.filter.ts",
           "isReExport": false
         }
       ],
@@ -2028,7 +2028,7 @@
         {
           "name": "ExceptionFilter",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2036,7 +2036,7 @@
         {
           "name": "ArgumentsHost",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2044,7 +2044,7 @@
         {
           "name": "Catch",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2052,7 +2052,7 @@
         {
           "name": "FastifyReply",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2060,7 +2060,7 @@
         {
           "name": "FastifyRequest",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2068,7 +2068,7 @@
         {
           "name": "formatFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2076,7 +2076,7 @@
         {
           "name": "getPreRoot",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2086,32 +2086,32 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
+    "src/lib/full-bundle/rejection-report.ts": {
+      "filePath": "src/lib/full-bundle/rejection-report.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "RejectionFlowEdge",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
+          "sourceModule": "src/lib/full-bundle/rejection-report.ts",
           "isReExport": false
         },
         {
           "name": "RejectionReport",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
+          "sourceModule": "src/lib/full-bundle/rejection-report.ts",
           "isReExport": false
         },
         {
           "name": "armRejectionCapture",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
+          "sourceModule": "src/lib/full-bundle/rejection-report.ts",
           "isReExport": false
         },
         {
           "name": "readRejectionReport",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
+          "sourceModule": "src/lib/full-bundle/rejection-report.ts",
           "isReExport": false
         }
       ],
@@ -2119,7 +2119,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2127,7 +2127,7 @@
         {
           "name": "formatFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2135,7 +2135,7 @@
         {
           "name": "getPreRoot",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2143,7 +2143,7 @@
         {
           "name": "FormattedFlowEdge",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2151,7 +2151,7 @@
         {
           "name": "PreRootData",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2161,26 +2161,26 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts",
+    "src/lib/full-bundle/strict-report.ts": {
+      "filePath": "src/lib/full-bundle/strict-report.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "StrictReport",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts",
+          "sourceModule": "src/lib/full-bundle/strict-report.ts",
           "isReExport": false
         },
         {
           "name": "armStrictFinalize",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts",
+          "sourceModule": "src/lib/full-bundle/strict-report.ts",
           "isReExport": false
         },
         {
           "name": "readStrictReport",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts",
+          "sourceModule": "src/lib/full-bundle/strict-report.ts",
           "isReExport": false
         }
       ],
@@ -2188,7 +2188,7 @@
         {
           "name": "finalize",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/typeomatica/lib/index.d.ts",
+          "sourceModule": "node_modules/typeomatica/lib/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2196,7 +2196,7 @@
         {
           "name": "getConstructedFields",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/typeomatica/lib/index.d.ts",
+          "sourceModule": "node_modules/typeomatica/lib/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2204,7 +2204,7 @@
         {
           "name": "isFinalized",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/typeomatica/lib/index.d.ts",
+          "sourceModule": "node_modules/typeomatica/lib/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2212,7 +2212,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2220,25 +2220,25 @@
         {
           "name": "StrictInvoice",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/strict-invoice.types.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts"
+        "src/lib/full-bundle/strict-invoice.types.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts",
+    "src/lib/full-bundle/bundle.controller.ts": {
+      "filePath": "src/lib/full-bundle/bundle.controller.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "BundleController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts",
+          "sourceModule": "src/lib/full-bundle/bundle.controller.ts",
           "isReExport": false
         }
       ],
@@ -2246,7 +2246,7 @@
         {
           "name": "Controller",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2254,7 +2254,7 @@
         {
           "name": "Get",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2262,7 +2262,7 @@
         {
           "name": "Post",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2270,7 +2270,7 @@
         {
           "name": "Body",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2278,7 +2278,7 @@
         {
           "name": "Query",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2286,7 +2286,7 @@
         {
           "name": "Res",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2294,7 +2294,7 @@
         {
           "name": "UseInterceptors",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2302,7 +2302,7 @@
         {
           "name": "UseFilters",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2310,7 +2310,7 @@
         {
           "name": "FastifyReply",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2318,7 +2318,7 @@
         {
           "name": "lookup",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2326,7 +2326,7 @@
         {
           "name": "mti",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2334,7 +2334,7 @@
         {
           "name": "mvp",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2342,94 +2342,94 @@
         {
           "name": "InvoiceEntityInstance",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice.types.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "InvoiceAsyncData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts",
+          "sourceModule": "src/lib/full-bundle/invoice-async.types.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "StrictInvoiceEntityData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/strict-invoice.types.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "StrictInvoiceEntityInstance",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
+          "sourceModule": "src/lib/full-bundle/strict-invoice.types.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "CreateInvoiceDto",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.dto.ts",
+          "sourceModule": "src/lib/full-bundle/invoice.dto.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "FullBundleFilter",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.filter.ts",
+          "sourceModule": "src/lib/full-bundle/bundle.filter.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "armRejectionCapture",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
+          "sourceModule": "src/lib/full-bundle/rejection-report.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "readRejectionReport",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
+          "sourceModule": "src/lib/full-bundle/rejection-report.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "armStrictFinalize",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts",
+          "sourceModule": "src/lib/full-bundle/strict-report.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "readStrictReport",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts",
+          "sourceModule": "src/lib/full-bundle/strict-report.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice-async.types.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-invoice.types.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.dto.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.filter.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/rejection-report.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/strict-report.ts"
+        "src/lib/full-bundle/invoice.types.ts",
+        "src/lib/full-bundle/invoice-async.types.ts",
+        "src/lib/full-bundle/strict-invoice.types.ts",
+        "src/lib/full-bundle/invoice.dto.ts",
+        "src/lib/full-bundle/bundle.filter.ts",
+        "src/lib/full-bundle/rejection-report.ts",
+        "src/lib/full-bundle/strict-report.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/full-bundle.module.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/full-bundle.module.ts",
+    "src/lib/full-bundle/full-bundle.module.ts": {
+      "filePath": "src/lib/full-bundle/full-bundle.module.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "FullBundleModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/full-bundle.module.ts",
+          "sourceModule": "src/lib/full-bundle/full-bundle.module.ts",
           "isReExport": false
         }
       ],
@@ -2437,7 +2437,7 @@
         {
           "name": "Module",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2445,19 +2445,19 @@
         {
           "name": "BundleController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts",
+          "sourceModule": "src/lib/full-bundle/bundle.controller.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/bundle.controller.ts"
+        "src/lib/full-bundle/bundle.controller.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+    "src/lib/dive-proof/types.ts": {
+      "filePath": "src/lib/dive-proof/types.ts",
       "definedTypes": [
         "ProofEntity"
       ],
@@ -2465,25 +2465,25 @@
         {
           "name": "ProofExpectation",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "isReExport": false
         },
         {
           "name": "ProofData",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "isReExport": false
         },
         {
           "name": "ProofResult",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "isReExport": false
         },
         {
           "name": "ProofEntity",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "isReExport": false
         }
       ],
@@ -2491,7 +2491,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2501,32 +2501,32 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+    "src/lib/dive-proof/store.ts": {
+      "filePath": "src/lib/dive-proof/store.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "ProofOutcome",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+          "sourceModule": "src/lib/dive-proof/store.ts",
           "isReExport": false
         },
         {
           "name": "recordOk",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+          "sourceModule": "src/lib/dive-proof/store.ts",
           "isReExport": false
         },
         {
           "name": "recordFailure",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+          "sourceModule": "src/lib/dive-proof/store.ts",
           "isReExport": false
         },
         {
           "name": "readOutcome",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+          "sourceModule": "src/lib/dive-proof/store.ts",
           "isReExport": false
         }
       ],
@@ -2534,7 +2534,7 @@
         {
           "name": "getErrorInstance",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2542,7 +2542,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2550,7 +2550,7 @@
         {
           "name": "formatFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2558,7 +2558,7 @@
         {
           "name": "FormattedFlowEdge",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2566,25 +2566,25 @@
         {
           "name": "ProofResult",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts"
+        "src/lib/dive-proof/types.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts",
+    "src/lib/dive-proof/queue.ts": {
+      "filePath": "src/lib/dive-proof/queue.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "enqueueProof",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts",
+          "sourceModule": "src/lib/dive-proof/queue.ts",
           "isReExport": false
         }
       ],
@@ -2592,40 +2592,40 @@
         {
           "name": "recordOk",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+          "sourceModule": "src/lib/dive-proof/store.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "recordFailure",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+          "sourceModule": "src/lib/dive-proof/store.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "ProofResult",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts"
+        "src/lib/dive-proof/store.ts",
+        "src/lib/dive-proof/types.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts",
+    "src/lib/dive-proof/proof.controller.ts": {
+      "filePath": "src/lib/dive-proof/proof.controller.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "ProofController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts",
+          "sourceModule": "src/lib/dive-proof/proof.controller.ts",
           "isReExport": false
         }
       ],
@@ -2633,7 +2633,7 @@
         {
           "name": "Controller",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2641,7 +2641,7 @@
         {
           "name": "Get",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2649,7 +2649,7 @@
         {
           "name": "Post",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2657,7 +2657,7 @@
         {
           "name": "Body",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2665,7 +2665,7 @@
         {
           "name": "Param",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2673,7 +2673,7 @@
         {
           "name": "Res",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2681,7 +2681,7 @@
         {
           "name": "FastifyReply",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/fastify/fastify.d.ts",
+          "sourceModule": "node_modules/fastify/fastify.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2689,48 +2689,48 @@
         {
           "name": "ProofEntity",
           "kind": "const",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "ProofExpectation",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
+          "sourceModule": "src/lib/dive-proof/types.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "enqueueProof",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts",
+          "sourceModule": "src/lib/dive-proof/queue.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "readOutcome",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts",
+          "sourceModule": "src/lib/dive-proof/store.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/queue.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/store.ts"
+        "src/lib/dive-proof/types.ts",
+        "src/lib/dive-proof/queue.ts",
+        "src/lib/dive-proof/store.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.module.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.module.ts",
+    "src/lib/dive-proof/proof.module.ts": {
+      "filePath": "src/lib/dive-proof/proof.module.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "ProofModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.module.ts",
+          "sourceModule": "src/lib/dive-proof/proof.module.ts",
           "isReExport": false
         }
       ],
@@ -2738,7 +2738,7 @@
         {
           "name": "Module",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2746,25 +2746,25 @@
         {
           "name": "ProofController",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts",
+          "sourceModule": "src/lib/dive-proof/proof.controller.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts"
+        "src/lib/dive-proof/proof.controller.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts",
+    "src/lib/dive-stress/dlq.ts": {
+      "filePath": "src/lib/dive-stress/dlq.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "pushToDlq",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts",
+          "sourceModule": "src/lib/dive-stress/dlq.ts",
           "isReExport": false
         }
       ],
@@ -2772,7 +2772,7 @@
         {
           "name": "current",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2780,7 +2780,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2790,32 +2790,32 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+    "src/lib/chainTrace.ts": {
+      "filePath": "src/lib/chainTrace.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "ChainStep",
           "kind": "type",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "isReExport": false
         },
         {
           "name": "traceChain",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "isReExport": false
         },
         {
           "name": "formatChainTrace",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "isReExport": false
         },
         {
           "name": "getRequestId",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "isReExport": false
         }
       ],
@@ -2823,7 +2823,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2833,14 +2833,14 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/app.module.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/app.module.ts",
+    "src/app.module.ts": {
+      "filePath": "src/app.module.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "AppModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/app.module.ts",
+          "sourceModule": "src/app.module.ts",
           "isReExport": false
         }
       ],
@@ -2848,7 +2848,7 @@
         {
           "name": "Module",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2856,7 +2856,7 @@
         {
           "name": "OnModuleInit",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2864,7 +2864,7 @@
         {
           "name": "Logger",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/common/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/common/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2872,7 +2872,7 @@
         {
           "name": "trace",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/api/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/api/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2880,7 +2880,7 @@
         {
           "name": "MnemonicaModule",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2888,7 +2888,7 @@
         {
           "name": "attachHooks",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/nestjs/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/nestjs/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2896,7 +2896,7 @@
         {
           "name": "defaultTypes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2904,7 +2904,7 @@
         {
           "name": "utils",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2912,7 +2912,7 @@
         {
           "name": "getProps",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2920,7 +2920,7 @@
         {
           "name": "current",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2928,7 +2928,7 @@
         {
           "name": "getErrorInstance",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2936,7 +2936,7 @@
         {
           "name": "getFlow",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@mnemonica/dive/build/index.d.ts",
+          "sourceModule": "node_modules/@mnemonica/dive/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -2944,97 +2944,97 @@
         {
           "name": "reportProcessError",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/process-error-spans.ts",
+          "sourceModule": "src/lib/process-error-spans.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "FrontendModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.module.ts",
+          "sourceModule": "src/frontend/frontend.module.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "EngineModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/engine/engine.module.ts",
+          "sourceModule": "src/engine/engine.module.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "AdminModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/admin/admin.module.ts",
+          "sourceModule": "src/admin/admin.module.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "FullBundleModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/full-bundle.module.ts",
+          "sourceModule": "src/lib/full-bundle/full-bundle.module.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "ProofModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.module.ts",
+          "sourceModule": "src/lib/dive-proof/proof.module.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "writeStaticCache",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts",
+          "sourceModule": "src/plugins/static-cache.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "pushToDlq",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts",
+          "sourceModule": "src/lib/dive-stress/dlq.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "formatChainTrace",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "traceChain",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/process-error-spans.ts",
-        "/code/mnemonica/finecut/nest-dive/src/frontend/frontend.module.ts",
-        "/code/mnemonica/finecut/nest-dive/src/engine/engine.module.ts",
-        "/code/mnemonica/finecut/nest-dive/src/admin/admin.module.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/full-bundle.module.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.module.ts",
-        "/code/mnemonica/finecut/nest-dive/src/plugins/static-cache.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/dive-stress/dlq.ts",
-        "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts"
+        "src/lib/process-error-spans.ts",
+        "src/frontend/frontend.module.ts",
+        "src/engine/engine.module.ts",
+        "src/admin/admin.module.ts",
+        "src/lib/full-bundle/full-bundle.module.ts",
+        "src/lib/dive-proof/proof.module.ts",
+        "src/plugins/static-cache.ts",
+        "src/lib/dive-stress/dlq.ts",
+        "src/lib/chainTrace.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/tracing.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/tracing.ts",
+    "src/tracing.ts": {
+      "filePath": "src/tracing.ts",
       "definedTypes": [],
       "exportedBindings": [],
       "importedBindings": [
         {
           "name": "NodeSDK",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/sdk-node/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/sdk-node/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3042,7 +3042,7 @@
         {
           "name": "getNodeAutoInstrumentations",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/auto-instrumentations-node/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/auto-instrumentations-node/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3050,7 +3050,7 @@
         {
           "name": "OTLPTraceExporter",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/exporter-trace-otlp-http/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/exporter-trace-otlp-http/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3058,7 +3058,7 @@
         {
           "name": "resourceFromAttributes",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/resources/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/resources/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3066,7 +3066,7 @@
         {
           "name": "ATTR_SERVICE_NAME",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@opentelemetry/semantic-conventions/build/src/index.d.ts",
+          "sourceModule": "node_modules/@opentelemetry/semantic-conventions/build/src/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3076,15 +3076,15 @@
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/main.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/main.ts",
+    "src/main.ts": {
+      "filePath": "src/main.ts",
       "definedTypes": [],
       "exportedBindings": [],
       "importedBindings": [
         {
           "name": "NestFactory",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/core/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/core/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3092,7 +3092,7 @@
         {
           "name": "FastifyAdapter",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/platform-fastify/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/platform-fastify/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3100,7 +3100,7 @@
         {
           "name": "NestFastifyApplication",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/@nestjs/platform-fastify/index.d.ts",
+          "sourceModule": "node_modules/@nestjs/platform-fastify/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3108,32 +3108,32 @@
         {
           "name": "AppModule",
           "kind": "class",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/app.module.ts",
+          "sourceModule": "src/app.module.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/tracing.ts",
-        "/code/mnemonica/finecut/nest-dive/src/app.module.ts"
+        "src/tracing.ts",
+        "src/app.module.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
     },
-    "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts": {
-      "filePath": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts",
+    "src/plugins/pino-logger.ts": {
+      "filePath": "src/plugins/pino-logger.ts",
       "definedTypes": [],
       "exportedBindings": [
         {
           "name": "createLogger",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts",
+          "sourceModule": "src/plugins/pino-logger.ts",
           "isReExport": false
         },
         {
           "name": "setupCollectionLogging",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/plugins/pino-logger.ts",
+          "sourceModule": "src/plugins/pino-logger.ts",
           "isReExport": false
         }
       ],
@@ -3141,7 +3141,7 @@
         {
           "name": "pino",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/pino/pino.d.ts",
+          "sourceModule": "node_modules/pino/pino.d.ts",
           "importKind": "default",
           "isReExport": false,
           "external": true
@@ -3149,7 +3149,7 @@
         {
           "name": "TypesCollection",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3157,7 +3157,7 @@
         {
           "name": "hooksOpts",
           "kind": "unknown",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/node_modules/mnemonica/build/index.d.ts",
+          "sourceModule": "node_modules/mnemonica/build/index.d.ts",
           "importKind": "named",
           "isReExport": false,
           "external": true
@@ -3165,27 +3165,27 @@
         {
           "name": "traceChain",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "formatChainTrace",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "importKind": "named",
           "isReExport": false
         },
         {
           "name": "getRequestId",
           "kind": "function",
-          "sourceModule": "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts",
+          "sourceModule": "src/lib/chainTrace.ts",
           "importKind": "named",
           "isReExport": false
         }
       ],
       "dependencies": [
-        "/code/mnemonica/finecut/nest-dive/src/lib/chainTrace.ts"
+        "src/lib/chainTrace.ts"
       ],
       "unresolvedSpecifiers": [],
       "builtinSpecifiers": []
@@ -3194,15 +3194,15 @@
   "edges": [
     {
       "typePath": "ProofEntity",
-      "definitionModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/types.ts",
-      "usageModule": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts",
-      "usageLocation": "/code/mnemonica/finecut/nest-dive/src/lib/dive-proof/proof.controller.ts:14:29"
+      "definitionModule": "src/lib/dive-proof/types.ts",
+      "usageModule": "src/lib/dive-proof/proof.controller.ts",
+      "usageLocation": "src/lib/dive-proof/proof.controller.ts:14:29"
     }
   ],
   "cycles": [
     [
-      "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/guard.ts",
-      "/code/mnemonica/finecut/nest-dive/src/lib/full-bundle/invoice.types.ts"
+      "src/lib/full-bundle/guard.ts",
+      "src/lib/full-bundle/invoice.types.ts"
     ]
   ]
 }

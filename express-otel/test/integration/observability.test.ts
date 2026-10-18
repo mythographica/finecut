@@ -16,12 +16,14 @@ import {
 	MnemonicaOtelProvider,
 	DiveOtelProvider,
 	AsyncFlowProvider,
-	runInRequestScope,
-	feedPreRootFromRequest,
-	buildUnblindReport,
-	recordUnblindTelemetry,
+	runInEntryScope,
+	feedPreRoot,
+	captureError,
+	analyseError,
+	recordErrorAnalysis,
 } from '@mnemonica/otel';
 import { wrap, getErrorInstance } from '@mnemonica/dive';
+import { settings } from '../../src/core/settings.js';
 import { startTestApp, type TestApp } from './httpHelper.js';
 
 type SpanShape = {
@@ -31,6 +33,7 @@ type SpanShape = {
 	parentSpanId?: string;
 	spanContext: () => { spanId: string };
 	attributes: Record<string, unknown>;
+	events?: Array<{ name: string; attributes?: Record<string, unknown> }>;
 };
 
 function parentIdOf (span: SpanShape): string | undefined {
@@ -44,6 +47,12 @@ describe('observability wiring', () => {
 	let provider: NodeTracerProvider;
 
 	beforeAll(async () => {
+		// The static cache is a SHARED dir (../bff/data/static) — leftovers
+		// from other apps/suites would short-circuit `/` through the
+		// fromCache branch and drop the render spans this suite asserts.
+		// Force the full render path; static-cache.ts reads this at call time.
+		settings.use_static = false;
+
 		exporter = new InMemorySpanExporter();
 		provider = new NodeTracerProvider({
 			spanProcessors: [new SimpleSpanProcessor(exporter)],
@@ -67,8 +76,28 @@ describe('observability wiring', () => {
 		const server = express();
 		server.use(express.json());
 		server.use((req, res, next) => {
-			feedPreRootFromRequest(req);
-			runInRequestScope(req, res, { tracer, otel, asyncFlow }, () => next());
+			feedPreRoot({
+				method  : req.method,
+				url     : req.url,
+				params  : req.params,
+				query   : req.query,
+				body    : req.body,
+				headers : req.headers,
+			});
+			runInEntryScope({
+				name        : `HTTP ${req.method} ${req.route?.path ?? req.url}`,
+				attributes  : {
+					'http.method' : req.method,
+					'http.url'    : req.url,
+				},
+				endOnReturn : false,
+			}, { tracer, otel, asyncFlow }, (span) => {
+				res.on('finish', () => {
+					span.setAttribute('http.status_code', res.statusCode);
+					span.end();
+				});
+				next();
+			});
 		});
 		const { default: frontendRouter } = await import('../../src/routes/frontend.js');
 		server.use(frontendRouter);
@@ -76,6 +105,7 @@ describe('observability wiring', () => {
 	});
 
 	afterAll(async () => {
+		settings.use_static = true;
 		await app.close();
 		await provider.shutdown();
 	});
@@ -117,7 +147,7 @@ describe('observability wiring', () => {
 		}
 	});
 
-	it('unblind telemetry carries the dive branch onto the error span', () => {
+	it('unblind telemetry carries the dive chain onto the error span event', () => {
 		exporter.reset();
 		let thrown: Error | undefined;
 		const ctx = { marker: 'unblind-test' };
@@ -131,13 +161,25 @@ describe('observability wiring', () => {
 		}
 		if (!thrown) throw new Error('expected throw');
 
-		const report = buildUnblindReport(thrown);
-		recordUnblindTelemetry(report, thrown);
-
+		// the analysis recovers the chain from the error OBJECT (dive pinned it)
+		const analysis = analyseError(captureError(thrown));
+		expect(analysis.source).toBe('error');
+		expect(analysis.evidence).toBe(true);
+		const chainNames = analysis.edges.map((edge) => `${edge.kind}:${edge.name}`);
+		expect(chainNames).toContain('call:failingStep');
 		expect(getErrorInstance(thrown)).toBe(ctx);
+
+		// the process-boundary shape: a fresh ERROR span carries the event
+		const span = trace.getTracer('finecut-express-otel-test').startSpan('mnemonica.caught-exception');
+		recordErrorAnalysis(analysis, span);
+		span.end();
+
 		const spans = exporter.getFinishedSpans() as unknown as SpanShape[];
-		const span = spans.find((s) => s.name === 'mnemonica.caught-exception');
-		if (!span) throw new Error('unblind span not found');
-		expect(String(span.attributes['dive.branch'])).toContain('failingStep');
+		const errorSpan = spans.find((s) => s.name === 'mnemonica.caught-exception');
+		if (!errorSpan) throw new Error('unblind span not found');
+		const event = errorSpan.events?.find((e) => e.name === 'mnemonica.error');
+		expect(event).toBeDefined();
+		expect(event?.attributes?.[ 'mnemonica.error.source' ]).toBe('error');
+		expect(event?.attributes?.[ 'mnemonica.error.evidence' ]).toBe(true);
 	});
 });

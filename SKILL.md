@@ -11,15 +11,15 @@ Read first, and never duplicate:
 - [`@mnemonica/otel` README](../otel/README.md) — the export table and
   the wiring contract.
 
-## Known-good versions (probed 2026-09-09)
+## Known-good versions (probed 2026-09-28)
 
 | Package | Version | Note |
 |---|---|---|
-| `mnemonica` | `^1.3.0` | core |
-| `@mnemonica/dive` | `^0.8.7` | `wrap`, `current`, `getErrorInstance`, `getFlow` stable |
-| `@mnemonica/otel` | `^0.1.0` | the framework-free engine |
-| `@mnemonica/nestjs` | `^0.8.1` | NestJS adapter; re-exports the otel surface |
-| `@mnemonica/tactica` | **`0.1.9`** | ⚠ 0.3.0 widens object-typed instance fields to `unknown` and breaks app-level `Pick`s of generated types. Pin 0.1.9 until that is resolved, or narrow at runtime (never cast). |
+| `mnemonica` | `^1.3.5` | core — `awaitReturn` renamed to `unchain` (polarity inverted); sync arrows/methods/bound fns and generators rejected at define time |
+| `@mnemonica/dive` | `^0.10.1` | `wrap`, `current`, `getErrorInstance`, `getFlow` stable |
+| `@mnemonica/otel` | `^0.1.5` | the framework-free engine |
+| `@mnemonica/nestjs` | `^0.8.7` | NestJS adapter; re-exports the otel surface; `ConstructorOptions.unchain` |
+| `@mnemonica/tactica` | `^0.4.4` | async function handlers emit `Promise<X>`; mnemonica is an optional peer (no runtime import); async classes stay user-typed |
 
 ## The five moves
 
@@ -31,15 +31,16 @@ Read first, and never duplicate:
   (`http://localhost:4318/v1/traces` for the local Jaeger), then
   `provider.register()`.
 - Do **not** add HTTP auto-instrumentations: the request span is created
-  explicitly by `runInRequestScope` — auto-instrumentation would double it.
+  explicitly by `runInEntryScope` — auto-instrumentation would double it.
 - Export the provider trio as singletons: `otel = new MnemonicaOtelProvider(tracer)`,
   `diveOtel = new DiveOtelProvider(tracer)`, `asyncFlow = new AsyncFlowProvider()`.
 - Export `attachObservability(collection)`:
   `attachHooks(collection)` → `otel.attachHooks(collection)` →
   `diveOtel.attach()` → `asyncFlow.attach()`. **Exactly once per process**
   (dive's `clear()` wipes subscribers — re-attach after calling it).
-- Export `reportProcessError(err, kind)` implemented with the Unblinder
-  (`buildUnblindReport` + `recordUnblindTelemetry`) and
+- Export `reportProcessError(err, kind)` — the Unblinder, app-side:
+  `analyseError(captureError(err, { asyncFlow }))` recorded on a fresh
+  ERROR span via `recordErrorAnalysis`, plus the `[unblind]` marker — and
   `flushTracing()` = `tracerProvider.shutdown()`.
 
 ### 2. Attach the collection once, at startup
@@ -55,22 +56,23 @@ One span per request + the triple scope (provider ALS + OTel global
 context + async-flow root frame):
 
 - **Express**: middleware after body parsing —
-  `feedPreRootFromRequest(req); runInRequestScope(req, res, { tracer, otel, asyncFlow }, () => next());`
-- **Fastify**: `onRequest` hook — feed the Fastify `request` to
-  `feedPreRootFromRequest` (it reads `.method/.url/.params/.query/.body/.headers`),
-  but scope a STRUCTURAL minimum plus the raw reply:
-  `runInRequestScope({ method: request.method, url: request.url }, reply.raw, deps, () => done())`.
-  Verified: `request.raw.method` is typed `string | undefined` and does
-  not satisfy `HttpRequestLike` — build the `{method, url}` object, no cast.
+  `feedPreRoot({ method, url, params, query, body, headers })` off the request, then
+  `runInEntryScope({ name: \`HTTP ${req.method} ${req.route?.path ?? req.url}\`, attributes: { 'http.method': req.method, 'http.url': req.url }, endOnReturn: false }, { tracer, otel, asyncFlow }, (span) => { res.on('finish', () => { span.setAttribute('http.status_code', res.statusCode); span.end(); }); next(); })`.
+- **Fastify**: `onRequest` hook — feed the Fastify `request`'s fields to
+  `feedPreRoot(...)` (`.method/.url/.params/.query/.body/.headers`);
+  the scope names the span from `request.method`/`request.url` and closes
+  it on `reply.raw`'s `finish`.
 - **NestJS (platform-fastify)**: a `NestMiddleware` applied
   `forRoutes('*')`. Verified: middie hands middleware the RAW
-  `IncomingMessage`/`ServerResponse`, so pass them straight through like
-  Express.
+  `IncomingMessage`/`ServerResponse`, so the feed sees only the request
+  line (`feedPreRoot({ method, url })`) and the span closes on the raw
+  response's `finish`.
 
 ### 4. Error boundaries — every layer, all Unblinder
 
-- **Route-level catch**: `buildUnblindReport(err)` +
-  `recordUnblindTelemetry(report, err)` before rendering the 500.
+- **Route-level catch**: `unblind(err)` (the app's `tracing.ts` helper —
+  the analysis rides the request's active span as a `mnemonica.error`
+  event) before rendering the 500.
 - **Framework error handler**: Express error middleware /
   Fastify `setErrorHandler` / Nest global `@Catch()` filter (registered via
   `APP_FILTER` from `@nestjs/core`). Verified Nest shape: the reply object
@@ -82,9 +84,12 @@ context + async-flow root frame):
   attempted args are recovered from the error OBJECT — no ALS survives
   here, the pin does.
 
-The pinned contract (downstream greps depend on it): span name
-`mnemonica.caught-exception`, `report.kind === 'caught-unblinded'`,
-stdout marker `[unblind]`.
+The pinned contract (downstream greps depend on it): the fresh
+fallback/process span name `mnemonica.caught-exception`,
+`report.kind === 'caught-unblinded'`, stdout marker `[unblind]`. The
+analysis itself rides as a `mnemonica.error` span event
+(`mnemonica.error.source`, `mnemonica.error.evidence`,
+`mnemonica.lineage.graph`).
 
 ### 5. Wrap the sync-splits — with the grammar that actually works
 
@@ -165,9 +170,9 @@ Rules learned the hard way:
   except the HTTP request span is parented on the request span's id.
 - Unblind test: `wrap(function failingStep () { throw new Error(...); }, ctx)`
   in try/catch → `getErrorInstance(thrown) === ctx`, then
-  `buildUnblindReport` + `recordUnblindTelemetry` → assert the
-  `mnemonica.caught-exception` span carries `dive.branch` containing
-  `failingStep`.
+  `analyseError(captureError(thrown))` carries the chain (`source: 'error'`,
+  `call:failingStep` among the edges) and `recordErrorAnalysis(analysis, span)`
+  lands the `mnemonica.error` event on the span.
 
 ## Environment gotchas (probed on this machine)
 

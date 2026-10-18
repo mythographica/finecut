@@ -2,7 +2,7 @@
  * Admin panel route — elFinder backend via elfinder-node + redirect to static admin page.
  */
 import type { FastifyRequest, FastifyReply } from 'fastify';
-import { LFS, driverRegistry } from 'elfinder-node';
+import { LFS, DriverRegistry } from 'elfinder-node';
 
 const ROOT = process.cwd();
 
@@ -16,6 +16,7 @@ const roots = [
 ];
 
 // Initialize driver registry for direct access
+const driverRegistry = new DriverRegistry();
 driverRegistry.initialize(roots);
 
 function convertParams (
@@ -62,11 +63,14 @@ async function handleElfinder (
 
 	try {
 		const driver = driverRegistry.getDriverForRequest(params);
-		if (typeof driver[cmd] !== 'function') {
+		// Reflect keeps the dynamic dispatch cast-free: 2.3.x's VolumeDriver
+		// is a closed interface, so string indexing no longer compiles
+		const method: unknown = Reflect.get(driver, cmd);
+		if (typeof method !== 'function') {
 			throw new Error(`'${cmd}' is not implemented by volume driver`);
 		}
 
-		const result = await driver[cmd](params);
+		const result = await Reflect.apply(method, driver, [ params ]);
 		return reply.type('application/json').send(result);
 	} catch (e: unknown) {
 		const message = e instanceof Error ? e.message : 'Unknown error';
